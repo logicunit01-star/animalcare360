@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-primary: #22C55E;
+  --color-brand-background: #F5F7FA;
+  --color-brand-navy: #0F172A;
+  --color-brand-muted: #64748B;
+  --color-brand-border: #E2E8F0;
+  --color-brand-card: #FFFFFF;
+  
+  --shadow-brand: 0 4px 12px rgba(34, 197, 94, 0.2);
+  --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+@layer base {
+  body {
+    @apply bg-brand-background text-brand-navy font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-primary text-white px-6 py-2.5 rounded-lg font-semibold text-sm border-none shadow-brand hover:opacity-90 transition-all cursor-pointer;
+  }
+  
+  .btn-ghost {
+    @apply px-5 py-2.5 font-semibold text-sm text-brand-muted hover:text-brand-navy transition-colors cursor-pointer;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-10 py-10;
+  }
+}
