@@ -22,13 +22,13 @@ export default function Home() {
             <p className="text-brand-primary font-bold mb-4 text-sm tracking-widest uppercase">
               Track. Manage. Grow.
             </p>
-            <h1 className="text-[44px] md:text-[56px] font-bold text-brand-navy leading-[1.1] mb-8">
-              The Complete Tech Suite<br /> for Pakistan&apos;s Animal Care.
+            <h1 className="text-[44px] md:text-[44px] font-bold text-brand-navy leading-[1.1] mb-8">
+              The Complete Tech Suite for Pakistan&apos;s Animal Care.
             </h1>
             <p className="text-lg md:text-xl text-brand-muted mb-10 leading-relaxed max-w-lg">
               The unified tech hub for Pakistan&apos;s animal industry. Specialized ERP solutions for Feed Retailers, Animal Traders, Cattle Farms, and Pet Hospitals.
             </p>
-            
+
             <div className="flex flex-wrap gap-4">
               <a href="https://app.hulmsolutions.com/Register" className="btn-primary !py-4 !px-8 text-base">
                 Start Free Trial
@@ -48,10 +48,10 @@ export default function Home() {
             className="relative"
           >
             <div className="bg-white rounded-3xl shadow-card border border-brand-border p-2 overflow-hidden relative aspect-[1.6/1]">
-              <Image 
-                src="/dashboard-procurement.png" 
-                alt="AnimalCare360 Dashboard Preview" 
-                fill 
+              <Image
+                src="/dashboard-procurement.png"
+                alt="AnimalCare360 Dashboard Preview"
+                fill
                 className="object-cover rounded-2xl"
               />
             </div>
@@ -136,14 +136,14 @@ export default function Home() {
         <div className="absolute inset-0 opacity-5 pointer-events-none">
           <div className="absolute top-0 left-0 w-full h-full border-[1px] border-white/20 rounded-full scale-150 -translate-y-1/2"></div>
         </div>
-        
+
         <div className="section-container text-center relative z-10">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">The Unified Ecosystem</p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-20 tracking-tight">Everything Animal Care. <span className="text-brand-primary">One Hub.</span></h2>
-          
+
           <div className="relative w-80 h-80 md:w-[600px] md:h-[600px] mx-auto flex items-center justify-center">
             {/* Central 360 Hub */}
-            <motion.div 
+            <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               viewport={{ once: true }}
@@ -189,7 +189,7 @@ export default function Home() {
                 </motion.div>
               );
             })}
-            
+
             {/* Mobile simplified view of orbit */}
             <div className="md:hidden absolute inset-0 border border-white/10 rounded-full"></div>
           </div>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const Footer = () => (
-  <footer id="footer" className="bg-white pt-20 pb-10 border-t border-brand-border">
+  <footer id="footer" className="bg-white border-t border-brand-border">
     <div className="section-container">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
         <div className="col-span-1 md:col-span-1">
@@ -19,7 +19,7 @@ const Footer = () => (
             <a href="https://hulmsolutions.com" target="_blank" rel="noopener noreferrer" className="text-brand-primary text-sm font-semibold hover:underline">hulmsolutions.com</a>
           </div>
         </div>
-        
+
         <div>
           <h4 className="font-bold text-brand-navy mb-6 uppercase text-[10px] tracking-[0.2em] opacity-50">Solutions</h4>
           <ul className="space-y-3 text-sm text-brand-muted font-medium">
@@ -52,7 +52,7 @@ const Footer = () => (
           </ul>
         </div>
       </div>
-      
+
       <div className="border-t border-brand-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
         <p className="text-[10px] font-bold text-brand-muted uppercase tracking-widest">
           © {new Date().getFullYear()} AnimalCare360. All rights reserved. Registered in Pakistan.
