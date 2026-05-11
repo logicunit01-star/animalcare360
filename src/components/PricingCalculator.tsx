@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { Calculator, ShoppingCart, Beef, Warehouse, TrendingUp } from 'lucide-react';
+import { Calculator, TrendingUp } from 'lucide-react';
 
 interface PricingCalculatorProps {
   basePrice: number;

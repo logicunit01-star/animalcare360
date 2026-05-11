@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import { motion } from "motion/react";
-import { FileText, ShieldCheck, HelpCircle, BookOpen, PlayCircle, Settings, ChevronRight } from "lucide-react";
+import { FileText, ShieldCheck, BookOpen, PlayCircle, Settings, ChevronRight } from "lucide-react";
 import CTA from "@/components/CTA";
 
 export default function Resources() {

@@ -1,6 +1,5 @@
 'use client';
 import React from "react";
-import Image from "next/image";
 import { HeartPulse, Syringe, Calendar, ClipboardList, Database, CheckCircle2, FlaskConical, Stethoscope } from "lucide-react";
 import CTA from "@/components/CTA";
 
@@ -72,7 +71,7 @@ export default function PetHospital() {
                 ))}
               </div>
               <div className="p-10 bg-[#FFF5F5] border border-red-100 rounded-[40px] shadow-sm">
-                 <p className="text-lg italic text-brand-navy mb-6 leading-relaxed">"AnimalCare360 has reduced our administrative overhead by 40%. We spend more time with patients and less time on paperwork."</p>
+                 <p className="text-lg italic text-brand-navy mb-6 leading-relaxed">&quot;AnimalCare360 has reduced our administrative overhead by 40%. We spend more time with patients and less time on paperwork.&quot;</p>
                  <p className="text-xs font-black uppercase text-red-600 tracking-widest">— Senior Vet, Lahore Pet Clinic</p>
               </div>
             </div>

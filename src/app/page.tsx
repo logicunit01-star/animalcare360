@@ -23,10 +23,10 @@ export default function Home() {
               Track. Manage. Grow.
             </p>
             <h1 className="text-[44px] md:text-[56px] font-bold text-brand-navy leading-[1.1] mb-8">
-              The Complete Tech Suite<br /> for Pakistan's Animal Care.
+              The Complete Tech Suite<br /> for Pakistan&apos;s Animal Care.
             </h1>
             <p className="text-lg md:text-xl text-brand-muted mb-10 leading-relaxed max-w-lg">
-              The unified tech hub for Pakistan's animal industry. Specialized ERP solutions for Feed Retailers, Animal Traders, Cattle Farms, and Pet Hospitals.
+              The unified tech hub for Pakistan&apos;s animal industry. Specialized ERP solutions for Feed Retailers, Animal Traders, Cattle Farms, and Pet Hospitals.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -280,7 +280,7 @@ export default function Home() {
                 <h4 className="font-bold text-brand-navy mb-4 text-xl">{box.title}</h4>
                 <p className="text-brand-muted text-sm mb-12">{box.desc}</p>
                 <div className="mt-auto pt-8 border-t border-gray-50">
-                  <p className="italic text-brand-navy text-sm mb-6 leading-relaxed">"{box.quote}"</p>
+                  <p className="italic text-brand-navy text-sm mb-6 leading-relaxed">&quot;{box.quote}&quot;</p>
                   <p className="text-[10px] uppercase font-black text-brand-primary tracking-widest">{box.author}</p>
                 </div>
               </div>

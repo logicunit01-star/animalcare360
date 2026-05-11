@@ -12,7 +12,7 @@ const Footer = () => (
             <span className="text-2xl font-bold tracking-tight text-brand-navy">AnimalCare<span className="text-brand-primary">360</span></span>
           </div>
           <p className="text-brand-muted text-sm leading-relaxed mb-6">
-            Precision livestock management for the modern farm operator. From health tracking to financial reporting. Built specifically for Pakistan's agricultural ecosystem.
+            Precision livestock management for the modern farm operator. From health tracking to financial reporting. Built specifically for Pakistan&apos;s agricultural ecosystem.
           </p>
           <div className="flex flex-col gap-1">
             <p className="text-[10px] uppercase font-black text-brand-navy tracking-widest">Hulm Solutions Product</p>

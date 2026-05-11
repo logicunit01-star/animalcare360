@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import Image from "next/image";
-import { Beef, Droplets, HeartPulse, LineChart, CheckCircle2 } from "lucide-react";
+import { Droplets, HeartPulse, LineChart, CheckCircle2 } from "lucide-react";
 import CTA from "@/components/CTA";
 
 export default function CattleManagement() {

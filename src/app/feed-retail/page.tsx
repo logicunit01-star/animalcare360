@@ -102,7 +102,7 @@ export default function FeedRetail() {
 
             <div className="bg-brand-navy rounded-[48px] p-12 md:p-20 text-white flex flex-col lg:flex-row gap-16 items-center border border-brand-border shadow-2xl">
                <div className="lg:w-1/2">
-                  <h2 className="text-4xl font-bold mb-8 italic">"Scale your distribution with FBR compliance built-in."</h2>
+                  <h2 className="text-4xl font-bold mb-8 italic">&quot;Scale your distribution with FBR compliance built-in.&quot;</h2>
                   <div className="space-y-6">
                      {[
                        "FBR QR-coded sales invoices",

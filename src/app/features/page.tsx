@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import Link from "next/link";
-import { Beef, PawPrint, LineChart, Users, ShoppingCart, HeartPulse, Sprout, Sparkles, Warehouse, ArrowRight } from "lucide-react";
+import { PawPrint, LineChart, Users, ShoppingCart, HeartPulse, Sprout, ArrowRight } from "lucide-react";
 import CTA from "@/components/CTA";
 
 export default function Features() {
