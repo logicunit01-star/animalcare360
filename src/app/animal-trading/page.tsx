@@ -6,7 +6,7 @@ import CTA from "@/components/CTA";
 
 export default function AnimalTrading() {
   return (
-    <div className="pt-20">
+    <div>
       {/* Hero Section */}
       <section className="bg-brand-navy py-24 text-white relative overflow-hidden">
         <div className="section-container relative z-10">
@@ -35,19 +35,19 @@ export default function AnimalTrading() {
         <div className="section-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
             <div className="order-2 lg:order-1">
-               <div className="grid grid-cols-2 gap-4">
-                  {[
-                    { label: "Trader Volume", val: "10k+", unit: "Animals" },
-                    { label: "Commission Auth", val: "99%", unit: "Accuracy" },
-                    { label: "Tax Compliance", val: "100%", unit: "FBR Sync" },
-                    { label: "Stock Logs", val: "Real", unit: "Time" },
-                  ].map((stat, i) => (
-                    <div key={i} className="bg-brand-background p-8 rounded-3xl border border-brand-border text-center shadow-sm">
-                       <p className="text-3xl font-black text-brand-navy">{stat.val}</p>
-                       <p className="text-[10px] font-bold text-brand-muted uppercase tracking-widest">{stat.label}</p>
-                    </div>
-                  ))}
-               </div>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { label: "Trader Volume", val: "10k+", unit: "Animals" },
+                  { label: "Commission Auth", val: "99%", unit: "Accuracy" },
+                  { label: "Tax Compliance", val: "100%", unit: "FBR Sync" },
+                  { label: "Stock Logs", val: "Real", unit: "Time" },
+                ].map((stat, i) => (
+                  <div key={i} className="bg-brand-background p-8 rounded-3xl border border-brand-border text-center shadow-sm">
+                    <p className="text-3xl font-black text-brand-navy">{stat.val}</p>
+                    <p className="text-[10px] font-bold text-brand-muted uppercase tracking-widest">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="text-4xl font-bold text-brand-navy mb-6 tracking-tight">Master the High-Value Livestock Trade</h2>
@@ -99,19 +99,19 @@ export default function AnimalTrading() {
           </div>
 
           <div className="relative aspect-video rounded-[48px] overflow-hidden border border-brand-border shadow-2xl">
-            <Image 
-              src="/dashboard-finance.png" 
-              alt="Trading Financial Management" 
-              fill 
+            <Image
+              src="/dashboard-finance.png"
+              alt="Trading Financial Management"
+              fill
               className="object-cover"
             />
           </div>
         </div>
       </section>
 
-      <CTA 
-        title="Scale Your Trading Business" 
-        subtitle="Digitize your commission tracking and sale logs. Professional software for professional animal traders." 
+      <CTA
+        title="Scale Your Trading Business"
+        subtitle="Digitize your commission tracking and sale logs. Professional software for professional animal traders."
       />
     </div>
   );

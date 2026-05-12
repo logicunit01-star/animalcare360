@@ -6,7 +6,7 @@ import CTA from "@/components/CTA";
 
 export default function CattleManagement() {
   return (
-    <div className="pt-20">
+    <div>
       {/* Hero Section */}
       <section className="bg-brand-navy py-24 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-primary opacity-10 blur-3xl rounded-full translate-x-1/2"></div>
@@ -38,7 +38,7 @@ export default function CattleManagement() {
             <div>
               <h2 className="text-4xl font-bold text-brand-navy mb-6 tracking-tight">Full Lifecycle Traceability</h2>
               <p className="text-brand-muted text-lg leading-relaxed mb-8">
-                Manage your herd with absolute precision. Our software allows you to classify every animal by category (A, B, C), breed, and pedigree. 
+                Manage your herd with absolute precision. Our software allows you to classify every animal by category (A, B, C), breed, and pedigree.
                 Whether you are managing a 500-head fattening lot or a boutique dairy enterprise, AnimalCare360 provides the data granularity you need.
               </p>
               <ul className="space-y-4">
@@ -55,10 +55,10 @@ export default function CattleManagement() {
               </ul>
             </div>
             <div className="relative aspect-video rounded-[40px] overflow-hidden border border-brand-border shadow-2xl">
-              <Image 
-                src="/dashboard-palai.png" 
-                alt="Palai and Herd Management Dashboard" 
-                fill 
+              <Image
+                src="/dashboard-palai.png"
+                alt="Palai and Herd Management Dashboard"
+                fill
                 className="object-cover"
               />
             </div>
@@ -126,9 +126,9 @@ export default function CattleManagement() {
         </div>
       </section>
 
-      <CTA 
-        title="Ready to Digitize Your Farm?" 
-        subtitle="Join Pakistan's leading livestock enterprises. Start your free trial today and experience precision farm management." 
+      <CTA
+        title="Ready to Digitize Your Farm?"
+        subtitle="Join Pakistan's leading livestock enterprises. Start your free trial today and experience precision farm management."
       />
     </div>
   );

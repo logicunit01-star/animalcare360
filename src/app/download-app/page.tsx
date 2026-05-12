@@ -13,16 +13,16 @@ export default function DownloadApp() {
   const apkLink = "https://drive.google.com/file/d/1VSk6zH4iGJp7QpinNa-xrdQJvqyvRIv8/view?usp=sharing";
 
   return (
-    <div className="pt-20">
+    <div>
       {/* Hero Section */}
       <section className="bg-brand-navy py-24 text-white relative overflow-hidden">
         <div className="section-container relative z-10">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-6">
-               <div className="w-10 h-10 rounded-2xl bg-brand-primary/20 flex items-center justify-center">
-                  <Smartphone className="w-6 h-6 text-brand-primary" />
-               </div>
-               <p className="text-brand-primary font-bold text-xs uppercase tracking-widest">Mobile ERP Edition</p>
+              <div className="w-10 h-10 rounded-2xl bg-brand-primary/20 flex items-center justify-center">
+                <Smartphone className="w-6 h-6 text-brand-primary" />
+              </div>
+              <p className="text-brand-primary font-bold text-xs uppercase tracking-widest">Mobile ERP Edition</p>
             </div>
             <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
               Manage Your Farm <br /> From Your Pocket.
@@ -88,9 +88,9 @@ export default function DownloadApp() {
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-brand-navy mb-12 text-center tracking-tight">How to Install the APK</h2>
-            
+
             <div className="space-y-8 relative before:absolute before:inset-0 before:ml-7 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-brand-border before:to-transparent">
-              
+
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 <div className="flex items-center justify-center w-14 h-14 rounded-full border-4 border-white bg-brand-primary text-white font-bold text-xl shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                   1
@@ -131,7 +131,7 @@ export default function DownloadApp() {
               </div>
 
             </div>
-            
+
             <div className="mt-16 text-center">
               <a href={apkLink} target="_blank" rel="noopener noreferrer" className="btn-primary !px-10 !py-4 inline-flex items-center gap-3">
                 <Download className="w-5 h-5" /> Download AnimalCare360 APK
@@ -141,9 +141,9 @@ export default function DownloadApp() {
         </div>
       </section>
 
-      <CTA 
-        title="Ready to Digitize Your Farm?" 
-        subtitle="The mobile app syncs flawlessly with the web portal. Work seamlessly across all your devices." 
+      <CTA
+        title="Ready to Digitize Your Farm?"
+        subtitle="The mobile app syncs flawlessly with the web portal. Work seamlessly across all your devices."
       />
     </div>
   );
