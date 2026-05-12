@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronRight, CheckCircle2, ArrowRight, Activity, Users, ShoppingCart, Beef, HeartPulse, Warehouse, Sparkles } from "lucide-react";
+import { ChevronRight, CheckCircle2, ArrowRight, Activity, Users, ShoppingCart, Beef, HeartPulse, Warehouse, Sparkles, Smartphone } from "lucide-react";
 import CTA from "@/components/CTA";
 
 export default function Home() {
@@ -33,6 +33,9 @@ export default function Home() {
               <a href="https://app.hulmsolutions.com/Register" className="btn-primary !py-4 !px-8 text-base">
                 Start Free Trial
               </a>
+              <Link href="/download-app" className="bg-brand-navy text-white hover:bg-brand-navy/90 px-8 py-4 rounded-xl font-bold transition-all flex items-center gap-2 text-base shadow-lg hover:shadow-xl">
+                <Smartphone className="w-5 h-5" /> Download App
+              </Link>
               <Link href="/solutions" className="btn-ghost !py-4 !px-6 text-base flex items-center gap-2 group">
                 Explore Modules <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>

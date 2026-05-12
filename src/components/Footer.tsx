@@ -36,6 +36,7 @@ const Footer = () => (
             <li><Link href="/pricing" className="hover:text-brand-navy transition-colors">Pricing</Link></li>
             <li><Link href="/features" className="hover:text-brand-navy transition-colors">Key Features</Link></li>
             <li><Link href="/resources" className="hover:text-brand-navy transition-colors">Learning Hub</Link></li>
+            <li><Link href="/download-app" className="hover:text-brand-navy transition-colors flex items-center gap-2">Mobile App <span className="text-[8px] bg-brand-primary text-white px-1.5 py-0.5 rounded-full font-bold uppercase tracking-widest">New</span></Link></li>
             <li><a href="https://app.hulmsolutions.com/Register" className="hover:text-brand-navy transition-colors">Register for Free</a></li>
           </ul>
         </div>
