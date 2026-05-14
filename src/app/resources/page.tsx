@@ -10,9 +10,9 @@ export default function Resources() {
       <div className="section-container">
         <div className="text-center mb-24">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Support Hub</p>
-          <h1 className="text-5xl md:text-7xl font-black text-brand-navy mb-8 tracking-tight">Learning & Resources.</h1>
+          <h1 className="text-5xl md:text-7xl font-black text-brand-navy mb-8 tracking-tight">Livestock, Feed Retail, and Veterinary Business Resources</h1>
           <p className="text-brand-muted max-w-2xl mx-auto text-xl leading-relaxed">
-            Master the AnimalCare360 ERP ecosystem with our comprehensive knowledge base, tutorials, and success guides.
+            Learn how to improve records, reduce manual work, control inventory, manage animal health, and grow animal businesses in Pakistan with practical guides from AnimalCare360.
           </p>
         </div>
 
@@ -47,12 +47,13 @@ export default function Resources() {
               <h2 className="text-4xl font-bold mb-16 tracking-tight">Module-Specific Documentation</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-12">
                 {[
-                  "Cattle Management Setup",
-                  "FBR-Compliant Invoicing",
-                  "Multi-Location Inventory",
-                  "Procurement Workflows",
-                  "Vendor Performance Monitoring",
-                  "Gemini AI Advisor Config"
+                  "Farm Management",
+                  "Dairy Records",
+                  "Feed and Wanda Retail",
+                  "Animal Trading",
+                  "Pet Hospital Operations",
+                  "FBR and Business Records",
+                  "Product Tutorials"
                 ].map((guide, idx) => (
                   <div key={idx} className="flex items-start gap-6 group cursor-pointer">
                     <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center group-hover:bg-brand-primary transition-colors shrink-0">

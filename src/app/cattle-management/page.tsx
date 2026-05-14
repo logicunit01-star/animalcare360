@@ -14,10 +14,10 @@ export default function CattleManagement() {
           <div className="max-w-3xl">
             <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Farm Operations ERP</p>
             <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight">
-              Cattle Management <br /> Software for Pakistan.
+              Cattle and Dairy Farm Management Software for Pakistan
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-10">
-              The only platform designed for the unique physiological and economic needs of Pakistani livestock. From Fattening lots to high-yield Dairy farms.
+              AnimalCare360 gives cattle, dairy, and fattening farms a complete digital record for every animal. Track purchase, birth, breed, health, vaccination, breeding, milk, weight, feed cost, sale, and profit from one system.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="https://app.hulmsolutions.com/Register" className="bg-brand-primary hover:bg-opacity-90 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-brand-primary/20">
@@ -64,22 +64,37 @@ export default function CattleManagement() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-32">
             {[
               {
-                title: "Dairy Production",
+                title: "Herd Register",
+                icon: CheckCircle2,
+                desc: "Keep complete profiles for every animal with category, breed, tag, purchase details, health history, and lifecycle status."
+              },
+              {
+                title: "Milk Records",
                 icon: Droplets,
-                desc: "Monitor somatic cell count (SCC), milk fat components, and daily yield variance. Automated drying-off schedules."
+                desc: "Track daily milk yield, animal-wise trends, buyer supply, and production changes over time."
               },
               {
-                title: "Health & Clinical",
+                title: "Health & Vaccination",
                 icon: HeartPulse,
-                desc: "Full clinical EMR for every cow. Never miss a vaccination dose. Automated withdrawal period alerts."
+                desc: "Record treatments, vet visits, medicine usage, vaccination schedules, and withdrawal periods."
               },
               {
-                title: "Fattening Logs",
+                title: "Fattening Performance",
                 icon: LineChart,
-                desc: "Track Feed Conversion Ratio (FCR) and Average Daily Gain (ADG). Optimize entry and exit weights."
+                desc: "Monitor weight gain, feed cost, ADG, FCR, market readiness, and profit per animal or lot."
+              },
+              {
+                title: "Partner ROI",
+                icon: CheckCircle2,
+                desc: "Manage palai or partnership arrangements with transparent cost, sale, and return reporting."
+              },
+              {
+                title: "Inventory Syncing",
+                icon: CheckCircle2,
+                desc: "Real-time tracking of feed and medicine consumption. Automated reordering logs."
               }
             ].map((card, i) => (
               <div key={i} className="p-10 bg-white border border-brand-border rounded-[32px] hover:shadow-xl transition-all group">

@@ -20,24 +20,24 @@ export default function Home() {
             className="text-left"
           >
             <p className="text-brand-primary font-bold mb-4 text-sm tracking-widest uppercase">
-              Track. Manage. Grow.
+              Built for Pakistan's Animal Industry
             </p>
             <h1 className="text-[44px] md:text-[44px] font-bold text-brand-navy leading-[1.1] mb-8">
-              The Complete Tech Suite for Pakistan&apos;s Animal Care.
+              Livestock, Feed Retail, Animal Trading, and Pet Hospital Software for Pakistan
             </h1>
             <p className="text-lg md:text-xl text-brand-muted mb-10 leading-relaxed max-w-lg">
-              The unified tech hub for Pakistan&apos;s animal industry. Specialized ERP solutions for Feed Retailers, Animal Traders, Cattle Farms, and Pet Hospitals.
+              AnimalCare360 helps animal businesses replace scattered registers, spreadsheets, and manual follow-ups with one cloud ERP. Manage animals, stock, sales, FBR invoices, health records, milk production, partner ROI, and clinic operations from web and Android.
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.hulmsolutions.com/Register" className="btn-primary !py-4 !px-8 text-base">
+              <a href="https://wa.me/923391119259" target="_blank" rel="noopener noreferrer" className="btn-primary !py-4 !px-8 text-base">
+                Book a Demo
+              </a>
+              <a href="https://app.hulmsolutions.com/Register" className="bg-brand-navy text-white hover:bg-brand-navy/90 px-8 py-4 rounded-xl font-bold transition-all flex items-center gap-2 text-base shadow-lg hover:shadow-xl">
                 Start Free Trial
               </a>
-              <Link href="/download-app" className="bg-brand-navy text-white hover:bg-brand-navy/90 px-8 py-4 rounded-xl font-bold transition-all flex items-center gap-2 text-base shadow-lg hover:shadow-xl">
-                <Smartphone className="w-5 h-5" /> Download App
-              </Link>
               <Link href="/solutions" className="btn-ghost !py-4 !px-6 text-base flex items-center gap-2 group">
-                Explore Modules <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                Explore Solutions <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </motion.div>
@@ -80,33 +80,33 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                title: "Feed Retail (Wanda)",
-                meta: "Pet Food & Ration",
-                desc: "POS, Inventory, and multi-warehouse sync.",
-                color: "border-[#F59E0B]",
-                bg: "bg-[#FFFBEB]",
-                link: "/feed-retail"
-              },
-              {
-                title: "Animal Trading",
-                meta: "B2B Livestock",
-                desc: "Sale-purchase logs and trading commissions.",
-                color: "border-[#8B5CF6]",
-                bg: "bg-[#F5F3FF]",
-                link: "/animal-trading"
-              },
-              {
-                title: "Enterprise Farms",
-                meta: "Cattle, Sheep, Poultry",
-                desc: "Milk supply chain and pedigree tracking.",
+                title: "Cattle and Dairy Farms",
+                meta: "Farm ERP",
+                desc: "Track every animal from purchase or birth to breeding, treatment, milk, weight gain, sale, and profit.",
                 color: "border-[#3B82F6]",
                 bg: "bg-[#EFF6FF]",
                 link: "/cattle-management"
               },
               {
-                title: "Pet Hospitals",
+                title: "Wanda and Feed Retailers",
+                meta: "Retail ERP",
+                desc: "Run POS, stock, expiry, supplier payments, customer credit, and FBR invoices from one retail system.",
+                color: "border-[#F59E0B]",
+                bg: "bg-[#FFFBEB]",
+                link: "/feed-retail"
+              },
+              {
+                title: "Animal Traders",
+                meta: "B2B Trading",
+                desc: "Record sale, purchase, commission, transport, payments, and profit for every deal and animal lot.",
+                color: "border-[#8B5CF6]",
+                bg: "bg-[#F5F3FF]",
+                link: "/animal-trading"
+              },
+              {
+                title: "Pet Hospitals and Clinics",
                 meta: "Clinical ERP",
-                desc: "Patient EMR, Pharmacy, and Surgery logs.",
+                desc: "Manage patient EMR, appointments, surgery notes, pharmacy stock, billing, and reminders.",
                 color: "border-[#EF4444]",
                 bg: "bg-[#FEF2F2]",
                 link: "/pet-hospital"
@@ -199,95 +199,63 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DETAILED FEATURE BLOCKS */}
-      <section className="py-24 bg-white overflow-hidden">
-        <div className="section-container">
-          <div className="space-y-32">
+      {/* BUILT FOR PAKISTAN */}
+      <section className="py-24 bg-white overflow-hidden border-b border-brand-border">
+        <div className="section-container text-center">
+          <h2 className="text-4xl font-bold text-brand-navy mb-6">Built for Pakistan's Animal Industry</h2>
+          <p className="text-brand-muted max-w-3xl mx-auto mb-16 text-lg">
+            From dairy farms in Punjab to wanda retailers, livestock traders, and pet hospitals in major cities, AnimalCare360 is designed around the way animal businesses actually work in Pakistan.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left max-w-5xl mx-auto">
             {[
-              {
-                title: "Feed & Pet Food Retailers (Wanda/Ration)",
-                desc: "Manage your entire retail or wholesale business with our precision POS and ERP. Track fodder inventory, grass supply chains, and bulk sales with FBR-compliant QR receipts.",
-                img: "/dashboard-procurement.png",
-                link: "/feed-retail",
-                features: ["FBR-compliant QR receipts", "Professional B2B group invoicing", "Automated sales workflows"]
-              },
-              {
-                title: "Large Cattle & Poultry Farms",
-                desc: "Scale your production with digital management. Monitor milk yields, vaccine schedules, and growth performance for cows, sheep, and chickens on one unified hub.",
-                img: "/dashboard-palai.png",
-                link: "/cattle-management",
-                reverse: true,
-                features: ["Milk Yield Tracking", "Vaccine Dose Alerts", "Growth Performance Analytics"]
-              }
-            ].map((block, i) => (
-              <div key={i} className={`flex flex-col ${block.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-16 lg:gap-32`}>
-                <div className="flex-1 space-y-8">
-                  <div className="w-16 h-1.5 bg-brand-primary rounded-full"></div>
-                  <h3 className="text-4xl font-bold text-brand-navy leading-tight">{block.title}</h3>
-                  <p className="text-brand-muted leading-relaxed text-lg">{block.desc}</p>
-                  <ul className="space-y-4">
-                    {block.features.map((item, idx) => (
-                      <li key={idx} className="flex items-center gap-4 text-brand-navy font-bold text-sm">
-                        <CheckCircle2 className="w-6 h-6 text-brand-primary" /> {item}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="pt-6">
-                    <Link href={block.link} className="btn-primary !px-10 !py-4 flex items-center gap-2 w-fit">
-                      Explore Module <ArrowRight className="w-5 h-5" />
-                    </Link>
-                  </div>
-                </div>
-                <div className="flex-1 w-full relative">
-                  <div className="relative aspect-[4/3] rounded-[48px] overflow-hidden shadow-2xl border border-brand-border">
-                    <Image src={block.img} alt={block.title} fill className="object-cover" />
-                  </div>
-                  {/* Decorative elements */}
-                  <div className={`absolute -bottom-6 ${block.reverse ? '-left-6' : '-right-6'} w-32 h-32 bg-brand-primary/10 rounded-full blur-3xl -z-10`}></div>
-                </div>
+              "FBR-ready invoices and digital sales records",
+              "Farm, shop, clinic, and field workflows in one system",
+              "Multi-location stock, staff, and customer management",
+              "WhatsApp-friendly onboarding and support",
+              "Android app for field teams and owners"
+            ].map((bullet, i) => (
+              <div key={i} className="flex items-start gap-3 p-6 bg-brand-background rounded-2xl border border-brand-border">
+                <CheckCircle2 className="w-6 h-6 text-brand-primary shrink-0 mt-0.5" />
+                <span className="font-medium text-brand-navy">{bullet}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* INTEGRATIONS & TRUST */}
+      {/* IMPLEMENTATION */}
       <section className="py-24 bg-brand-background">
         <div className="section-container">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl font-bold text-brand-navy mb-6">Designed for the Ecosystem</h2>
-            <p className="text-brand-muted max-w-2xl mx-auto">Seamlessly connecting your farm with hardware, accountants, and industry standards.</p>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-brand-navy mb-6">Go Live Without Disrupting Daily Work</h2>
+            <p className="text-brand-muted max-w-2xl mx-auto">
+              Our team helps set up your business, import starting data, train staff, and configure reports so your team can start using AnimalCare360 with confidence.
+            </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Software Ecosystems",
-                desc: "Connect seamlessly with accounting packages like Xero or Quickbooks.",
-                quote: "The easiest financial bridge I've ever used. AnimalCare360 saves us hours of data entry every month.",
-                author: "Asim Nawaz, Dairy Operator"
-              },
-              {
-                title: "Hardware & IoT",
-                desc: "Compatible with RFID readers, smart tags, and automated weighing systems.",
-                quote: "Real hardware integration that actually works in the field. The tagging system is foolproof.",
-                author: "Robert Müller, Herd Manager"
-              },
-              {
-                title: "Associations",
-                desc: "Native support for breed association reporting and cattle registrations.",
-                quote: "Registration used to be a nightmare. Now it's a few clicks and we're compliant with all breed regs.",
-                author: "Saeed Khan, Beef Specialist"
-              }
-            ].map((box, i) => (
-              <div key={i} className="bg-white p-12 rounded-[40px] flex flex-col border border-gray-100 shadow-sm hover:shadow-xl transition-all">
-                <h4 className="font-bold text-brand-navy mb-4 text-xl">{box.title}</h4>
-                <p className="text-brand-muted text-sm mb-12">{box.desc}</p>
-                <div className="mt-auto pt-8 border-t border-gray-50">
-                  <p className="italic text-brand-navy text-sm mb-6 leading-relaxed">&quot;{box.quote}&quot;</p>
-                  <p className="text-[10px] uppercase font-black text-brand-primary tracking-widest">{box.author}</p>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-4">
+              {[
+                "Business workflow review",
+                "Data and module setup",
+                "Staff training",
+                "First live records and invoices",
+                "Weekly optimization"
+              ].map((step, i) => (
+                <div key={i} className="flex flex-col items-center text-center relative group">
+                  <div className="w-12 h-12 rounded-full bg-white border-2 border-brand-primary text-brand-primary font-bold flex items-center justify-center text-lg mb-4 z-10 relative">
+                    {i + 1}
+                  </div>
+                  {i !== 4 && <div className="hidden md:block absolute top-6 left-[60%] w-[calc(100%-20px)] h-[2px] bg-brand-primary/20 -z-0"></div>}
+                  <p className="font-medium text-brand-navy text-sm">{step}</p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+          </div>
+          <div className="text-center mt-16">
+            <p className="text-lg font-medium text-brand-navy mb-6">Ready to run your animal business with better records?</p>
+            <a href="https://wa.me/923391119259" target="_blank" rel="noopener noreferrer" className="btn-primary !px-10 !py-4">
+              Book a demo with our Pakistan team
+            </a>
           </div>
         </div>
       </section>

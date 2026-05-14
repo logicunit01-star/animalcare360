@@ -46,11 +46,11 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="https://app.hulmsolutions.com/SigninPage" className="btn-ghost">
-            Sign In
+          <a href="https://app.hulmsolutions.com/Register" className="btn-ghost">
+            Start Free Trial
           </a>
-          <a href="https://app.hulmsolutions.com/Register" className="btn-primary">
-            Register for Free
+          <a href="https://wa.me/923391119259" target="_blank" rel="noopener noreferrer" className="btn-primary">
+            Book a Demo
           </a>
         </div>
 
@@ -81,8 +81,8 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="pt-4 flex flex-col gap-3">
-                <a href="https://app.hulmsolutions.com/SigninPage" className="text-center py-3 font-semibold text-brand-navy">Sign In</a>
-                <a href="https://app.hulmsolutions.com/Register" className="bg-brand-primary text-white text-center py-4 rounded-xl font-bold">Register for Free</a>
+                <a href="https://app.hulmsolutions.com/Register" className="text-center py-3 font-semibold text-brand-navy border border-brand-border rounded-xl">Start Free Trial</a>
+                <a href="https://wa.me/923391119259" target="_blank" rel="noopener noreferrer" className="bg-brand-primary text-white text-center py-4 rounded-xl font-bold">Book a Demo</a>
               </div>
             </div>
           </motion.div>

@@ -7,45 +7,38 @@ import CTA from "@/components/CTA";
 export default function Features() {
   const features = [
     {
-      title: "Cattle Management",
-      desc: "Comprehensive tracking for Pakistan's growing livestock sector. Classify your herd by pedigree, category, and breed.",
+      title: "Animal Records",
+      desc: "Profiles, breed, category, purchase, birth, health, vaccination, breeding, weight, milk, and sale history.",
       icon: PawPrint,
-      details: ["Pedigree Traceability", "Milk Monitoring", "Weight Gain Analysis", "Health Alerts"],
+      details: ["Profiles & Breed", "Health & Vaccines", "Milk & Weight", "Sale History"],
       link: "/cattle-management"
     },
     {
-      title: "Animal Trading Suite",
-      desc: "Designed for B2B Animal Traders. Manage high-value livestock trade from sale-purchase to collection.",
-      icon: Users,
-      details: ["Sale/Purchase Logs", "Commission Tracking", "Stock Movement", "B2B Dashboards"],
-      link: "/animal-trading"
-    },
-    {
-      title: "Pet Hospital & Clinics",
-      desc: "Comprehensive clinical software for pet hospitals. Manage patient EMRs, surgery logs, and pharmacy inventory.",
-      icon: HeartPulse,
-      details: ["Patient EMR", "Surgery Logs", "Pharmacy Sync", "Appointment Hub"],
-      link: "/pet-hospital"
-    },
-    {
-      title: "Feed Retail (Wanda)",
-      desc: "A powerful ERP for Wanda, Ration, and grass retailers. Manage bulk supply chains and track inventory.",
+      title: "Inventory",
+      desc: "Feed, medicines, pet food, batches, expiry dates, warehouse stock, transfers, and low-stock alerts.",
       icon: ShoppingCart,
-      details: ["Retail POS", "Wholesale Orders", "Credit Tracking", "Bulk Supply Logs"],
+      details: ["Batch Tracking", "Expiry Dates", "Multi-Warehouse", "Stock Alerts"],
       link: "/feed-retail"
     },
     {
-      title: "Diet Formulation",
-      desc: "Maximize ROI through nutritional science. Formulate custom rations for fattening lots and dairy herds.",
-      icon: Sprout,
-      details: ["Scientific Rations", "Cost Analysis", "Ingredient Inventory", "Conversion Reporting"],
-      link: "/cattle-management"
+      title: "Sales and Finance",
+      desc: "POS, invoices, customer credit, supplier payments, profit/loss, partner ROI, and FBR-ready records.",
+      icon: Users,
+      details: ["Retail POS", "FBR Invoices", "Customer Credit", "Profit & Loss"],
+      link: "/animal-trading"
     },
     {
-      title: "FBR Compliance",
-      desc: "Generate FBR-compliant QR receipts, manage complex profit/loss statements, and maintain digital records.",
+      title: "Clinical Workflows",
+      desc: "Patient EMR, treatment plans, appointments, surgery logs, prescriptions, pharmacy stock, and follow-up reminders.",
+      icon: HeartPulse,
+      details: ["Patient EMR", "Appointments", "Surgery Logs", "Pharmacy Stock"],
+      link: "/pet-hospital"
+    },
+    {
+      title: "Reports",
+      desc: "Milk yield, animal performance, sales margin, inventory valuation, pending payments, tax records, and location-wise performance.",
       icon: LineChart,
-      details: ["QR Receipts", "Tax Compliance", "P&L Dashboards", "Auditing Readiness"],
+      details: ["Milk Yield", "Sales Margin", "Tax Records", "Pending Payments"],
       link: "/pricing"
     }
   ];
@@ -55,9 +48,9 @@ export default function Features() {
       <div className="section-container">
         <div className="text-center mb-24">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">The ERP Ecosystem</p>
-          <h1 className="text-5xl md:text-7xl font-black text-brand-navy mb-6 tracking-tight">Built for Precision.</h1>
+          <h1 className="text-5xl md:text-7xl font-black text-brand-navy mb-6 tracking-tight">AnimalCare360 Features for Farms, Retailers, Traders, and Clinics</h1>
           <p className="text-brand-muted max-w-3xl mx-auto text-xl leading-relaxed">
-            AnimalCare360 integrates every facet of your business into a single hub. From clinical health to complex financial compliance.
+            AnimalCare360 connects daily operations with the reports owners need. Staff can enter records from the office, shop, clinic, or field while owners monitor stock, animals, payments, and performance.
           </p>
         </div>
 

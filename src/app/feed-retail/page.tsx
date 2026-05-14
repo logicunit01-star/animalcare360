@@ -13,10 +13,10 @@ export default function FeedRetail() {
           <div className="max-w-3xl">
             <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Retail & Wholesale ERP</p>
             <h1 className="text-5xl md:text-7xl font-black text-brand-navy mb-8 leading-tight tracking-tight">
-              Feed & Pet Food <br /> Retail Management.
+              Wanda, Feed, and Pet Food Retail Software for Pakistan
             </h1>
             <p className="text-xl text-brand-muted leading-relaxed mb-10">
-              The precision POS for Wanda, Ration, and Pet Food businesses in Pakistan. Manage bulk supply chains, track fodder inventory, and handle retail sales with FBR compliance.
+              Run your wanda shop, feed distribution business, pet food store, or veterinary pharmacy with a POS and inventory system built for animal retail. Track stock, expiry, customer credit, supplier payments, purchase orders, and FBR-ready invoices from one dashboard.
             </p>
             <div className="flex flex-wrap gap-4">
                <a href="https://app.hulmsolutions.com/Register" className="bg-brand-navy text-white px-10 py-5 rounded-2xl font-bold shadow-xl hover:bg-slate-800 transition-all">Get Started</a>
@@ -64,32 +64,22 @@ export default function FeedRetail() {
                  {
                    title: "High-Speed POS",
                    icon: ShoppingBag,
-                   desc: "Cloud-synced terminal that works offline. Scan barcodes and generate FBR QR receipts at lightning speed."
+                   desc: "Create fast invoices, apply customer pricing, scan barcodes, and manage cash or credit sales from a simple shop-floor interface."
                  },
                  {
-                   title: "Batch & Expiry",
-                   icon: ShieldCheck,
-                   desc: "Automatically track batch numbers and get notified 30 days before expiry to reduce waste."
-                 },
-                 {
-                   title: "Wholesale CRM",
-                   icon: Users,
-                   desc: "Set custom pricing tiers for regular dealers and track credit limits with automated reminders."
-                 },
-                 {
-                   title: "Multi-Warehouse",
-                   icon: Database,
-                   desc: "Synchronize stock across your retail shop, godown, and mobile supply vans in real-time."
-                 },
-                 {
-                   title: "Bulk Supply Logs",
+                   title: "Inventory and Expiry",
                    icon: Package,
-                   desc: "Manage ton-level procurements. Track grass and grain supplies with cost-averaging models."
+                   desc: "Track feed, medicines, pet food, accessories, batches, expiry dates, warehouses, and low-stock items before they affect sales."
                  },
                  {
-                   title: "Sales Analytics",
-                   icon: BarChart2,
-                   desc: "Understand your best-selling rations. Track profit margins per SKU and optimize your shelf space."
+                   title: "Customer Credit",
+                   icon: Users,
+                   desc: "Manage customer balances, dealer pricing, payment history, and reminders without relying on paper registers."
+                 },
+                 {
+                   title: "Supplier and Purchase Control",
+                   icon: Database,
+                   desc: "Record purchase orders, supplier balances, bulk stock arrivals, and cost changes for better margin control."
                  }
                ].map((item, i) => (
                  <div key={i} className="group p-12 border border-brand-border rounded-[48px] bg-white hover:bg-brand-background transition-all shadow-sm hover:shadow-xl">

@@ -13,12 +13,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: {
-    template: "%s | AnimalCare360 – Pakistan's #1 Livestock ERP",
-    default: "AnimalCare360 – Pakistan's #1 Livestock & Farm Management ERP",
-  },
+  title: "Livestock & Pet Business Software in Pakistan | AnimalCare360",
   description:
-    "AnimalCare360 is Pakistan's leading livestock management software. ERP solutions for cattle farms, wanda feed retailers, animal traders, and pet hospitals in Lahore, Karachi, Islamabad & across Pakistan.",
+    "Run cattle farms, wanda shops, animal trading, and pet hospitals with AnimalCare360. Manage animals, stock, FBR invoices, milk records, sales, and clinic workflows in Pakistan.",
   keywords: [
     "livestock software Pakistan",
     "cattle management software Pakistan",
@@ -68,9 +65,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={outfit.variable}>
       <body className="font-sans antialiased bg-brand-background text-brand-navy">
-        <div className="bg-brand-navy text-white text-[11px] py-1.5 px-6 sm:px-10 flex justify-between items-center tracking-widest uppercase font-medium">
-          <span>A product of Hulm Solutions</span>
-          <span className="hidden sm:inline">WhatsApp / Call: +92 339 111 9259</span>
+        <div className="bg-brand-navy text-white text-[11px] py-1.5 px-6 sm:px-10 flex justify-center items-center tracking-widest uppercase font-medium text-center">
+          <span>Built for Pakistan's livestock, feed retail, trading, and veterinary businesses | WhatsApp: +92 339 111 9259</span>
         </div>
         <Navbar />
         <main className="flex-grow">{children}</main>

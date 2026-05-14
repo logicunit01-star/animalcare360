@@ -8,36 +8,36 @@ import CTA from "@/components/CTA";
 export default function Solutions() {
   const solutions = [
     {
-      title: "Wanda & Feed ERP",
-      desc: "Custom-built for animal feed retailers and wholesalers (Wanda/Ration). Manage bulk supply chains, track fodder inventory, and handle high-velocity sales orders.",
+      title: "Wanda and Feed Retail ERP",
+      desc: "For shops, wholesalers, distributors, and pet food retailers that need POS, inventory, expiry, customer credit, supplier ledgers, and FBR-ready invoices.",
       icon: ShoppingCart,
       color: "border-blue-200",
       link: "/feed-retail"
     },
     {
-      title: "Livestock Farms & Dairy",
-      desc: "Scalable technology for big cattle, chicken, and sheep farms. Monitor milk supply chains, pedigree health, and fattening performance with clinical precision.",
+      title: "Cattle and Dairy Farm ERP",
+      desc: "For farms that need accurate records for animals, milk, feed, breeding, treatment, weight gain, and farm profitability.",
       icon: Beef,
       color: "border-orange-200",
       link: "/cattle-management"
     },
     {
-      title: "Animal Trading Hub",
-      desc: "A specialized suite for Animal Traders. Manage the complete sale-purchase cycle of high-value livestock. Generate FBR QR receipts and track commissions.",
+      title: "Animal Trading Suite",
+      desc: "For traders, dealers, brokers, and livestock investors who need sale-purchase records, commission tracking, buyer/seller ledgers, and profit visibility.",
       icon: Users,
       color: "border-green-200",
       link: "/animal-trading"
     },
     {
-      title: "Pet Hospitals & Clinics",
-      desc: "Professional clinical management for pet hospitals and pharmacies. Track patient digital records, surgery logs, and pharmacy inventory.",
+      title: "Pet Hospital ERP",
+      desc: "For veterinary clinics and pet hospitals that need patient EMR, appointment scheduling, surgery logs, pharmacy inventory, billing, and reminders.",
       icon: HeartPulse,
       color: "border-red-200",
       link: "/pet-hospital"
     },
     {
-      title: "FBR-Compliant Financials",
-      desc: "Bridge the gap between animal care and tax compliance. Our financials handle QR-coded invoicing, B2B sales workflows, and complete audit logs.",
+      title: "FBR and Financial Control",
+      desc: "For businesses that need clean invoices, audit logs, profit/loss reports, receivables, payables, and tax-friendly digital records.",
       icon: LineChart,
       color: "border-slate-200",
       link: "/pricing"
@@ -49,9 +49,9 @@ export default function Solutions() {
       <div className="section-container">
         <div className="text-center mb-24">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Targeted Industry Tech</p>
-          <h1 className="text-5xl md:text-7xl font-black text-brand-navy mb-8 tracking-tight leading-[1.1]">Unified Tech for <br/>Animal Enterprises.</h1>
+          <h1 className="text-5xl md:text-7xl font-black text-brand-navy mb-8 tracking-tight leading-[1.1]">Software Modules for Every Animal Business in Pakistan</h1>
           <p className="text-brand-muted max-w-3xl mx-auto text-xl leading-relaxed">
-            AnimalCare360 provides specialized ERP modules built to address the unique physiological and economic nuances of retailers, wholesalers, farmers, and clinicians in Pakistan.
+            AnimalCare360 is modular, so you can start with the system your business needs today and expand as your operations grow. Each module is designed for a specific animal industry workflow, not a generic ERP template.
           </p>
         </div>
 
@@ -73,10 +73,10 @@ export default function Solutions() {
                    <h2 className="text-4xl font-bold text-brand-navy mb-6 tracking-tight">{sol.title}</h2>
                    <p className="text-brand-muted text-lg leading-relaxed mb-10 max-w-lg">{sol.desc}</p>
                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-5 gap-x-12 mb-10">
-                     {(sol.title === "Wanda & Feed ERP" ? ["Retail POS Terminal", "Fodder Supply Logs", "Wholesale Credit Limits", "Customer CRM Analytics"] : 
-                       sol.title === "Livestock Farms & Dairy" ? ["Milk Supply Chain", "ADG Fattening Logs", "Pedigree Mapping", "Poultry/Egg Records"] :
-                       sol.title === "Pet Hospitals & Clinics" ? ["Surgery Case Records", "Pharmacy Dispensary", "Appointment Hub", "Clinical Histories"] :
-                       sol.title === "Animal Trading Hub" ? ["Sale/Purchase Logs", "Trading Commission", "FBR-Compliant Receipts", "Trader Dashboards"] :
+                     {(sol.title === "Wanda and Feed Retail ERP" ? ["Retail POS Terminal", "Fodder Supply Logs", "Wholesale Credit Limits", "Customer CRM Analytics"] : 
+                       sol.title === "Cattle and Dairy Farm ERP" ? ["Milk Supply Chain", "ADG Fattening Logs", "Pedigree Mapping", "Poultry/Egg Records"] :
+                       sol.title === "Pet Hospital ERP" ? ["Surgery Case Records", "Pharmacy Dispensary", "Appointment Hub", "Clinical Histories"] :
+                       sol.title === "Animal Trading Suite" ? ["Sale/Purchase Logs", "Trading Commission", "FBR-Compliant Receipts", "Trader Dashboards"] :
                        ["QR-Coded Invoicing", "Auditable Tax Logs", "Profit/Loss Tracking", "Sales Order Workflows"]).map((item, idx) => (
                        <li key={idx} className="flex items-center gap-3 text-[10px] font-black text-brand-navy uppercase tracking-widest">
                          <div className="w-2 h-2 rounded-full bg-brand-primary shadow-sm shadow-green-200"></div> {item}

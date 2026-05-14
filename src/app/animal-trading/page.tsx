@@ -13,10 +13,10 @@ export default function AnimalTrading() {
           <div className="max-w-3xl">
             <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Marketplace & B2B Hub</p>
             <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight">
-              Animal Trading <br /> Suite for Professionals.
+              Animal Trading Software for Sale, Purchase, Commission, and Payments
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-10">
-              The complete toolkit for high-value livestock traders in Pakistan. Manage sale-purchase logs, track commissions, and generate FBR digital receipts.
+              AnimalCare360 helps livestock traders, dealers, brokers, and investors keep clean records for every deal. Track buyer and seller details, animal lots, advance payments, commission, transport costs, balances, and profit.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="https://app.hulmsolutions.com/Register" className="bg-brand-primary hover:bg-opacity-90 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-brand-primary/20">
@@ -72,22 +72,27 @@ export default function AnimalTrading() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32">
             {[
               {
-                title: "Smart Commission",
-                icon: BadgePercent,
-                desc: "Calculate agent fees, trading margins, and taxes automatically based on sale price."
-              },
-              {
-                title: "Multi-Party Invoicing",
+                title: "Deal Records",
                 icon: FileText,
-                desc: "Generate professional PDFs for buyers, sellers, and transport partners in one click."
+                desc: "Record purchase, sale, animal details, buyer, seller, rate, quantity, and deal status in one place."
               },
               {
-                title: "Financial Ledger",
+                title: "Commission Tracking",
+                icon: BadgePercent,
+                desc: "Calculate broker or agent commission automatically and keep every party's ledger clear."
+              },
+              {
+                title: "Payment Control",
                 icon: Coins,
-                desc: "Real-time P&L for every animal lot. Monitor cash flow and pending collections across the market."
+                desc: "Track advance, balance, cash flow, pending collections, and payment proof for each deal."
+              },
+              {
+                title: "Profit Reporting",
+                icon: FileText,
+                desc: "View profit by animal, lot, customer, market, or trading period."
               }
             ].map((feature, i) => (
               <div key={i} className="p-10 border border-brand-border rounded-[40px] hover:border-brand-primary transition-all shadow-sm hover:shadow-xl bg-white">

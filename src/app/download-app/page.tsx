@@ -25,18 +25,19 @@ export default function DownloadApp() {
               <p className="text-brand-primary font-bold text-xs uppercase tracking-widest">Mobile ERP Edition</p>
             </div>
             <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
-              Manage Your Farm <br /> From Your Pocket.
+              Download the AnimalCare360 Android App
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-10">
-              Download the AnimalCare360 mobile app for Android. Track your cattle, log milk yields, and manage farm operations from anywhere, at any time.
+              Use AnimalCare360 from the farm, shop, clinic, or field. The Android app helps owners, managers, vets, and staff record updates faster and stay connected with daily operations.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href={apkLink} target="_blank" rel="noopener noreferrer" className="bg-brand-primary hover:bg-opacity-90 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-brand-primary/20 flex items-center gap-3">
                 <Download className="w-5 h-5" /> Download APK Now
               </a>
             </div>
-            <p className="text-sm text-slate-400 mt-6 flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4 text-brand-primary" /> 100% Secure & Virus-Free. Optimized for Android.
+            <p className="text-sm text-slate-400 mt-6 flex items-start gap-2">
+              <ShieldCheck className="w-5 h-5 text-brand-primary shrink-0 mt-0.5" /> 
+              <span>The APK is provided directly by AnimalCare360. Only download it from this official page or a link shared by the AnimalCare360 team.</span>
             </p>
           </div>
         </div>
@@ -53,30 +54,18 @@ export default function DownloadApp() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              {
-                title: "Track Anywhere",
-                desc: "Whether you are at the market, travelling, or in the field, access real-time stats of your herd instantly.",
-                icon: Globe
-              },
-              {
-                title: "Instant Logging",
-                desc: "Record milk production, track daily feed, and log veterinary treatments right from the shed.",
-                icon: Smartphone
-              },
-              {
-                title: "Push Notifications",
-                desc: "Get instant alerts for pending vaccinations, drying-off schedules, and inventory shortages.",
-                icon: ShieldCheck
-              }
+              { title: "Add milk entries" },
+              { title: "Record vaccination and treatment" },
+              { title: "Check animal profiles" },
+              { title: "Update weight records" },
+              { title: "Review stock and alerts" },
+              { title: "Receive task notifications" }
             ].map((feature, idx) => (
-              <div key={idx} className="bg-white p-10 border border-brand-border rounded-[32px] shadow-sm hover:shadow-xl transition-all">
-                <div className="w-14 h-14 bg-brand-background rounded-2xl flex items-center justify-center mb-6">
-                  <feature.icon className="w-7 h-7 text-brand-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-brand-navy mb-4">{feature.title}</h3>
-                <p className="text-brand-muted leading-relaxed">{feature.desc}</p>
+              <div key={idx} className="bg-white p-6 border border-brand-border rounded-[24px] shadow-sm flex items-center gap-4 hover:shadow-md transition-all">
+                <CheckCircle2 className="w-6 h-6 text-brand-primary shrink-0" />
+                <h3 className="font-bold text-brand-navy">{feature.title}</h3>
               </div>
             ))}
           </div>

@@ -17,10 +17,10 @@ export default function PetHospital() {
                <p className="text-red-600 font-bold text-xs uppercase tracking-widest">Clinical Management ERP</p>
             </div>
             <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
-              Clinical Excellence for <br /> Pet Hospitals.
+              Pet Hospital and Veterinary Clinic Software for Pakistan
             </h1>
             <p className="text-xl text-brand-muted leading-relaxed mb-10">
-              Transform your veterinary clinic with digital patient records, automated surgery logs, and integrated pharmacy inventory. Designed for compassionate care and business growth in Pakistan.
+              AnimalCare360 helps veterinary clinics and pet hospitals manage patient care and business operations together. Keep patient histories, appointments, prescriptions, surgery notes, pharmacy stock, billing, and reminders in one system.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="https://wa.me/923391119259" className="bg-red-500 hover:bg-red-600 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-red-500/20">
@@ -40,14 +40,15 @@ export default function PetHospital() {
         <div className="section-container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-32">
             {[
-              { title: "Electronic Health Records", icon: ClipboardList },
-              { title: "Surgery & Case Logs", icon: Stethoscope },
-              { title: "Lab Results Hub", icon: FlaskConical },
-              { title: "Pharmacy Sync", icon: Syringe },
+              { title: "Patient EMR", icon: ClipboardList, desc: "Store pet profiles, owner details, visit history, diagnosis, treatment plans, vaccinations, and follow-ups." },
+              { title: "Appointments", icon: Calendar, desc: "Manage doctors, rooms, follow-ups, and reminders so fewer patients are missed." },
+              { title: "Surgery and Lab Records", icon: Stethoscope, desc: "Record procedures, consent, notes, lab results, attachments, and post-treatment instructions." },
+              { title: "Pharmacy and Billing", icon: Syringe, desc: "Track medicines, expiry dates, prescriptions, stock levels, sales, and FBR-ready invoices where applicable." },
             ].map((mod, i) => (
               <div key={i} className="p-10 bg-brand-background border border-brand-border rounded-[32px] text-center hover:border-red-500 transition-all shadow-sm">
                 <mod.icon className="w-12 h-12 text-red-500 mx-auto mb-6" />
-                <h4 className="font-bold text-brand-navy text-lg">{mod.title}</h4>
+                <h4 className="font-bold text-brand-navy text-lg mb-4">{mod.title}</h4>
+                <p className="text-brand-muted text-sm">{mod.desc}</p>
               </div>
             ))}
           </div>
