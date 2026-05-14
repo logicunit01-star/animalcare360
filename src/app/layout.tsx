@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   creator: "Hulm Solutions",
   publisher: "Hulm Solutions",
   metadataBase: new URL("https://animalcare360.com"),
-  alternates: { canonical: "/" },
+
   openGraph: {
     type: "website",
     locale: "en_PK",

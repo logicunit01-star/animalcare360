@@ -49,7 +49,7 @@ export default function Solutions() {
       <div className="section-container">
         <div className="text-center mb-24">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Targeted Industry Tech</p>
-          <h1 className="text-5xl md:text-7xl font-black text-brand-navy mb-8 tracking-tight leading-[1.1]">Software Modules for Every Animal Business in Pakistan</h1>
+          <h1 className="text-5xl font-black text-brand-navy mb-8 tracking-tight leading-[1.1]">Software Modules for Every Animal Business in Pakistan</h1>
           <p className="text-brand-muted max-w-3xl mx-auto text-xl leading-relaxed">
             AnimalCare360 is modular, so you can start with the system your business needs today and expand as your operations grow. Each module is designed for a specific animal industry workflow, not a generic ERP template.
           </p>

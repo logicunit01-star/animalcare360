@@ -16,7 +16,7 @@ export default function PetHospital() {
                </div>
                <p className="text-red-600 font-bold text-xs uppercase tracking-widest">Clinical Management ERP</p>
             </div>
-            <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
+            <h1 className="text-5xl font-black mb-8 leading-tight tracking-tight">
               Pet Hospital and Veterinary Clinic Software for Pakistan
             </h1>
             <p className="text-xl text-brand-muted leading-relaxed mb-10">

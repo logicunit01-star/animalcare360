@@ -12,7 +12,7 @@ export default function FeedRetail() {
         <div className="section-container relative z-10">
           <div className="max-w-3xl">
             <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Retail & Wholesale ERP</p>
-            <h1 className="text-5xl md:text-7xl font-black text-brand-navy mb-8 leading-tight tracking-tight">
+            <h1 className="text-5xl font-black text-brand-navy mb-8 leading-tight tracking-tight">
               Wanda, Feed, and Pet Food Retail Software for Pakistan
             </h1>
             <p className="text-xl text-brand-muted leading-relaxed mb-10">

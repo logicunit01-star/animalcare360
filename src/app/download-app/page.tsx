@@ -24,7 +24,7 @@ export default function DownloadApp() {
               </div>
               <p className="text-brand-primary font-bold text-xs uppercase tracking-widest">Mobile ERP Edition</p>
             </div>
-            <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
+            <h1 className="text-5xl font-black mb-8 leading-tight tracking-tight">
               Download the AnimalCare360 Android App
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-10">

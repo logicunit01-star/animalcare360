@@ -50,7 +50,7 @@ export default function Pricing() {
       <div className="section-container">
         <div className="text-center mb-20">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Investment Plans</p>
-          <h1 className="text-5xl md:text-7xl font-bold text-brand-navy mb-6 tracking-tight">Pricing Plans for Farms, Wanda Shops, Traders, and Pet Clinics</h1>
+          <h1 className="text-5xl font-bold text-brand-navy mb-6 tracking-tight">Pricing Plans for Farms, Wanda Shops, Traders, and Pet Clinics</h1>
           <p className="text-brand-muted max-w-2xl mx-auto text-lg leading-relaxed">
             Choose the module that fits your business today. Pricing can scale by number of users, animals, locations, inventory volume, and implementation needs.
           </p>

@@ -48,7 +48,7 @@ export default function Features() {
       <div className="section-container">
         <div className="text-center mb-24">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">The ERP Ecosystem</p>
-          <h1 className="text-5xl md:text-7xl font-black text-brand-navy mb-6 tracking-tight">AnimalCare360 Features for Farms, Retailers, Traders, and Clinics</h1>
+          <h1 className="text-5xl font-black text-brand-navy mb-6 tracking-tight">AnimalCare360 Features for Farms, Retailers, Traders, and Clinics</h1>
           <p className="text-brand-muted max-w-3xl mx-auto text-xl leading-relaxed">
             AnimalCare360 connects daily operations with the reports owners need. Staff can enter records from the office, shop, clinic, or field while owners monitor stock, animals, payments, and performance.
           </p>

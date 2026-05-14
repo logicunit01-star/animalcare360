@@ -10,7 +10,7 @@ export default function Resources() {
       <div className="section-container">
         <div className="text-center mb-24">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Support Hub</p>
-          <h1 className="text-5xl md:text-7xl font-black text-brand-navy mb-8 tracking-tight">Livestock, Feed Retail, and Veterinary Business Resources</h1>
+          <h1 className="text-5xl font-black text-brand-navy mb-8 tracking-tight">Livestock, Feed Retail, and Veterinary Business Resources</h1>
           <p className="text-brand-muted max-w-2xl mx-auto text-xl leading-relaxed">
             Learn how to improve records, reduce manual work, control inventory, manage animal health, and grow animal businesses in Pakistan with practical guides from AnimalCare360.
           </p>
