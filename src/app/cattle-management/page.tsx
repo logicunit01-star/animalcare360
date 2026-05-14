@@ -13,7 +13,7 @@ export default function CattleManagement() {
         <div className="section-container relative z-10">
           <div className="max-w-3xl">
             <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Farm Operations ERP</p>
-            <h1 className="text-5xl font-black mb-8 leading-tight">
+            <h1 className="text-5xl font-bold mb-8 leading-tight">
               Cattle and Dairy Farm Management Software for Pakistan
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-10">

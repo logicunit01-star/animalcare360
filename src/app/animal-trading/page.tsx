@@ -12,7 +12,7 @@ export default function AnimalTrading() {
         <div className="section-container relative z-10">
           <div className="max-w-3xl">
             <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Marketplace & B2B Hub</p>
-            <h1 className="text-5xl font-black mb-8 leading-tight">
+            <h1 className="text-5xl font-bold mb-8 leading-tight">
               Animal Trading Software for Sale, Purchase, Commission, and Payments
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-10">
@@ -43,7 +43,7 @@ export default function AnimalTrading() {
                   { label: "Stock Logs", val: "Real", unit: "Time" },
                 ].map((stat, i) => (
                   <div key={i} className="bg-brand-background p-8 rounded-3xl border border-brand-border text-center shadow-sm">
-                    <p className="text-3xl font-black text-brand-navy">{stat.val}</p>
+                    <p className="text-3xl font-bold text-brand-navy">{stat.val}</p>
                     <p className="text-[10px] font-bold text-brand-muted uppercase tracking-widest">{stat.label}</p>
                   </div>
                 ))}

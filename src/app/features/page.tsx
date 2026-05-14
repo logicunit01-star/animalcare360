@@ -48,7 +48,7 @@ export default function Features() {
       <div className="section-container">
         <div className="text-center mb-24">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">The ERP Ecosystem</p>
-          <h1 className="text-5xl font-black text-brand-navy mb-6 tracking-tight">AnimalCare360 Features for Farms, Retailers, Traders, and Clinics</h1>
+          <h1 className="text-5xl font-bold text-brand-navy mb-6 tracking-tight">AnimalCare360 Features for Farms, Retailers, Traders, and Clinics</h1>
           <p className="text-brand-muted max-w-3xl mx-auto text-xl leading-relaxed">
             AnimalCare360 connects daily operations with the reports owners need. Staff can enter records from the office, shop, clinic, or field while owners monitor stock, animals, payments, and performance.
           </p>
@@ -64,17 +64,17 @@ export default function Features() {
               <p className="text-sm text-brand-muted leading-relaxed mb-6">
                 {feature.desc}
               </p>
-              
-              <Link 
-                href={feature.link} 
-                className="mb-8 flex items-center gap-2 text-brand-primary font-black uppercase tracking-widest text-[9px] hover:translate-x-1 transition-transform"
+
+              <Link
+                href={feature.link}
+                className="mb-8 flex items-center gap-2 text-brand-primary font-bold uppercase tracking-widest text-[9px] hover:translate-x-1 transition-transform"
               >
                 Learn More <ArrowRight className="w-3 h-3" />
               </Link>
 
               <div className="pt-8 border-t border-brand-border grid grid-cols-2 gap-y-4 gap-x-2">
                 {feature.details.map((detail, idx) => (
-                  <div key={idx} className="flex items-center gap-2 text-[10px] font-black text-brand-navy uppercase tracking-[0.05em] leading-tight">
+                  <div key={idx} className="flex items-center gap-2 text-[10px] font-bold text-brand-navy uppercase tracking-[0.05em] leading-tight">
                     <div className="w-1.5 h-1.5 rounded-full bg-brand-primary shadow-sm shadow-green-200"></div>
                     {detail}
                   </div>

@@ -65,7 +65,7 @@ export default function Home() {
                   <Activity className="w-5 h-5 text-brand-primary" />
                 </div>
                 <div>
-                  <p className="text-[10px] font-black uppercase text-brand-muted tracking-widest">Milk Yield</p>
+                  <p className="text-[10px] font-bold uppercase text-brand-muted tracking-widest">Milk Yield</p>
                   <p className="text-lg font-bold text-brand-navy">+12.5%</p>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function Home() {
                   whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.05)" }}
                   className={`${card.bg} p-8 h-full rounded-[32px] border-l-[6px] ${card.color} shadow-sm flex flex-col gap-3 transition-all`}
                 >
-                  <div className="text-[10px] uppercase font-black text-brand-muted tracking-widest">
+                  <div className="text-[10px] uppercase font-bold text-brand-muted tracking-widest">
                     {card.meta}
                   </div>
                   <h3 className="text-xl font-bold text-brand-navy">{card.title}</h3>
@@ -153,8 +153,8 @@ export default function Home() {
               transition={{ type: "spring", damping: 15 }}
               className="w-32 h-32 md:w-56 md:h-56 bg-brand-primary rounded-full flex flex-col items-center justify-center shadow-[0_0_80px_rgba(34,197,94,0.3)] z-20 border-8 border-brand-navy"
             >
-              <span className="text-4xl md:text-7xl font-black text-white leading-none">360</span>
-              <span className="text-[8px] md:text-[11px] font-black text-white px-4 py-1.5 bg-brand-navy/30 rounded-full mt-3 uppercase tracking-[0.2em]">Unified ERP</span>
+              <span className="text-4xl md:text-7xl font-bold text-white leading-none">360</span>
+              <span className="text-[8px] md:text-[11px] font-bold text-white px-4 py-1.5 bg-brand-navy/30 rounded-full mt-3 uppercase tracking-[0.2em]">Unified ERP</span>
             </motion.div>
 
             {/* Solutions Orbiting */}

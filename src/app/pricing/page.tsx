@@ -64,16 +64,15 @@ export default function Pricing() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start mb-20">
           {pricingData.map((plan, i) => (
-            <div 
+            <div
               key={i}
-              className={`p-10 rounded-[40px] border transition-all ${
-                plan.highlight 
-                  ? "bg-brand-navy text-white shadow-card relative border-brand-navy scale-105 z-10" 
+              className={`p-10 rounded-[40px] border transition-all ${plan.highlight
+                  ? "bg-brand-navy text-white shadow-card relative border-brand-navy scale-105 z-10"
                   : "bg-white text-brand-navy border-brand-border"
-              }`}
+                }`}
             >
               {plan.highlight && (
-                <div className="absolute top-0 right-10 -translate-y-1/2 bg-brand-primary text-white text-[10px] font-black uppercase tracking-widest py-1.5 px-4 rounded-full shadow-lg">
+                <div className="absolute top-0 right-10 -translate-y-1/2 bg-brand-primary text-white text-[10px] font-bold uppercase tracking-widest py-1.5 px-4 rounded-full shadow-lg">
                   Most Popular
                 </div>
               )}
@@ -85,7 +84,7 @@ export default function Pricing() {
               <p className={`text-sm mb-10 leading-relaxed ${plan.highlight ? "text-slate-300" : "text-brand-muted"}`}>
                 {plan.desc}
               </p>
-              
+
               <ul className="space-y-4 mb-12">
                 {plan.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center gap-3 text-sm font-medium">
@@ -95,13 +94,12 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <a 
+              <a
                 href="https://app.hulmsolutions.com/Register"
-                className={`w-full block text-center py-5 rounded-2xl font-bold transition-all text-sm ${
-                  plan.highlight 
-                    ? "bg-brand-primary text-white hover:opacity-90 shadow-brand" 
+                className={`w-full block text-center py-5 rounded-2xl font-bold transition-all text-sm ${plan.highlight
+                    ? "bg-brand-primary text-white hover:opacity-90 shadow-brand"
                     : "bg-brand-background text-brand-navy hover:bg-gray-100"
-                }`}
+                  }`}
               >
                 Get Started
               </a>
@@ -110,23 +108,23 @@ export default function Pricing() {
         </div>
 
         <div className="bg-white p-12 rounded-[40px] border border-gray-100 flex flex-col md:flex-row items-center justify-between gap-8 mb-20">
-           <div className="flex items-start gap-4">
-             <div className="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center shrink-0">
-               <Info className="w-6 h-6 text-blue-500" />
-             </div>
-             <div>
-               <h4 className="text-xl font-bold text-brand-navy mb-2">Data Migration & Implementation</h4>
-               <p className="text-brand-muted text-sm leading-relaxed">Need migration from Excel, registers, or another software? Our team can help prepare your starting records and train your staff.</p>
-             </div>
-           </div>
-           <a 
-             href="https://wa.me/923391119259" 
-             target="_blank"
-             rel="noopener noreferrer"
-             className="bg-brand-navy text-white px-10 py-5 rounded-2xl font-bold whitespace-nowrap hover:bg-slate-800 transition-colors"
-           >
-             Contact Sales Team
-           </a>
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center shrink-0">
+              <Info className="w-6 h-6 text-blue-500" />
+            </div>
+            <div>
+              <h4 className="text-xl font-bold text-brand-navy mb-2">Data Migration & Implementation</h4>
+              <p className="text-brand-muted text-sm leading-relaxed">Need migration from Excel, registers, or another software? Our team can help prepare your starting records and train your staff.</p>
+            </div>
+          </div>
+          <a
+            href="https://wa.me/923391119259"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-brand-navy text-white px-10 py-5 rounded-2xl font-bold whitespace-nowrap hover:bg-slate-800 transition-colors"
+          >
+            Contact Sales Team
+          </a>
         </div>
 
         {/* FAQ Section */}

@@ -11,12 +11,12 @@ export default function PetHospital() {
         <div className="section-container relative z-10">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-6">
-               <div className="w-10 h-10 rounded-2xl bg-red-500/10 flex items-center justify-center">
-                  <HeartPulse className="w-6 h-6 text-red-500" />
-               </div>
-               <p className="text-red-600 font-bold text-xs uppercase tracking-widest">Clinical Management ERP</p>
+              <div className="w-10 h-10 rounded-2xl bg-red-500/10 flex items-center justify-center">
+                <HeartPulse className="w-6 h-6 text-red-500" />
+              </div>
+              <p className="text-red-600 font-bold text-xs uppercase tracking-widest">Clinical Management ERP</p>
             </div>
-            <h1 className="text-5xl font-black mb-8 leading-tight tracking-tight">
+            <h1 className="text-5xl font-bold mb-8 leading-tight tracking-tight">
               Pet Hospital and Veterinary Clinic Software for Pakistan
             </h1>
             <p className="text-xl text-brand-muted leading-relaxed mb-10">
@@ -72,33 +72,33 @@ export default function PetHospital() {
                 ))}
               </div>
               <div className="p-10 bg-[#FFF5F5] border border-red-100 rounded-[40px] shadow-sm">
-                 <p className="text-lg italic text-brand-navy mb-6 leading-relaxed">&quot;AnimalCare360 has reduced our administrative overhead by 40%. We spend more time with patients and less time on paperwork.&quot;</p>
-                 <p className="text-xs font-black uppercase text-red-600 tracking-widest">— Senior Vet, Lahore Pet Clinic</p>
+                <p className="text-lg italic text-brand-navy mb-6 leading-relaxed">&quot;AnimalCare360 has reduced our administrative overhead by 40%. We spend more time with patients and less time on paperwork.&quot;</p>
+                <p className="text-xs font-bold uppercase text-red-600 tracking-widest">— Senior Vet, Lahore Pet Clinic</p>
               </div>
             </div>
             <div className="space-y-6">
-               <div className="bg-white border border-brand-border p-12 rounded-[48px] shadow-sm hover:shadow-xl transition-all">
-                  <Calendar className="w-14 h-14 text-blue-500 mb-8" />
-                  <h3 className="text-3xl font-bold text-brand-navy mb-6 tracking-tight">Scheduling Excellence</h3>
-                  <p className="text-brand-muted leading-relaxed text-lg">
-                    Manage multi-room clinics and multiple doctors with a dynamic drag-and-drop calendar. Reduce no-shows with WhatsApp integrated reminders.
-                  </p>
-               </div>
-               <div className="bg-white border border-brand-border p-12 rounded-[48px] shadow-sm hover:shadow-xl transition-all">
-                  <Database className="w-14 h-14 text-green-500 mb-8" />
-                  <h3 className="text-3xl font-bold text-brand-navy mb-6 tracking-tight">Inventory & Dispensary</h3>
-                  <p className="text-brand-muted leading-relaxed text-lg">
-                    Track every vaccine vial and tablet. Automated alerts for pharmacy stock levels and expiry dates. FBR-compliant invoicing for retail pharmacies.
-                  </p>
-               </div>
+              <div className="bg-white border border-brand-border p-12 rounded-[48px] shadow-sm hover:shadow-xl transition-all">
+                <Calendar className="w-14 h-14 text-blue-500 mb-8" />
+                <h3 className="text-3xl font-bold text-brand-navy mb-6 tracking-tight">Scheduling Excellence</h3>
+                <p className="text-brand-muted leading-relaxed text-lg">
+                  Manage multi-room clinics and multiple doctors with a dynamic drag-and-drop calendar. Reduce no-shows with WhatsApp integrated reminders.
+                </p>
+              </div>
+              <div className="bg-white border border-brand-border p-12 rounded-[48px] shadow-sm hover:shadow-xl transition-all">
+                <Database className="w-14 h-14 text-green-500 mb-8" />
+                <h3 className="text-3xl font-bold text-brand-navy mb-6 tracking-tight">Inventory & Dispensary</h3>
+                <p className="text-brand-muted leading-relaxed text-lg">
+                  Track every vaccine vial and tablet. Automated alerts for pharmacy stock levels and expiry dates. FBR-compliant invoicing for retail pharmacies.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <CTA 
-        title="Ready to Modernize Your Practice?" 
-        subtitle="Join the digital veterinary revolution in Pakistan. Standardize care, improve outcomes, and grow your clinic with AnimalCare360." 
+      <CTA
+        title="Ready to Modernize Your Practice?"
+        subtitle="Join the digital veterinary revolution in Pakistan. Standardize care, improve outcomes, and grow your clinic with AnimalCare360."
       />
     </div>
   );

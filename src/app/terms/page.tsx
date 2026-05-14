@@ -7,7 +7,7 @@ export default function TermsOfService() {
       <div className="section-container max-w-4xl">
         <div className="mb-16">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Legal</p>
-          <h1 className="text-5xl font-black text-brand-navy mb-8 tracking-tight">Terms of Service</h1>
+          <h1 className="text-5xl font-bold text-brand-navy mb-8 tracking-tight">Terms of Service</h1>
           <p className="text-brand-muted text-xl leading-relaxed">
             Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
           </p>

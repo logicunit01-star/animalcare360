@@ -24,7 +24,7 @@ export default function DownloadApp() {
               </div>
               <p className="text-brand-primary font-bold text-xs uppercase tracking-widest">Mobile ERP Edition</p>
             </div>
-            <h1 className="text-5xl font-black mb-8 leading-tight tracking-tight">
+            <h1 className="text-5xl font-bold mb-8 leading-tight tracking-tight">
               Download the AnimalCare360 Android App
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-10">
@@ -36,7 +36,7 @@ export default function DownloadApp() {
               </a>
             </div>
             <p className="text-sm text-slate-400 mt-6 flex items-start gap-2">
-              <ShieldCheck className="w-5 h-5 text-brand-primary shrink-0 mt-0.5" /> 
+              <ShieldCheck className="w-5 h-5 text-brand-primary shrink-0 mt-0.5" />
               <span>The APK is provided directly by AnimalCare360. Only download it from this official page or a link shared by the AnimalCare360 team.</span>
             </p>
           </div>

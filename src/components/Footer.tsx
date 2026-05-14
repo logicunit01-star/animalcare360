@@ -15,7 +15,7 @@ const Footer = () => (
             Precision livestock management for the modern farm operator. From health tracking to financial reporting. Built specifically for Pakistan&apos;s agricultural ecosystem.
           </p>
           <div className="flex flex-col gap-1">
-            <p className="text-[10px] uppercase font-black text-brand-navy tracking-widest">Hulm Solutions Product</p>
+            <p className="text-[10px] uppercase font-bold text-brand-navy tracking-widest">Hulm Solutions Product</p>
             <a href="https://hulmsolutions.com" target="_blank" rel="noopener noreferrer" className="text-brand-primary text-sm font-semibold hover:underline">hulmsolutions.com</a>
           </div>
         </div>

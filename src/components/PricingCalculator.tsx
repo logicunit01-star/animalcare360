@@ -18,11 +18,11 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
     // base + per unit cost logic
     const unitCost = type === 'wanda' ? 10 : 50; // Example variables
     const storeCost = 2000;
-    
+
     let calculatedTotal = basePrice;
     if (qty > 0) calculatedTotal += (qty * unitCost);
     if (stores > 1) calculatedTotal += ((stores - 1) * storeCost);
-    
+
     setTotal(calculatedTotal);
   }, [qty, stores, basePrice, type]);
 
@@ -37,7 +37,7 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
 
       <div className="space-y-6">
         <div>
-          <label className="block text-xs font-black uppercase tracking-widest text-brand-muted mb-2">
+          <label className="block text-xs font-bold uppercase tracking-widest text-brand-muted mb-2">
             {type === 'wanda' ? 'Inventory Items / SKU Count' : 'Total Cattle / Animal Quantity'}
           </label>
           <input
@@ -50,7 +50,7 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
         </div>
 
         <div>
-          <label className="block text-xs font-black uppercase tracking-widest text-brand-muted mb-2">
+          <label className="block text-xs font-bold uppercase tracking-widest text-brand-muted mb-2">
             Number of Stores / Locations
           </label>
           <input
@@ -65,10 +65,10 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
         <div className="pt-6 border-t border-brand-border">
           <div className="flex justify-between items-end">
             <div>
-              <p className="text-[10px] font-black uppercase tracking-[0.2em] text-brand-muted mb-1">Estimated Monthly Investment</p>
-              <p className="text-3xl font-black text-brand-navy">PKR {total.toLocaleString()}</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-muted mb-1">Estimated Monthly Investment</p>
+              <p className="text-3xl font-bold text-brand-navy">PKR {total.toLocaleString()}</p>
             </div>
-            <a 
+            <a
               href={`https://wa.me/923391119259?text=Hi, I am interested in ${label} for ${qty} items and ${stores} stores. Can you provide a custom quote?`}
               target="_blank"
               rel="noopener noreferrer"
