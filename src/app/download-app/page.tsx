@@ -10,7 +10,7 @@ export const metadata = {
 };
 
 export default function DownloadApp() {
-  const apkLink = "https://drive.google.com/file/d/1VSk6zH4iGJp7QpinNa-xrdQJvqyvRIv8/view?usp=sharing";
+  const apkLink = "https://drive.google.com/file/d/1PSXIkFQKHog5Ef1Ql7WYILBK9XuKU5Ti/view?usp=sharing";
 
   return (
     <div>

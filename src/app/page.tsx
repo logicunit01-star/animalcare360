@@ -164,7 +164,7 @@ export default function Home() {
               { title: "Cattle Farms", icon: Beef, link: "/cattle-management", angle: 120 },
               { title: "Pet Hospital", icon: HeartPulse, link: "/pet-hospital", angle: 180 },
               { title: "Supply Chain", icon: Warehouse, link: "/feed-retail", angle: 240 },
-              { title: "Gemini AI", icon: Sparkles, link: "/solutions", angle: 300 },
+              { title: "Integrations", icon: Sparkles, link: "/solutions", angle: 300 },
             ].map((sol, i) => {
               const rad = sol.angle * (Math.PI / 180);
               const r = 240; // radius
