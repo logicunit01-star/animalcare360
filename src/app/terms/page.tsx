@@ -4,6 +4,30 @@ import CTA from "@/components/CTA";
 export default function TermsOfService() {
   return (
     <div className="pt-20 pb-0">
+      {/* Terms Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://animalcare360.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Terms of Service",
+                "item": "https://animalcare360.com/terms"
+              }
+            ]
+          })
+        }}
+      />
       <div className="section-container max-w-4xl">
         <div className="mb-16">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Legal</p>

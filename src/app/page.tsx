@@ -9,6 +9,41 @@ import CTA from "@/components/CTA";
 export default function Home() {
   return (
     <div>
+      {/* Homepage Structured Data - SoftwareApplication Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "@id": "https://animalcare360.com/#software",
+            "name": "AnimalCare360",
+            "operatingSystem": "All (Web & Mobile/Android)",
+            "applicationCategory": "BusinessApplication",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "PKR",
+              "price": "2999",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "2999",
+                "priceCurrency": "PKR",
+                "referenceQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": "1",
+                  "unitCode": "MON"
+                }
+              }
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "124"
+            }
+          })
+        }}
+      />
+
       {/* HERO SECTION */}
       <section id="hero" className="relative pt-16 pb-24 overflow-hidden bg-white">
         <div className="section-container grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
@@ -224,7 +259,7 @@ export default function Home() {
       </section>
 
       {/* IMPLEMENTATION */}
-      <section className="py-24 bg-brand-background">
+      <section id="implementation" className="py-24 bg-brand-background">
         <div className="section-container">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-brand-navy mb-6">Go Live Without Disrupting Daily Work</h2>

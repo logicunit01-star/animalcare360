@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     creator: "Hulm Solutions",
     publisher: "Hulm Solutions",
     metadataBase: new URL("https://animalcare360.com"),
+    alternates: {
+        canonical: "/",
+    },
 
     openGraph: {
         type: "website",
@@ -66,6 +69,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en" className={outfit.variable}>
             <body className="font-sans antialiased bg-brand-background text-brand-navy">
+                {/* Global Structured Data - Organization Schema */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Organization",
+                            "@id": "https://animalcare360.com/#organization",
+                            "name": "AnimalCare360",
+                            "url": "https://animalcare360.com",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://animalcare360.com/logo.png"
+                            },
+                            "sameAs": [
+                                "https://facebook.com/animalcare360",
+                                "https://twitter.com/animalcare360"
+                            ],
+                            "contactPoint": {
+                                "@type": "ContactPoint",
+                                "telephone": "+92-339-111-9259",
+                                "contactType": "customer service",
+                                "areaServed": "PK",
+                                "availableLanguage": ["English", "Urdu"]
+                            }
+                        })
+                    }}
+                />
                 <div className="bg-brand-navy text-white text-[11px] py-1.5 px-6 sm:px-10 flex justify-center items-center tracking-widest uppercase font-medium text-center">
                     <span>Built for Pakistan's livestock, feed retail, trading, and veterinary businesses | WhatsApp: +92 339 111 9259</span>
                 </div>

@@ -6,6 +6,63 @@ import CTA from "@/components/CTA";
 export default function PetHospital() {
   return (
     <div className="pt-20">
+      {/* Pet Hospital Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://animalcare360.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Pet Hospital ERP",
+                "item": "https://animalcare360.com/pet-hospital"
+              }
+            ]
+          })
+        }}
+      />
+
+      {/* Pet Hospital Product Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Pet Hospital & Veterinary Clinic Software (AnimalCare360)",
+            "image": "https://animalcare360.com/user-icon.png",
+            "description": "Veterinary clinical management ERP. Digitally manage patient Electronic Medical Records (EMR), drag-and-drop appointment calendars, surgery logs, laboratory results, pharmacy stock control with expiry alerts, and medical billing with WhatsApp reminders in Pakistan.",
+            "brand": {
+              "@type": "Brand",
+              "name": "AnimalCare360"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "PKR",
+              "price": "2999",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "2999",
+                "priceCurrency": "PKR",
+                "referenceQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": "1",
+                  "unitCode": "MON"
+                }
+              }
+            }
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="bg-[#FEF2F2] py-24 text-brand-navy relative overflow-hidden">
         <div className="section-container relative z-10">

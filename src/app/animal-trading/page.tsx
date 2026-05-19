@@ -7,6 +7,63 @@ import CTA from "@/components/CTA";
 export default function AnimalTrading() {
   return (
     <div>
+      {/* Animal Trading Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://animalcare360.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Animal Trading ERP",
+                "item": "https://animalcare360.com/animal-trading"
+              }
+            ]
+          })
+        }}
+      />
+
+      {/* Animal Trading Product Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Animal Trading Software (AnimalCare360)",
+            "image": "https://animalcare360.com/dashboard-finance.png",
+            "description": "Digitally track animal purchases, sales, mandi deal registers, agent commission tracking, transit cost logs, buyer and seller ledgers, and profit reporting per animal or lot in Pakistan.",
+            "brand": {
+              "@type": "Brand",
+              "name": "AnimalCare360"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "PKR",
+              "price": "5000",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "5000",
+                "priceCurrency": "PKR",
+                "referenceQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": "1",
+                  "unitCode": "MON"
+                }
+              }
+            }
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="bg-brand-navy py-24 text-white relative overflow-hidden">
         <div className="section-container relative z-10">

@@ -14,6 +14,30 @@ export default function DownloadApp() {
 
   return (
     <div>
+      {/* Download App Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://animalcare360.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Download App",
+                "item": "https://animalcare360.com/download-app"
+              }
+            ]
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="bg-brand-navy py-24 text-white relative overflow-hidden">
         <div className="section-container relative z-10">

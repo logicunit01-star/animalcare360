@@ -47,6 +47,84 @@ const pricingData = [
 export default function Pricing() {
   return (
     <div className="pt-20 pb-0 bg-brand-background">
+      {/* Pricing Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://animalcare360.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Pricing",
+                "item": "https://animalcare360.com/pricing"
+              }
+            ]
+          })
+        }}
+      />
+
+      {/* Pricing FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Can I start with one module?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Many businesses start with farm, feed retail, or clinic management first, then add more modules later."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide onboarding?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We help configure your business, train staff, and support the first live records."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is AnimalCare360 suitable for small businesses?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Small shops and clinics can start with essential POS, inventory, billing, and records, then scale as they grow."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you migrate my Excel or register data?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We can help import clean starting data for animals, stock, customers, vendors, and balances."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does the system support FBR invoicing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AnimalCare360 includes FBR-ready invoicing workflows for eligible retail and enterprise use cases. Final setup depends on your business registration and compliance requirements."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
       <div className="section-container">
         <div className="text-center mb-20">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Investment Plans</p>

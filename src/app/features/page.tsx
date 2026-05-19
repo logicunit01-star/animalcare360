@@ -45,6 +45,30 @@ export default function Features() {
 
   return (
     <div className="pt-20 pb-0">
+      {/* Features Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://animalcare360.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Features",
+                "item": "https://animalcare360.com/features"
+              }
+            ]
+          })
+        }}
+      />
       <div className="section-container">
         <div className="text-center mb-24">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">The ERP Ecosystem</p>

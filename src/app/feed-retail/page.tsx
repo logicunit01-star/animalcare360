@@ -7,6 +7,63 @@ import CTA from "@/components/CTA";
 export default function FeedRetail() {
   return (
     <div className="pt-20">
+      {/* Feed Retail Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://animalcare360.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Feed Retail ERP",
+                "item": "https://animalcare360.com/feed-retail"
+              }
+            ]
+          })
+        }}
+      />
+
+      {/* Feed Retail Product Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Wanda & Feed Retail Software (AnimalCare360)",
+            "image": "https://animalcare360.com/dashboard-procurement.png",
+            "description": "Point of Sale (POS), multi-warehouse stock inventory, customer credit ledgers, supplier payments, expiry tracking, and FBR compliant invoicing for Wanda shops, pet food retailers, and feed wholesalers in Pakistan.",
+            "brand": {
+              "@type": "Brand",
+              "name": "AnimalCare360"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "PKR",
+              "price": "8500",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "8500",
+                "priceCurrency": "PKR",
+                "referenceQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": "1",
+                  "unitCode": "MON"
+                }
+              }
+            }
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="bg-brand-background py-24 border-b border-brand-border relative overflow-hidden">
         <div className="section-container relative z-10">

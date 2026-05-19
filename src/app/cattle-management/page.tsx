@@ -7,6 +7,64 @@ import CTA from "@/components/CTA";
 export default function CattleManagement() {
   return (
     <div>
+      {/* Cattle Management Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://animalcare360.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Cattle Management",
+                "item": "https://animalcare360.com/cattle-management"
+              }
+            ]
+          })
+        }}
+      />
+
+      {/* Cattle Management Product Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Cattle & Dairy Farm Management Software (AnimalCare360)",
+            "image": "https://animalcare360.com/dashboard-palai.png",
+            "description": "Digitally track cattle breeding, milk production, vaccination schedules, weight gain (ADG), fattening lots, palai partnership ROI, and feed inventory for dairy farms in Pakistan.",
+            "brand": {
+              "@type": "Brand",
+              "name": "AnimalCare360"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "PKR",
+              "price": "12000",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "12000",
+                "priceCurrency": "PKR",
+                "referenceQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": "1",
+                  "unitCode": "MON"
+                }
+              }
+            }
+          })
+        }}
+      />
+
       {/* Hero Section */}
       <section className="bg-brand-navy py-24 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-primary opacity-10 blur-3xl rounded-full translate-x-1/2"></div>

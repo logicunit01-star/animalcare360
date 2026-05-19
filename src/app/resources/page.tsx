@@ -7,6 +7,30 @@ import CTA from "@/components/CTA";
 export default function Resources() {
   return (
     <div className="pt-20">
+      {/* Resources Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://animalcare360.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Resources",
+                "item": "https://animalcare360.com/resources"
+              }
+            ]
+          })
+        }}
+      />
       <div className="section-container">
         <div className="text-center mb-24">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Support Hub</p>

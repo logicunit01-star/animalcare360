@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { Calculator, TrendingUp } from 'lucide-react';
+import { trackGAEvent } from '@/lib/analytics';
 
 interface PricingCalculatorProps {
   basePrice: number;
@@ -26,6 +27,23 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
     setTotal(calculatedTotal);
   }, [qty, stores, basePrice, type]);
 
+  const handleBlur = (field: 'qty' | 'stores', val: number) => {
+    trackGAEvent('pricing_calculator_use', {
+      calculator_type: type,
+      field,
+      value: val,
+    });
+  };
+
+  const handleQuoteClick = () => {
+    trackGAEvent('pricing_calculator_quote_click', {
+      calculator_type: type,
+      quantity: qty,
+      stores_count: stores,
+      estimated_total: total,
+    });
+  };
+
   return (
     <div className="bg-white p-8 rounded-3xl border border-brand-border shadow-sm hover:shadow-xl transition-all">
       <div className="flex items-center gap-3 mb-6">
@@ -44,6 +62,7 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
             type="number"
             value={qty || ''}
             onChange={(e) => setQty(Math.max(0, parseInt(e.target.value) || 0))}
+            onBlur={() => handleBlur('qty', qty)}
             placeholder={type === 'wanda' ? "e.g. 100" : "e.g. 50"}
             className="w-full bg-brand-background border border-brand-border p-4 rounded-xl text-brand-navy font-bold focus:ring-2 focus:ring-brand-primary outline-none transition-all"
           />
@@ -57,6 +76,7 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
             type="number"
             value={stores || ''}
             onChange={(e) => setStores(Math.max(1, parseInt(e.target.value) || 1))}
+            onBlur={() => handleBlur('stores', stores)}
             placeholder="e.g. 1"
             className="w-full bg-brand-background border border-brand-border p-4 rounded-xl text-brand-navy font-bold focus:ring-2 focus:ring-brand-primary outline-none transition-all"
           />
@@ -72,6 +92,7 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
               href={`https://wa.me/923391119259?text=Hi, I am interested in ${label} for ${qty} items and ${stores} stores. Can you provide a custom quote?`}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleQuoteClick}
               className="bg-brand-primary text-white p-3 rounded-xl hover:scale-110 transition-transform shadow-brand"
             >
               <TrendingUp className="w-5 h-5" />
