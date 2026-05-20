@@ -104,7 +104,7 @@ export default function TermsOfService() {
             <p>For any questions or concerns regarding these Terms, please contact us at:</p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
               <li><strong>WhatsApp/Phone:</strong> +92 339 111 9259</li>
-              <li><strong>Website:</strong> https://hulmsolutions.com</li>
+              <li><strong>Website:</strong> https://animalcare360.com</li>
             </ul>
           </section>
         </div>

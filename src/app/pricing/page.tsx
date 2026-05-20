@@ -173,7 +173,7 @@ export default function Pricing() {
               </ul>
 
               <a
-                href="https://app.hulmsolutions.com/Register"
+                href="https://app.animalcare360.com/register"
                 className={`w-full block text-center py-5 rounded-2xl font-bold transition-all text-sm ${plan.highlight
                     ? "bg-brand-primary text-white hover:opacity-90 shadow-brand"
                     : "bg-brand-background text-brand-navy hover:bg-gray-100"

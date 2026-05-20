@@ -15,8 +15,8 @@ const Footer = () => (
             Precision livestock management for the modern farm operator. From health tracking to financial reporting. Built specifically for Pakistan&apos;s agricultural ecosystem.
           </p>
           <div className="flex flex-col gap-1">
-            <p className="text-[10px] uppercase font-bold text-brand-navy tracking-widest">Hulm Solutions Product</p>
-            <a href="https://hulmsolutions.com" target="_blank" rel="noopener noreferrer" className="text-brand-primary text-sm font-semibold hover:underline">hulmsolutions.com</a>
+            <p className="text-[10px] uppercase font-bold text-brand-navy tracking-widest">Main Portal</p>
+            <a href="https://app.animalcare360.com" target="_blank" rel="noopener noreferrer" className="text-brand-primary text-sm font-semibold hover:underline">app.animalcare360.com</a>
           </div>
         </div>
 
@@ -37,7 +37,8 @@ const Footer = () => (
             <li><Link href="/features" className="hover:text-brand-navy transition-colors">Key Features</Link></li>
             <li><Link href="/resources" className="hover:text-brand-navy transition-colors">Learning Hub</Link></li>
             <li><Link href="/download-app" className="hover:text-brand-navy transition-colors flex items-center gap-2">Mobile App <span className="text-[8px] bg-brand-primary text-white px-1.5 py-0.5 rounded-full font-bold uppercase tracking-widest">New</span></Link></li>
-            <li><a href="https://app.hulmsolutions.com/Register" className="hover:text-brand-navy transition-colors">Register for Free</a></li>
+            <li><a href="https://app.animalcare360.com/register" className="hover:text-brand-navy transition-colors">Register for Free</a></li>
+            <li><a href="https://app.animalcare360.com/login" className="hover:text-brand-navy transition-colors">Portal Login</a></li>
           </ul>
         </div>
 

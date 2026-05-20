@@ -83,7 +83,7 @@ export default function PetHospital() {
               <a href="https://wa.me/923391119259" className="bg-red-500 hover:bg-red-600 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-red-500/20">
                 Schedule Practice Consult
               </a>
-              <a href="https://app.hulmsolutions.com/Register" className="bg-white text-brand-navy border border-brand-border px-10 py-5 rounded-2xl font-bold transition-all hover:bg-gray-50">
+              <a href="https://app.animalcare360.com/apps" className="bg-white text-brand-navy border border-brand-border px-10 py-5 rounded-2xl font-bold transition-all hover:bg-gray-50">
                 Free Trial
               </a>
             </div>

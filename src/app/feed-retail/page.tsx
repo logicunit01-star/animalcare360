@@ -76,7 +76,7 @@ export default function FeedRetail() {
               Run your wanda shop, feed distribution business, pet food store, or veterinary pharmacy with a POS and inventory system built for animal retail. Track stock, expiry, customer credit, supplier payments, purchase orders, and FBR-ready invoices from one dashboard.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.hulmsolutions.com/Register" className="bg-brand-navy text-white px-10 py-5 rounded-2xl font-bold shadow-xl hover:bg-slate-800 transition-all">Get Started</a>
+              <a href="https://app.animalcare360.com/apps" className="bg-brand-navy text-white px-10 py-5 rounded-2xl font-bold shadow-xl hover:bg-slate-800 transition-all">Get Started</a>
               <a href="https://wa.me/923391119259" className="bg-white border border-brand-border text-brand-navy px-10 py-5 rounded-2xl font-bold hover:bg-gray-50 transition-all">Request Demo</a>
             </div>
           </div>

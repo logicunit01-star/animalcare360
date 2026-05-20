@@ -68,7 +68,7 @@ export default function Home() {
               <a href="https://wa.me/923391119259" target="_blank" rel="noopener noreferrer" className="btn-primary !py-4 !px-8 text-base">
                 Book a Demo
               </a>
-              <a href="https://app.hulmsolutions.com/Register" className="bg-brand-navy text-white hover:bg-brand-navy/90 px-8 py-4 rounded-xl font-bold transition-all flex items-center gap-2 text-base shadow-lg hover:shadow-xl">
+              <a href="https://app.animalcare360.com/register" className="bg-brand-navy text-white hover:bg-brand-navy/90 px-8 py-4 rounded-xl font-bold transition-all flex items-center gap-2 text-base shadow-lg hover:shadow-xl">
                 Start Free Trial
               </a>
               <Link href="/solutions" className="btn-ghost !py-4 !px-6 text-base flex items-center gap-2 group">

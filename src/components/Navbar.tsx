@@ -46,7 +46,10 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="https://app.hulmsolutions.com/Register" className="btn-ghost">
+          <a href="https://app.animalcare360.com/login" className="text-sm font-semibold text-brand-navy hover:text-brand-primary px-3 py-2 transition-colors">
+            Login
+          </a>
+          <a href="https://app.animalcare360.com/register" className="btn-ghost">
             Start Free Trial
           </a>
           <a href="https://wa.me/923391119259" target="_blank" rel="noopener noreferrer" className="btn-primary">
@@ -81,7 +84,8 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="pt-4 flex flex-col gap-3">
-                <a href="https://app.hulmsolutions.com/Register" className="text-center py-3 font-semibold text-brand-navy border border-brand-border rounded-xl">Start Free Trial</a>
+                <a href="https://app.animalcare360.com/login" className="text-center py-3 font-semibold text-brand-navy border border-brand-border rounded-xl">Login</a>
+                <a href="https://app.animalcare360.com/register" className="text-center py-3 font-semibold text-white bg-brand-navy rounded-xl">Start Free Trial</a>
                 <a href="https://wa.me/923391119259" target="_blank" rel="noopener noreferrer" className="bg-brand-primary text-white text-center py-4 rounded-xl font-bold">Book a Demo</a>
               </div>
             </div>

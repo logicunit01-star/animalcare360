@@ -78,7 +78,7 @@ export default function CattleManagement() {
               AnimalCare360 gives cattle, dairy, and fattening farms a complete digital record for every animal. Track purchase, birth, breed, health, vaccination, breeding, milk, weight, feed cost, sale, and profit from one system.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.hulmsolutions.com/Register" className="bg-brand-primary hover:bg-opacity-90 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-brand-primary/20">
+              <a href="https://app.animalcare360.com/apps" className="bg-brand-primary hover:bg-opacity-90 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-brand-primary/20">
                 Start Free Trial
               </a>
               <a href="https://wa.me/923391119259" className="bg-white/10 hover:bg-white/20 text-white px-10 py-5 rounded-2xl font-bold transition-all border border-white/20">

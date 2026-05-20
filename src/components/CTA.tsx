@@ -37,7 +37,7 @@ const CTA: React.FC<CTAProps> = ({
               Connect with Expert
             </a>
             <a 
-              href="https://app.hulmsolutions.com/Register"
+              href="https://app.animalcare360.com/register"
               className="flex items-center gap-2 bg-brand-primary text-white px-10 py-5 rounded-2xl font-bold hover:scale-105 transition-all shadow-xl shadow-brand-primary/20"
             >
               Start Free Trial <ArrowRight className="w-5 h-5" />

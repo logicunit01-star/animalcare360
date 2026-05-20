@@ -76,7 +76,7 @@ export default function AnimalTrading() {
               AnimalCare360 helps livestock traders, dealers, brokers, and investors keep clean records for every deal. Track buyer and seller details, animal lots, advance payments, commission, transport costs, balances, and profit.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.hulmsolutions.com/Register" className="bg-brand-primary hover:bg-opacity-90 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-brand-primary/20">
+              <a href="https://app.animalcare360.com/apps" className="bg-brand-primary hover:bg-opacity-90 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-brand-primary/20">
                 Start Trading Today
               </a>
               <a href="https://wa.me/923391119259" className="bg-white/10 hover:bg-white/20 text-white px-10 py-5 rounded-2xl font-bold transition-all border border-white/20">
