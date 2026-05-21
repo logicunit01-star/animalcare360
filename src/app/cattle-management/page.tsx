@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Droplets, HeartPulse, LineChart, CheckCircle2 } from "lucide-react";
+import Link from "next/link";
 import CTA from "@/components/CTA";
 
 export default function CattleManagement() {
@@ -195,6 +196,23 @@ export default function CattleManagement() {
               </div>
             </div>
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-white opacity-40 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+          </div>
+
+          <div className="mt-16">
+            <div className="bg-brand-navy text-white rounded-[32px] p-8 md:p-12 max-w-4xl mx-auto shadow-xl border border-white/5 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-brand-primary/10 via-transparent to-brand-primary/5"></div>
+              <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 text-left">
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Detailed Product Specifications</h3>
+                  <p className="text-sm text-slate-300">
+                    Read the comprehensive CattlePro product guide outlining all 16 operating modules, data models, and features.
+                  </p>
+                </div>
+                <Link href="/cattlepro" className="bg-brand-primary hover:bg-opacity-90 text-white px-6 py-3.5 rounded-xl font-bold text-sm transition-all whitespace-nowrap shadow-lg shadow-brand-primary/20 shrink-0">
+                  View Product Guide
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

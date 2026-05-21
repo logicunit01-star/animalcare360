@@ -24,6 +24,7 @@ const Footer = () => (
           <h4 className="font-bold text-brand-navy mb-6 uppercase text-[10px] tracking-[0.2em] opacity-50">Solutions</h4>
           <ul className="space-y-3 text-sm text-brand-muted font-medium">
             <li><Link href="/cattle-management" className="hover:text-brand-navy transition-colors">Cattle Management</Link></li>
+            <li><Link href="/cattlepro" className="hover:text-brand-navy transition-colors">CattlePro Product Guide</Link></li>
             <li><Link href="/feed-retail" className="hover:text-brand-navy transition-colors">Wanda Feed Retail</Link></li>
             <li><Link href="/animal-trading" className="hover:text-brand-navy transition-colors">Animal Trading</Link></li>
             <li><Link href="/pet-hospital" className="hover:text-brand-navy transition-colors">Pet Hospital ERP</Link></li>

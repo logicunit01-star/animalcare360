@@ -15,6 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/feed-retail',
     '/animal-trading',
     '/pet-hospital',
+    '/cattlepro',
+    '/cattlepro/features',
     '/privacy',
     '/terms',
   ];

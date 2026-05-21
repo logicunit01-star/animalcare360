@@ -11,7 +11,7 @@ export default function Features() {
       desc: "Profiles, breed, category, purchase, birth, health, vaccination, breeding, weight, milk, and sale history.",
       icon: PawPrint,
       details: ["Profiles & Breed", "Health & Vaccines", "Milk & Weight", "Sale History"],
-      link: "/cattle-management"
+      link: "/cattlepro"
     },
     {
       title: "Inventory",
