@@ -3,7 +3,7 @@ import CTA from "@/components/CTA";
 
 export default function TermsOfService() {
   return (
-    <div className="pt-20 pb-0">
+    <div className="pt-0 pb-0">
       {/* Terms Breadcrumb Schema */}
       <script
         type="application/ld+json"

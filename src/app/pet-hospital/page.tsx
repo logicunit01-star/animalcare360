@@ -5,7 +5,7 @@ import CTA from "@/components/CTA";
 
 export default function PetHospital() {
   return (
-    <div className="pt-20">
+    <div className="pt-0">
       {/* Pet Hospital Breadcrumb Schema */}
       <script
         type="application/ld+json"

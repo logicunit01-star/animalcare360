@@ -307,7 +307,7 @@ export default function CattleProFeatures() {
   }, [searchQuery, activeCategory]);
 
   return (
-    <div className="pt-20 bg-brand-background">
+    <div className="pt-0 bg-brand-background">
       {/* Breadcrumbs Schema */}
       <script
         type="application/ld+json"

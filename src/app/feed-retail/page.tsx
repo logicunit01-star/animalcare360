@@ -6,7 +6,7 @@ import CTA from "@/components/CTA";
 
 export default function FeedRetail() {
   return (
-    <div className="pt-20">
+    <div className="pt-0">
       {/* Feed Retail Breadcrumb Schema */}
       <script
         type="application/ld+json"

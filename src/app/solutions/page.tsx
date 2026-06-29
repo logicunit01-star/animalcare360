@@ -45,7 +45,7 @@ export default function Solutions() {
   ];
 
   return (
-    <div className="pt-20 pb-0">
+    <div className="pt-0 pb-0">
       {/* Solutions Breadcrumb Schema */}
       <script
         type="application/ld+json"

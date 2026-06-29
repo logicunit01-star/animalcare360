@@ -46,7 +46,7 @@ const pricingData = [
 
 export default function Pricing() {
   return (
-    <div className="pt-20 pb-0 bg-brand-background">
+    <div className="pt-0 pb-0 bg-brand-background">
       {/* Pricing Breadcrumb Schema */}
       <script
         type="application/ld+json"

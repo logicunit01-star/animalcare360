@@ -6,7 +6,7 @@ import CTA from "@/components/CTA";
 
 export default function Resources() {
   return (
-    <div className="pt-20">
+    <div className="pt-0">
       {/* Resources Breadcrumb Schema */}
       <script
         type="application/ld+json"

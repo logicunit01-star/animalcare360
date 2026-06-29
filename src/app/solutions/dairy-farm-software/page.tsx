@@ -14,7 +14,7 @@ export default function DairyFarmSoftware() {
   ];
 
   return (
-    <div className="pt-20 bg-brand-background">
+    <div className="pt-0 bg-brand-background">
       {/* Schemas */}
       <script
         type="application/ld+json"

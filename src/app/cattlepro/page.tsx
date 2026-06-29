@@ -109,7 +109,7 @@ export default function CattleProOverview() {
   ];
 
   return (
-    <div className="pt-20 bg-brand-background">
+    <div className="pt-0 bg-brand-background">
       {/* JSON-LD Schemas */}
       <script
         type="application/ld+json"
