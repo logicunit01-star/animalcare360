@@ -18,21 +18,21 @@ export default function Features() {
       desc: "Feed, medicines, pet food, batches, expiry dates, warehouse stock, transfers, and low-stock alerts.",
       icon: ShoppingCart,
       details: ["Batch Tracking", "Expiry Dates", "Multi-Warehouse", "Stock Alerts"],
-      link: "/feed-retail"
+      link: "/features/inventory-management"
     },
     {
       title: "Sales and Finance",
       desc: "POS, invoices, customer credit, supplier payments, profit/loss, partner ROI, and FBR-ready records.",
       icon: Users,
       details: ["Retail POS", "FBR Invoices", "Customer Credit", "Profit & Loss"],
-      link: "/animal-trading"
+      link: "/features/billing-pos"
     },
     {
       title: "Clinical Workflows",
       desc: "Patient EMR, treatment plans, appointments, surgery logs, prescriptions, pharmacy stock, and follow-up reminders.",
       icon: HeartPulse,
       details: ["Patient EMR", "Appointments", "Surgery Logs", "Pharmacy Stock"],
-      link: "/pet-hospital"
+      link: "/features/health-tracking"
     },
     {
       title: "Reports",

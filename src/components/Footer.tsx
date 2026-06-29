@@ -24,10 +24,12 @@ const Footer = () => (
           <h4 className="font-bold text-brand-navy mb-6 uppercase text-[10px] tracking-[0.2em] opacity-50">Solutions</h4>
           <ul className="space-y-3 text-sm text-brand-muted font-medium">
             <li><Link href="/cattle-management" className="hover:text-brand-navy transition-colors">Cattle Management</Link></li>
+            <li><Link href="/solutions/dairy-farm-software" className="hover:text-brand-navy transition-colors">Dairy Farm Software</Link></li>
             <li><Link href="/cattlepro" className="hover:text-brand-navy transition-colors">CattlePro Product Guide</Link></li>
             <li><Link href="/feed-retail" className="hover:text-brand-navy transition-colors">Wanda Feed Retail</Link></li>
             <li><Link href="/animal-trading" className="hover:text-brand-navy transition-colors">Animal Trading</Link></li>
             <li><Link href="/pet-hospital" className="hover:text-brand-navy transition-colors">Pet Hospital ERP</Link></li>
+            <li><Link href="/solutions/veterinary-clinic-software" className="hover:text-brand-navy transition-colors">Veterinary Software</Link></li>
           </ul>
         </div>
 
@@ -36,6 +38,7 @@ const Footer = () => (
           <ul className="space-y-3 text-sm text-brand-muted font-medium">
             <li><Link href="/pricing" className="hover:text-brand-navy transition-colors">Pricing</Link></li>
             <li><Link href="/features" className="hover:text-brand-navy transition-colors">Key Features</Link></li>
+            <li><Link href="/blog" className="hover:text-brand-navy transition-colors">Company Blog</Link></li>
             <li><Link href="/resources" className="hover:text-brand-navy transition-colors">Learning Hub</Link></li>
             <li><Link href="/download-app" className="hover:text-brand-navy transition-colors flex items-center gap-2">Mobile App <span className="text-[8px] bg-brand-primary text-white px-1.5 py-0.5 rounded-full font-bold uppercase tracking-widest">New</span></Link></li>
             <li><a href="https://app.animalcare360.com/register" className="hover:text-brand-navy transition-colors">Register for Free</a></li>

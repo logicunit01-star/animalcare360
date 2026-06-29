@@ -14,9 +14,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-    title: "Livestock & Pet Business Software in Pakistan | AnimalCare360",
+    title: "Animal Care 360 | Livestock, Feed Retail & Pet Hospital Software Pakistan",
     description:
-        "Run cattle farms, wanda shops, animal trading, and pet hospitals with AnimalCare360. Manage animals, stock, FBR invoices, milk records, sales, and clinic workflows in Pakistan.",
+        "Manage livestock, feed retail, animal trading and pet hospitals with one powerful cloud-based software platform. FBR-ready invoices, milk production charts, EMR clinic logs.",
     keywords: [
         "livestock software Pakistan",
         "cattle management software Pakistan",

@@ -58,7 +58,7 @@ export default function Home() {
               Built for Pakistan's Animal Industry
             </p>
             <h1 className="text-[44px] md:text-[44px] font-bold text-brand-navy leading-[1.1] mb-8">
-              Livestock, Feed Retail, Animal Trading, and Pet Hospital Software for Pakistan
+              Animal Management Software for Livestock, Feed Retail & Pet Hospitals
             </h1>
             <p className="text-lg md:text-xl text-brand-muted mb-10 leading-relaxed max-w-lg">
               AnimalCare360 helps animal businesses replace scattered registers, spreadsheets, and manual follow-ups with one cloud ERP. Manage animals, stock, sales, FBR invoices, health records, milk production, partner ROI, and clinic operations from web and Android.
@@ -106,6 +106,32 @@ export default function Home() {
               </div>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* TRUST STATS SECTION */}
+      <section className="py-12 bg-white border-b border-brand-border">
+        <div className="section-container">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            {[
+              { val: "10,000+", label: "Animals Managed", desc: "Across cattle, dairy, goats, and pet records." },
+              { val: "500+", label: "Businesses Active", desc: "Wanda shops, farms, and hospitals in Pakistan." },
+              { val: "99.9%", label: "System Uptime", desc: "Reliable cloud ERP on web and Android app." }
+            ].map((stat, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1, duration: 0.5 }}
+                className="p-6 rounded-2xl bg-brand-background border border-brand-border hover:shadow-md transition-all"
+              >
+                <p className="text-4xl md:text-5xl font-extrabold text-brand-primary mb-2">{stat.val}</p>
+                <h4 className="text-base font-bold text-brand-navy uppercase tracking-wider mb-1">{stat.label}</h4>
+                <p className="text-xs text-brand-muted font-medium">{stat.desc}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -253,6 +279,55 @@ export default function Home() {
                 <CheckCircle2 className="w-6 h-6 text-brand-primary shrink-0 mt-0.5" />
                 <span className="font-medium text-brand-navy">{bullet}</span>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS SECTION */}
+      <section className="py-24 bg-white border-b border-brand-border">
+        <div className="section-container">
+          <div className="text-center mb-16">
+            <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Customer Stories</p>
+            <h2 className="text-4xl font-bold text-brand-navy tracking-tight mb-4">Trusted by Animal Care Operators</h2>
+            <p className="text-brand-muted max-w-xl mx-auto text-base">
+              See how modern livestock farms, feed stores, and pet clinics across Pakistan digitize operations with AnimalCare360.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                quote: "Before AnimalCare360, tracking milk yield and feeding costs for 200 cows was a nightmare of notebooks. Now, CattlePro gives us a complete financial ledger for each cow.",
+                author: "Kamran Shah",
+                role: "Farm Manager, Sahiwal Dairy Farms"
+              },
+              {
+                quote: "The Wanda retail POS and FBR-ready invoicing save us hours every evening. Our customer credit records and supplier balances are automated.",
+                author: "M. Rizwan",
+                role: "Owner, Al-Rehman Wanda & Feed Store"
+              },
+              {
+                quote: "Managing patient EMRs and clinic appointments is incredibly simple. The system uptime and auto-reminders have improved customer retention.",
+                author: "Dr. Ayesha Malik",
+                role: "Chief Veterinarian, VetCare Hospital Lahore"
+              }
+            ].map((test, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1, duration: 0.5 }}
+                className="p-8 rounded-[32px] bg-brand-background border border-brand-border flex flex-col justify-between hover:shadow-card transition-all"
+              >
+                <p className="text-sm text-brand-muted leading-relaxed italic mb-8">
+                  &ldquo;{test.quote}&rdquo;
+                </p>
+                <div>
+                  <h4 className="font-bold text-brand-navy text-sm">{test.author}</h4>
+                  <p className="text-[10px] font-semibold text-brand-primary uppercase tracking-wider">{test.role}</p>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>

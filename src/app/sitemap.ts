@@ -17,6 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/pet-hospital',
     '/cattlepro',
     '/cattlepro/features',
+    '/solutions/dairy-farm-software',
+    '/solutions/veterinary-clinic-software',
+    '/features/inventory-management',
+    '/features/health-tracking',
+    '/features/billing-pos',
+    '/blog',
     '/privacy',
     '/terms',
   ];
