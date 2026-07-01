@@ -55,13 +55,13 @@ export default function Home() {
             className="text-left"
           >
             <p className="text-brand-primary font-bold mb-4 text-sm tracking-widest uppercase">
-              Built for Pakistan's Animal Industry
+              Built for the Modern Animal Industry
             </p>
             <h1 className="text-[44px] md:text-[44px] font-bold text-brand-navy leading-[1.1] mb-8">
               Animal Management Software for Livestock, Feed Retail & Pet Hospitals
             </h1>
             <p className="text-lg md:text-xl text-brand-muted mb-10 leading-relaxed max-w-lg">
-              AnimalCare360 helps animal businesses replace scattered registers, spreadsheets, and manual follow-ups with one cloud ERP. Manage animals, stock, sales, FBR invoices, health records, milk production, partner ROI, and clinic operations from web and Android.
+              AnimalCare360 helps animal businesses replace scattered registers, spreadsheets, and manual follow-ups with one cloud ERP. Manage animals, stock, sales, digital invoices, health records, milk production, partner ROI, and clinic operations from web and Android.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -109,31 +109,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRUST STATS SECTION */}
-      <section className="py-12 bg-white border-b border-brand-border">
-        <div className="section-container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            {[
-              { val: "10,000+", label: "Animals Managed", desc: "Across cattle, dairy, goats, and pet records." },
-              { val: "500+", label: "Businesses Active", desc: "Wanda shops, farms, and hospitals in Pakistan." },
-              { val: "99.9%", label: "System Uptime", desc: "Reliable cloud ERP on web and Android app." }
-            ].map((stat, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="p-6 rounded-2xl bg-brand-background border border-brand-border hover:shadow-md transition-all"
-              >
-                <p className="text-4xl md:text-5xl font-extrabold text-brand-primary mb-2">{stat.val}</p>
-                <h4 className="text-base font-bold text-brand-navy uppercase tracking-wider mb-1">{stat.label}</h4>
-                <p className="text-xs text-brand-muted font-medium">{stat.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* INDUSTRY CARDS */}
       <section className="py-24 bg-brand-background border-y border-brand-border">
@@ -151,7 +126,7 @@ export default function Home() {
               {
                 title: "Wanda and Feed Retailers",
                 meta: "Retail ERP",
-                desc: "Run POS, stock, expiry, supplier payments, customer credit, and FBR invoices from one retail system.",
+                desc: "Run POS, stock, expiry, supplier payments, customer credit, and digital invoices from one retail system.",
                 color: "border-[#F59E0B]",
                 bg: "bg-[#FFFBEB]",
                 link: "/feed-retail"
@@ -260,16 +235,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* BUILT FOR PAKISTAN */}
+      {/* BUILT FOR THE MODERN ANIMAL INDUSTRY */}
       <section className="py-24 bg-white overflow-hidden border-b border-brand-border">
         <div className="section-container text-center">
-          <h2 className="text-4xl font-bold text-brand-navy mb-6">Built for Pakistan's Animal Industry</h2>
+          <h2 className="text-4xl font-bold text-brand-navy mb-6">Built for the Modern Animal Industry</h2>
           <p className="text-brand-muted max-w-3xl mx-auto mb-16 text-lg">
-            From dairy farms in Punjab to wanda retailers, livestock traders, and pet hospitals in major cities, AnimalCare360 is designed around the way animal businesses actually work in Pakistan.
+            From dairy farms and wanda retailers to livestock traders and pet hospitals, AnimalCare360 is designed around the way animal businesses actually work.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left max-w-5xl mx-auto">
             {[
-              "FBR-ready invoices and digital sales records",
+              "Digital invoices and secure sales records",
               "Farm, shop, clinic, and field workflows in one system",
               "Multi-location stock, staff, and customer management",
               "WhatsApp-friendly onboarding and support",
@@ -279,55 +254,6 @@ export default function Home() {
                 <CheckCircle2 className="w-6 h-6 text-brand-primary shrink-0 mt-0.5" />
                 <span className="font-medium text-brand-navy">{bullet}</span>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIALS SECTION */}
-      <section className="py-24 bg-white border-b border-brand-border">
-        <div className="section-container">
-          <div className="text-center mb-16">
-            <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Customer Stories</p>
-            <h2 className="text-4xl font-bold text-brand-navy tracking-tight mb-4">Trusted by Animal Care Operators</h2>
-            <p className="text-brand-muted max-w-xl mx-auto text-base">
-              See how modern livestock farms, feed stores, and pet clinics across Pakistan digitize operations with AnimalCare360.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                quote: "Before AnimalCare360, tracking milk yield and feeding costs for 200 cows was a nightmare of notebooks. Now, CattlePro gives us a complete financial ledger for each cow.",
-                author: "Kamran Shah",
-                role: "Farm Manager, Sahiwal Dairy Farms"
-              },
-              {
-                quote: "The Wanda retail POS and FBR-ready invoicing save us hours every evening. Our customer credit records and supplier balances are automated.",
-                author: "M. Rizwan",
-                role: "Owner, Al-Rehman Wanda & Feed Store"
-              },
-              {
-                quote: "Managing patient EMRs and clinic appointments is incredibly simple. The system uptime and auto-reminders have improved customer retention.",
-                author: "Dr. Ayesha Malik",
-                role: "Chief Veterinarian, VetCare Hospital Lahore"
-              }
-            ].map((test, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="p-8 rounded-[32px] bg-brand-background border border-brand-border flex flex-col justify-between hover:shadow-card transition-all"
-              >
-                <p className="text-sm text-brand-muted leading-relaxed italic mb-8">
-                  &ldquo;{test.quote}&rdquo;
-                </p>
-                <div>
-                  <h4 className="font-bold text-brand-navy text-sm">{test.author}</h4>
-                  <p className="text-[10px] font-semibold text-brand-primary uppercase tracking-wider">{test.role}</p>
-                </div>
-              </motion.div>
             ))}
           </div>
         </div>
@@ -364,7 +290,7 @@ export default function Home() {
           <div className="text-center mt-16">
             <p className="text-lg font-medium text-brand-navy mb-6">Ready to run your animal business with better records?</p>
             <a href="https://wa.me/923391119259" target="_blank" rel="noopener noreferrer" className="btn-primary !px-10 !py-4">
-              Book a demo with our Pakistan team
+              Book a demo with our team
             </a>
           </div>
         </div>

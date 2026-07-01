@@ -14,23 +14,20 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-    title: "Animal Care 360 | Livestock, Feed Retail & Pet Hospital Software Pakistan",
+    title: "Animal Care 360 | Livestock, Feed Retail & Pet Hospital Software",
     description:
-        "Manage livestock, feed retail, animal trading and pet hospitals with one powerful cloud-based software platform. FBR-ready invoices, milk production charts, EMR clinic logs.",
+        "Manage livestock, feed retail, animal trading and pet hospitals with one powerful cloud-based software platform. Digital invoices, milk production charts, EMR clinic logs.",
     keywords: [
-        "livestock software Pakistan",
-        "cattle management software Pakistan",
-        "farm ERP Pakistan",
-        "wanda ERP software Pakistan",
-        "maweshi software",
-        "animal care software Pakistan",
-        "dairy farm software Pakistan",
-        "pet hospital software Pakistan",
-        "animal trading software Pakistan",
-        "FBR compliant farm software",
-        "livestock tracking Pakistan",
-        "مویشی سافٹ ویئر",
-        "فارم مینجمنٹ سافٹ ویئر",
+        "livestock software",
+        "cattle management software",
+        "farm ERP",
+        "feed retail software",
+        "animal care software",
+        "dairy farm software",
+        "pet hospital software",
+        "animal trading software",
+        "compliant farm software",
+        "livestock tracking",
     ],
     authors: [{ name: "AnimalCare360", url: "https://animalcare360.com" }],
     creator: "AnimalCare360",
@@ -42,25 +39,17 @@ export const metadata: Metadata = {
 
     openGraph: {
         type: "website",
-        locale: "en_PK",
+        locale: "en_US",
         siteName: "AnimalCare360",
-        title: "AnimalCare360 – Pakistan's #1 Livestock & Farm Management ERP",
+        title: "AnimalCare360 – Modern Livestock & Farm Management ERP",
         description:
-            "Specialized ERP for cattle farms, wanda feed retailers, animal traders & pet hospitals across Pakistan. FBR-compliant, cloud-based, built for Pakistan.",
+            "Specialized ERP for cattle farms, wanda feed retailers, animal traders & pet hospitals. Cloud-based, built for the modern animal industry.",
         images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     },
     twitter: {
         card: "summary_large_image",
-        title: "AnimalCare360 – Pakistan's #1 Livestock ERP",
-        description: "Farm ERP, Wanda Software, Pet Hospital ERP – all in one hub for Pakistan.",
-    },
-    other: {
-        "geo.region": "PK",
-        "geo.placename": "Pakistan",
-        "geo.position": "30.3753;69.3451",
-        "ICBM": "30.3753, 69.3451",
-        "DC.language": "en",
-        "DC.coverage": "Pakistan",
+        title: "AnimalCare360 – Modern Livestock ERP",
+        description: "Farm ERP, Wanda Software, Pet Hospital ERP – all in one hub.",
     },
 };
 
@@ -90,14 +79,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                 "@type": "ContactPoint",
                                 "telephone": "+92-339-111-9259",
                                 "contactType": "customer service",
-                                "areaServed": "PK",
-                                "availableLanguage": ["English", "Urdu"]
+                                "availableLanguage": ["English"]
                             }
                         })
                     }}
                 />
                 <div className="bg-brand-navy text-white text-[11px] py-1.5 px-6 sm:px-10 flex justify-center items-center tracking-widest uppercase font-medium text-center">
-                    <span>Built for Pakistan's livestock, feed retail, trading, and veterinary businesses | WhatsApp: +92 339 111 9259</span>
+                    <span>Built for modern livestock, feed retail, trading, and veterinary businesses | WhatsApp: +92 339 111 9259</span>
                 </div>
                 <Navbar />
                 <main className="flex-grow">{children}</main>
