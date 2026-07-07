@@ -60,9 +60,14 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-brand-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-        <p className="text-[10px] font-bold text-brand-muted uppercase tracking-widest">
-          © {new Date().getFullYear()} AnimalCare360. All rights reserved. Registered in Pakistan.
-        </p>
+        <div className="flex flex-col gap-1 text-center md:text-left">
+          <p className="text-[10px] font-bold text-brand-muted uppercase tracking-widest">
+            © {new Date().getFullYear()} AnimalCare360. All rights reserved. Registered in Pakistan.
+          </p>
+          <p className="text-[10px] text-brand-muted font-medium">
+            AnimalCare360 is part of the <a href="https://logic-unit.com/ecosystem/animalcare360-livestock-animal-care-software" target="_blank" rel="noopener noreferrer" className="text-brand-primary hover:underline font-semibold">Logic Unit product ecosystem</a>.
+          </p>
+        </div>
         <div className="flex gap-6">
           <Link href="/privacy" className="text-[10px] font-bold text-brand-muted uppercase tracking-widest hover:text-brand-navy">Privacy Policy</Link>
           <Link href="/terms" className="text-[10px] font-bold text-brand-muted uppercase tracking-widest hover:text-brand-navy">Terms of Service</Link>
