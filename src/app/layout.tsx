@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     authors: [{ name: "AnimalCare360", url: "https://animalcare360.com" }],
     creator: "AnimalCare360",
     publisher: "AnimalCare360",
-    metadataBase: new URL("https://animalcare360.com"),
+    metadataBase: new URL("https://www.animalcare360.com"),
     alternates: {
         canonical: "/",
     },

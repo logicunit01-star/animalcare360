@@ -1,0 +1,45 @@
+# AnimalCare360
+
+AnimalCare360 is a cloud-based Enterprise Resource Planning (ERP) platform and mobile Android app designed specifically for the animal industry, including livestock farms, dairy farms, feed retailers, animal traders, and pet hospitals/veterinary clinics.
+
+## Core Software Modules
+
+### 1. Cattle & Dairy Farm Management (CattlePro)
+- **Traceability**: Digital lifecycle record keeping for every animal classifying breed, pedigree, and weight gain.
+- **Dairy Production**: Logs milk yield logs, lactation cycles, dry period calendars, and average cost-per-liter calculation.
+- **Operations & Health**: Automated treatment protocols, vaccine schedules, breeding logs, and feed consumption logs.
+
+### 2. Wanda & Feed Retail (Wanda POS)
+- **Point of Sale (POS)**: Retail sales transaction workflows, digital invoices, and cash drawer logging.
+- **Inventory Control**: Real-time stock counts, expiry batch warnings, supplier ledgers, and low-stock alerts.
+- **Credit (Khata) Records**: Digital customer credit logs, limit parameters, and payments.
+
+### 3. Animal Trading
+- **Deal Lifecycles**: Comprehensive buy, sell, commission, transport, and profit reporting.
+- **Financial Ledgers**: Individual balance sheets for buyers, sellers, brokers, and partner shares (Palai/investor ROI).
+
+### 4. Pet Hospital & Veterinary Clinic ERP
+- **Patient Journeys**: Online appointment booking, clinic check-in logs, and SOAP clinical notes.
+- **Electronic Medical Records (EMR)**: Complete diagnosis logs, prescription PDFs, and automated vaccination alerts.
+- **Pharmacy & Billing**: Direct pharmacy inventory deductions and digital invoicing.
+
+## Key Target Markets
+- Livestock Breeding & Fattening Farms
+- Dairy Enterprises
+- Feed & Wanda Retail Merchants
+- Animal Traders & Mandi Brokers
+- Veterinary Clinics & Pet Hospitals
+
+## Main Site Directory
+- Homepage: https://www.animalcare360.com/
+- Solutions Hub: https://www.animalcare360.com/solutions
+- Features Hub: https://www.animalcare360.com/features
+- Pricing Details: https://www.animalcare360.com/pricing
+- Download App: https://www.animalcare360.com/download-app
+- Resources & Guides: https://www.animalcare360.com/resources
+- Blog Articles: https://www.animalcare360.com/blog
+
+## Support & Contacts
+- Portal Login: https://app.animalcare360.com/login
+- Account Registration: https://app.animalcare360.com/register
+- Contact: support@animalcare360.com

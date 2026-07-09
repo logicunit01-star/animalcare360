@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://animalcare360.com';
+  const baseUrl = 'https://www.animalcare360.com';
   const currentDate = new Date();
 
   const routes = [

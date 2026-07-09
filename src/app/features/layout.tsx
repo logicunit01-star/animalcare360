@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AnimalCare360 Features | Livestock ERP, FBR Billing, Inventory & EMR',
-  description: 'Explore the full capabilities of AnimalCare360: livestock health records, POS billing, feed inventory, FBR compliance, financial reporting, and offline Android app support.',
+  title: 'All ERP Features for Farm, Retail & Clinic | AnimalCare360',
+  description: 'View features including animal breeding records, milk logging, low-stock warnings, digital billing POS, and pet EMR.',
+  alternates: {
+    canonical: '/features',
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

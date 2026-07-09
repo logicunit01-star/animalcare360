@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronRight, CheckCircle2, ArrowRight, Activity, Users, ShoppingCart, Beef, HeartPulse, Warehouse, Sparkles, Smartphone } from "lucide-react";
+import { ChevronRight, CheckCircle2, ArrowRight, Activity, Users, ShoppingCart, Beef, HeartPulse, Warehouse, Sparkles, Smartphone, Plus, Minus } from "lucide-react";
 import CTA from "@/components/CTA";
 
 export default function Home() {
@@ -235,6 +235,66 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PRODUCT MODULE TABLE */}
+      <section className="py-24 bg-white border-b border-brand-border">
+        <div className="section-container">
+          <div className="text-center mb-16">
+            <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Module Directory</p>
+            <h2 className="text-4xl font-bold text-brand-navy tracking-tight mb-4">Select the Modules Your Business Needs</h2>
+            <p className="text-brand-muted max-w-xl mx-auto text-base">
+              AnimalCare360 is modular. You only pay for what you actually use. Compare module highlights below.
+            </p>
+          </div>
+          <div className="overflow-x-auto border border-brand-border rounded-2xl">
+            <table className="w-full text-left border-collapse min-w-[700px]">
+              <thead>
+                <tr className="bg-brand-background border-b border-brand-border">
+                  <th className="p-5 font-bold text-brand-navy text-sm">Module</th>
+                  <th className="p-5 font-bold text-brand-navy text-sm">Target Intent</th>
+                  <th className="p-5 font-bold text-brand-navy text-sm">Key Features</th>
+                  <th className="p-5 font-bold text-brand-navy text-sm">Primary Benefits</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-brand-border">
+                {[
+                  {
+                    name: "Cattle & Dairy",
+                    intent: "Farms & Fattening Lots",
+                    features: "Herd registry, breeding logs, milk tracking, ADG charts, palai shares",
+                    benefit: "Eliminate paper registers; track exact cost-per-liter and fattening profitability"
+                  },
+                  {
+                    name: "Wanda & Feed POS",
+                    intent: "Feed retail stores",
+                    features: "POS billing, expiry warnings, customer khata credit limits, supplier ledgers",
+                    benefit: "Fast retail checkout; prevent expired inventory loss and automate balance tracking"
+                  },
+                  {
+                    name: "Animal Trading",
+                    intent: "Livestock brokers & dealers",
+                    features: "Buy/sell lots, transport expenses, commission logs, partner shares",
+                    benefit: "Understand deal-by-deal profitability instantly; transparent broker balances"
+                  },
+                  {
+                    name: "Veterinary Clinic",
+                    intent: "Doctors & Pet Hospitals",
+                    features: "SOAP clinical notes, patient EMR check-ins, prescription builder, pharmacy POS",
+                    benefit: "Paperless health history; automatic vaccination reminders to return pet owners"
+                  }
+                ].map((row, i) => (
+                  <tr key={i} className="hover:bg-brand-background/40 transition-colors">
+                    <td className="p-5 font-bold text-brand-navy text-sm">{row.name}</td>
+                    <td className="p-5 text-sm text-brand-muted font-medium">{row.intent}</td>
+                    <td className="p-5 text-sm text-brand-muted font-medium">{row.features}</td>
+                    <td className="p-5 text-sm text-brand-muted font-medium">{row.benefit}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* BUILT FOR THE MODERN ANIMAL INDUSTRY */}
       <section className="py-24 bg-white overflow-hidden border-b border-brand-border">
         <div className="section-container text-center">
@@ -254,6 +314,58 @@ export default function Home() {
                 <CheckCircle2 className="w-6 h-6 text-brand-primary shrink-0 mt-0.5" />
                 <span className="font-medium text-brand-navy">{bullet}</span>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHO USES ANIMALCARE360? */}
+      <section className="py-24 bg-brand-background border-b border-brand-border">
+        <div className="section-container">
+          <div className="text-center mb-16">
+            <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Target Audience</p>
+            <h2 className="text-4xl font-bold text-brand-navy tracking-tight mb-4">Who Uses AnimalCare360?</h2>
+            <p className="text-brand-muted max-w-xl mx-auto text-base">
+              Our modular ERP serves different roles across the agricultural, retail, and veterinary spectrum.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                icon: <Beef className="w-8 h-8 text-brand-primary" />,
+                title: "Livestock & Dairy Farms",
+                desc: "Optimizing cattle genetics, milk production yield charts, feed costs per cow, and dry calendars."
+              },
+              {
+                icon: <ShoppingCart className="w-8 h-8 text-brand-primary" />,
+                title: "Wanda & Feed Retailers",
+                desc: "Managing POS transactions, expiry batch warnings, customer credit ledgers (Khata), and supplier accounts."
+              },
+              {
+                icon: <Warehouse className="w-8 h-8 text-brand-primary" />,
+                title: "B2B Animal Traders",
+                desc: "Tracking deal-by-deal logistics expenses, transportation commissions, partner shares, and net profit margins."
+              },
+              {
+                icon: <HeartPulse className="w-8 h-8 text-brand-primary" />,
+                title: "Vets & Pet Hospitals",
+                desc: "Scheduling check-ins, record-keeping SOAP notes, patient health histories (EMR), and medical billing."
+              }
+            ].map((role, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1, duration: 0.5 }}
+                className="p-8 bg-white border border-brand-border rounded-[32px] hover:shadow-card transition-all flex flex-col items-start"
+              >
+                <div className="p-4 bg-brand-background rounded-2xl mb-6">
+                  {role.icon}
+                </div>
+                <h4 className="font-bold text-brand-navy text-lg mb-2">{role.title}</h4>
+                <p className="text-sm text-brand-muted leading-relaxed">{role.desc}</p>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -292,6 +404,56 @@ export default function Home() {
             <a href="https://wa.me/923391119259" target="_blank" rel="noopener noreferrer" className="btn-primary !px-10 !py-4">
               Book a demo with our team
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section className="py-24 bg-white border-b border-brand-border">
+        <div className="section-container max-w-4xl">
+          <div className="text-center mb-16">
+            <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Common Questions</p>
+            <h2 className="text-4xl font-bold text-brand-navy tracking-tight mb-4">Frequently Asked Questions</h2>
+            <p className="text-brand-muted max-w-xl mx-auto text-base">
+              Learn more about how the modular cloud platform fits your agribusiness operations.
+            </p>
+          </div>
+          <div className="space-y-4">
+            {[
+              {
+                q: "Is AnimalCare360 a cloud platform or an offline app?",
+                a: "AnimalCare360 is a secure cloud-native ERP. Your data is synced in real-time, allowing you to access dashboard statistics from any computer web browser or via our companion Android app."
+              },
+              {
+                q: "Can I purchase single modules or do I have to subscribe to everything?",
+                a: "Our plans are fully modular. You only subscribe to what you need. For example, a feed retailer can choose the Wanda Retail POS module and skip the cattle farm tracking modules entirely."
+              },
+              {
+                q: "How is my farm and business data secured?",
+                a: "We employ industry-standard SSL encryption for all data in transit, coupled with automated daily cloud backups. Your business records are private, isolated, and belong entirely to you."
+              },
+              {
+                q: "What onboarding support is provided?",
+                a: "Every subscription includes comprehensive remote onboarding assistance. Our team helps you configure your account, upload starting animal registries or store inventory lists from Excel, and train your staff."
+              },
+              {
+                q: "Does the retail module support digital receipts and billing?",
+                a: "Yes. The billing and Wanda retail modules support digital receipts, invoice generation, customer credit ledgers, and thermal print sizing."
+              }
+            ].map((faq, i) => (
+              <details key={i} className="group border border-brand-border rounded-2xl bg-brand-background p-6 [&_summary::-webkit-details-marker]:hidden">
+                <summary className="flex items-center justify-between cursor-pointer focus:outline-none">
+                  <h3 className="font-bold text-brand-navy text-base">{faq.q}</h3>
+                  <span className="relative ml-1.5 h-5 w-5 flex-shrink-0">
+                    <Plus className="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0 transition-opacity text-brand-muted" />
+                    <Minus className="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100 transition-opacity text-brand-primary" />
+                  </span>
+                </summary>
+                <p className="mt-4 text-sm leading-relaxed text-brand-muted font-medium border-t border-brand-border/60 pt-4">
+                  {faq.a}
+                </p>
+              </details>
+            ))}
           </div>
         </div>
       </section>

@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Animal Trading Software Pakistan | Sale, Purchase & Commission Records',
-  description: 'Complete ERP for animal trading and commission agents in Pakistan. Track purchase & sale deals, mandi commissions, buyer/seller ledgers, transport costs, and lot profitability.',
+  title: 'Animal Trading & Livestock Deal Ledger | AnimalCare360',
+  description: 'Manage livestock trading deals, purchase and sales logs, commission structures, partner shares, and transportation expenses.',
+  alternates: {
+    canonical: '/animal-trading',
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AnimalCare360 Solutions | Farm, Feed, Trading & Pet Hospital ERP',
-  description: 'Explore AnimalCare360 ERP modules tailored for Pakistan\'s agriculture sector. Scalable software for cattle farms, feed retailers, livestock traders, and vet clinics.',
+  title: 'Animal Care Software Solutions | AnimalCare360',
+  description: 'Explore cloud ERP solutions for cattle management, dairy farm records, wanda retail shops, and veterinary clinics.',
+  alternates: {
+    canonical: '/solutions',
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

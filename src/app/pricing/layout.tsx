@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AnimalCare360 Pricing Pakistan | Farm, Feed & Pet Hospital ERP Plans',
-  description: 'Transparent pricing plans for livestock farms, wanda feed retailers, trading agents, and pet clinics in Pakistan. Affordable packages scaled to your business size.',
+  title: 'Flexible Pricing Plans for Animal Care ERP | AnimalCare360',
+  description: 'View simple, modular pricing plans for CattlePro, Wanda POS, and Vet Clinic software. Choose the modules you need.',
+  alternates: {
+    canonical: '/pricing',
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

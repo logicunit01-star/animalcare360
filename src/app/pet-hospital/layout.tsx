@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Pet Hospital Software Pakistan | Veterinary EMR, Pharmacy & Billing',
-  description: 'All-in-one veterinary clinic and pet hospital management software in Pakistan. Manage patient EMR, vaccination logs, billing, pharmacy inventory, and automated WhatsApp alerts.',
+  title: 'Pet Hospital ERP & Veterinary EMR Software | AnimalCare360',
+  description: 'All-in-one veterinary clinic software. Manage pet patient EMR histories, vaccine alerts, SOAP records, doctor schedules, and pharmacy billing.',
+  alternates: {
+    canonical: '/pet-hospital',
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
