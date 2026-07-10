@@ -27,7 +27,7 @@ const Footer = () => (
             <li><Link href="/solutions/feed-retail" className="hover:text-brand-navy transition-colors">Wanda Feed Retail</Link></li>
             <li><Link href="/solutions/animal-trading" className="hover:text-brand-navy transition-colors">Animal Trading ERP</Link></li>
             <li><Link href="/solutions/pet-hospital" className="hover:text-brand-navy transition-colors">Pet Hospital & Clinic</Link></li>
-            <li><Link href="/solutions/cattlepro" className="hover:text-brand-navy transition-colors">CattlePro Product Guide</Link></li>
+            <li><Link href="/solutions/cattlepro" className="hover:text-brand-navy transition-colors">CattlePro</Link></li>
           </ul>
         </div>
 
