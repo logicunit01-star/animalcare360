@@ -22,12 +22,12 @@ export default function Home() {
             "applicationCategory": "BusinessApplication",
             "offers": {
               "@type": "Offer",
-              "priceCurrency": "PKR",
-              "price": "2999",
+              "priceCurrency": "USD",
+              "price": "19",
               "priceSpecification": {
                 "@type": "UnitPriceSpecification",
-                "price": "2999",
-                "priceCurrency": "PKR",
+                "price": "19",
+                "priceCurrency": "USD",
                 "referenceQuantity": {
                   "@type": "QuantitativeValue",
                   "value": "1",

@@ -17,8 +17,8 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
   useEffect(() => {
     // Dynamic pricing logic based on user requirements
     // base + per unit cost logic
-    const unitCost = type === 'wanda' ? 10 : 50; // Example variables
-    const storeCost = 2000;
+    const unitCost = type === 'wanda' ? 0.1 : 0.5; // Example variables
+    const storeCost = 15;
 
     let calculatedTotal = basePrice;
     if (qty > 0) calculatedTotal += (qty * unitCost);
@@ -86,7 +86,7 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
           <div className="flex justify-between items-end">
             <div>
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-muted mb-1">Estimated Monthly Investment</p>
-              <p className="text-3xl font-bold text-brand-navy">PKR {total.toLocaleString()}</p>
+              <p className="text-3xl font-bold text-brand-navy">${total.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 1 })}</p>
             </div>
             <a
               href={`https://wa.me/923391119259?text=Hi, I am interested in ${label} for ${qty} items and ${stores} stores. Can you provide a custom quote?`}

@@ -41,19 +41,19 @@ export default function FeedRetail() {
             "@type": "Product",
             "name": "Wanda & Feed Retail Software (AnimalCare360)",
             "image": "https://animalcare360.com/dashboard-procurement.png",
-            "description": "Point of Sale (POS), multi-warehouse stock inventory, customer credit ledgers, supplier payments, expiry tracking, and FBR compliant invoicing for Wanda shops, pet food retailers, and feed wholesalers in Pakistan.",
+            "description": "Point of Sale (POS), multi-warehouse stock inventory, customer credit ledgers, supplier payments, expiry tracking, and tax-compliant invoicing for wanda shops, pet food retailers, and feed wholesalers.",
             "brand": {
               "@type": "Brand",
               "name": "AnimalCare360"
             },
             "offers": {
               "@type": "Offer",
-              "priceCurrency": "PKR",
-              "price": "8500",
+              "priceCurrency": "USD",
+              "price": "29",
               "priceSpecification": {
                 "@type": "UnitPriceSpecification",
-                "price": "8500",
-                "priceCurrency": "PKR",
+                "price": "29",
+                "priceCurrency": "USD",
                 "referenceQuantity": {
                   "@type": "QuantitativeValue",
                   "value": "1",
@@ -70,10 +70,10 @@ export default function FeedRetail() {
           <div className="max-w-3xl">
             <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Retail & Wholesale ERP</p>
             <h1 className="text-5xl font-bold text-brand-navy mb-8 leading-tight tracking-tight">
-              Wanda, Feed, and Pet Food Retail Software for Pakistan
+              Wanda, Feed, and Pet Food Retail Software
             </h1>
             <p className="text-xl text-brand-muted leading-relaxed mb-10">
-              Run your wanda shop, feed distribution business, pet food store, or veterinary pharmacy with a POS and inventory system built for animal retail. Track stock, expiry, customer credit, supplier payments, purchase orders, and FBR-ready invoices from one dashboard.
+              Run your wanda shop, feed distribution business, pet food store, or veterinary pharmacy with a POS and inventory system built for animal retail. Track stock, expiry, customer credit, supplier payments, purchase orders, and digital invoices from one dashboard.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="https://app.animalcare360.com/apps" className="bg-brand-navy text-white px-10 py-5 rounded-2xl font-bold shadow-xl hover:bg-slate-800 transition-all">Get Started</a>
@@ -103,7 +103,7 @@ export default function FeedRetail() {
               </p>
               <div className="space-y-4">
                 {[
-                  "FBR-compliant QR receipts for all sales",
+                  "Tax-compliant QR receipts for all sales",
                   "Multi-warehouse stock synchronization",
                   "Batch tracking for expiry management",
                   "Credit limit management for wholesalers"
@@ -149,10 +149,10 @@ export default function FeedRetail() {
 
           <div className="bg-brand-navy rounded-[48px] p-12 md:p-20 text-white flex flex-col lg:flex-row gap-16 items-center border border-brand-border shadow-2xl">
             <div className="lg:w-1/2">
-              <h2 className="text-4xl font-bold mb-8 italic">&quot;Scale your distribution with FBR compliance built-in.&quot;</h2>
+              <h2 className="text-4xl font-bold mb-8 italic">&quot;Scale your distribution with tax compliance built-in.&quot;</h2>
               <div className="space-y-6">
                 {[
-                  "FBR QR-coded sales invoices",
+                  "Tax-compliant QR-coded sales invoices",
                   "Purchase tax reconciliation",
                   "Complete digital audit trail",
                   "Professional VAT/GST reporting"
@@ -180,7 +180,7 @@ export default function FeedRetail() {
 
       <CTA
         title="Modernise Your Retail Hub"
-        subtitle="Manage your wanda shop or pet store with precision. Joined the digital retail ecosystem of Pakistan."
+        subtitle="Manage your wanda shop or pet store with precision. Join our digital retail ecosystem."
       />
     </div>
   );

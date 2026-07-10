@@ -448,7 +448,7 @@ export default function CattleProFeatures() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-left">
               {[
-                { title: "Locations & Farm Contexts", desc: "Pre-configured cities (Lahore, Sahiwal) and physical farm sites (Farm A, Farm B, Farm C) to validate context-aware analytics." },
+                { title: "Locations & Farm Contexts", desc: "Pre-configured regions and physical farm sites (Farm A, Farm B, Farm C) to validate context-aware analytics." },
                 { title: "Livestock Register", desc: "Cattle and goat profiles across categories: milking dairy heads, breeding stock, beef fattening lots, calves, and Palai clients." },
                 { title: "Financial Transactions", desc: "Mock records covering feed purchases, vet treatment expenses, milk sales batches, manure invoices, and supplier ledgers." }
               ].map((data, idx) => (

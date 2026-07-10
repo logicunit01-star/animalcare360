@@ -42,19 +42,19 @@ export default function CattleManagement() {
             "@type": "Product",
             "name": "Cattle & Dairy Farm Management Software (AnimalCare360)",
             "image": "https://animalcare360.com/dashboard-palai.png",
-            "description": "Digitally track cattle breeding, milk production, vaccination schedules, weight gain (ADG), fattening lots, palai partnership ROI, and feed inventory for dairy farms in Pakistan.",
+            "description": "Digitally track cattle breeding, milk production, vaccination schedules, weight gain (ADG), fattening lots, palai partnership ROI, and feed inventory for dairy farms.",
             "brand": {
               "@type": "Brand",
               "name": "AnimalCare360"
             },
             "offers": {
               "@type": "Offer",
-              "priceCurrency": "PKR",
-              "price": "12000",
+              "priceCurrency": "USD",
+              "price": "49",
               "priceSpecification": {
                 "@type": "UnitPriceSpecification",
-                "price": "12000",
-                "priceCurrency": "PKR",
+                "price": "49",
+                "priceCurrency": "USD",
                 "referenceQuantity": {
                   "@type": "QuantitativeValue",
                   "value": "1",
@@ -73,7 +73,7 @@ export default function CattleManagement() {
           <div className="max-w-3xl">
             <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Farm Operations ERP</p>
             <h1 className="text-5xl font-bold mb-8 leading-tight">
-              Cattle and Dairy Farm Management Software for Pakistan
+              Cattle and Dairy Farm Management Software
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-10">
               AnimalCare360 gives cattle, dairy, and fattening farms a complete digital record for every animal. Track purchase, birth, breed, health, vaccination, breeding, milk, weight, feed cost, sale, and profit from one system.
@@ -185,7 +185,7 @@ export default function CattleManagement() {
                   },
                   {
                     title: "Financial Auditing",
-                    desc: "Generate FBR-compliant records for all livestock purchases and sales."
+                    desc: "Generate tax-compliant records for all livestock purchases and sales."
                   }
                 ].map((f, i) => (
                   <div key={i}>
@@ -219,7 +219,7 @@ export default function CattleManagement() {
 
       <CTA
         title="Ready to Digitize Your Farm?"
-        subtitle="Join Pakistan's leading livestock enterprises. Start your free trial today and experience precision farm management."
+        subtitle="Join leading livestock enterprises. Start your free trial today and experience precision farm management."
       />
     </div>
   );

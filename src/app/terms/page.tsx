@@ -48,7 +48,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-2xl font-bold text-brand-navy mb-4">2. Description of Service</h2>
             <p>
-              AnimalCare360 is a cloud-based ERP software suite designed for livestock farms, wanda and feed retailers, animal traders, and pet hospitals in Pakistan. The service is provided on a subscription or licensing basis. Features, modules, and availability may be updated over time.
+              AnimalCare360 is a cloud-based ERP software suite designed for livestock farms, wanda and feed retailers, animal traders, and pet hospitals. The service is provided on a subscription or licensing basis. Features, modules, and availability may be updated over time.
             </p>
           </section>
 
@@ -66,8 +66,8 @@ export default function TermsOfService() {
             </p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
               <li>Maintaining the confidentiality of your account credentials.</li>
-              <li>The accuracy and legality of the data you enter into the Software (including FBR tax data).</li>
-              <li>Ensuring your use of the Software complies with all applicable local laws and regulations in Pakistan.</li>
+              <li>The accuracy and legality of the data you enter into the Software (including tax data).</li>
+              <li>Ensuring your use of the Software complies with all applicable local laws and regulations.</li>
             </ul>
           </section>
 

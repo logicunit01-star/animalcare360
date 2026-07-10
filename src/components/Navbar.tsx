@@ -30,7 +30,7 @@ const Navbar = () => {
       subItems: [
         { name: "Inventory Management", path: "/features/inventory-management" },
         { name: "Animal Health Tracking", path: "/features/health-tracking" },
-        { name: "FBR Invoicing & POS", path: "/features/billing-pos" },
+        { name: "Invoicing & POS", path: "/features/billing-pos" },
         { name: "CattlePro Feature Spec", path: "/cattlepro/features" }
       ]
     },

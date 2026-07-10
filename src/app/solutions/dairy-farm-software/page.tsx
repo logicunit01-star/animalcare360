@@ -38,7 +38,7 @@ export default function DairyFarmSoftware() {
             "@type": "Product",
             "name": "Dairy Farm ERP Software (AnimalCare360)",
             "image": "https://animalcare360.com/dashboard-palai.png",
-            "description": "Digitally track daily milk yield, fat logs, dry periods, lactation cycles, and feed ROI for dairy farms in Pakistan.",
+            "description": "Digitally track daily milk yield, fat logs, dry periods, lactation cycles, and feed ROI for dairy farms.",
             "brand": { "@type": "Brand", "name": "AnimalCare360" }
           })
         }}

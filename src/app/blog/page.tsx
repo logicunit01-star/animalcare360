@@ -8,8 +8,8 @@ import CTA from "@/components/CTA";
 export default function BlogIndex() {
   const articles = [
     {
-      title: "Best Livestock Management Software for Pakistan",
-      desc: "Explore how cloud-based farm ERP systems solve milk yield tracking, cattle breeding pedigrees, and Palai profit-sharing distributions for Pakistani dairy owners.",
+      title: "Best Livestock Management Software for Agribusiness",
+      desc: "Explore how cloud-based farm ERP systems solve milk yield tracking, cattle breeding pedigrees, and profit-sharing distributions for dairy owners.",
       tag: "Livestock Management",
       readTime: "8 min read",
       date: "June 24, 2026"
@@ -30,7 +30,7 @@ export default function BlogIndex() {
     },
     {
       title: "Why Veterinary Clinic Software is Critical for Modern Practices",
-      desc: "Compare manual diaries with unified SOAP note software. Learn about FBR-compliant billing POS and auto reminders to boost veterinary clinic client retention.",
+      desc: "Compare manual diaries with unified SOAP note software. Learn about tax-compliant billing POS and auto reminders to boost veterinary clinic client retention.",
       tag: "Clinical Workflows",
       readTime: "5 min read",
       date: "June 05, 2026"
@@ -44,7 +44,7 @@ export default function BlogIndex() {
     },
     {
       title: "Wanda & Feed Retail Business Management Strategy",
-      desc: "Unlock retail success in Pakistan. Automate credit ledger khata accounts, coordinate supplier payable limits, and print FBR-ready sales receipts.",
+      desc: "Unlock retail success. Automate credit ledger accounts, coordinate supplier payable limits, and print digital sales receipts.",
       tag: "Feed Store Retail",
       readTime: "6 min read",
       date: "May 20, 2026"

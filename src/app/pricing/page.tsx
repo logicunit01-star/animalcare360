@@ -7,19 +7,19 @@ import PricingCalculator from "@/components/PricingCalculator";
 const pricingData = [
   {
     name: "Retail & Pharmacy",
-    price: "PKR 2,999",
+    price: "$19",
     desc: "Essential POS and inventory for pet shops and pharmacies.",
     features: [
       "Point of Sale Terminal",
       "Medicine Expiry Tracking",
-      "FBR QR Receipts",
+      "Tax QR Receipts",
       "Customer Loyalty CRM",
       "Sales Analytics"
     ]
   },
   {
     name: "Feed & Wanda ERP",
-    price: "PKR 8,500",
+    price: "$49",
     desc: "Specially designed for Wholesalers and Retailers of Pet Food & Grass.",
     features: [
       "Bulk Sales Orders",
@@ -32,7 +32,7 @@ const pricingData = [
   },
   {
     name: "Farm Management",
-    price: "PKR 12,000",
+    price: "$79",
     desc: "Comprehensive software for Cattle, Dairy, and Poultry farms.",
     features: [
       "Cattle Pedigree Tracking",
@@ -114,10 +114,10 @@ export default function Pricing() {
               },
               {
                 "@type": "Question",
-                "name": "Does the system support FBR invoicing?",
+                "name": "Does the system support tax-compliant invoicing?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AnimalCare360 includes FBR-ready invoicing workflows for eligible retail and enterprise use cases. Final setup depends on your business registration and compliance requirements."
+                  "text": "AnimalCare360 includes tax-compliant invoicing workflows for eligible retail and enterprise use cases. Final setup depends on your business registration and local compliance requirements."
                 }
               }
             ]
@@ -136,8 +136,8 @@ export default function Pricing() {
 
         {/* Dynamic Calculators */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
-          <PricingCalculator basePrice={8500} label="Wanda ERP Feed" type="wanda" />
-          <PricingCalculator basePrice={12000} label="Farm Management" type="farm" />
+          <PricingCalculator basePrice={49} label="Wanda ERP Feed" type="wanda" />
+          <PricingCalculator basePrice={79} label="Farm Management" type="farm" />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start mb-20">
@@ -214,7 +214,7 @@ export default function Pricing() {
               { q: "Do you provide onboarding?", a: "Yes. We help configure your business, train staff, and support the first live records." },
               { q: "Is AnimalCare360 suitable for small businesses?", a: "Yes. Small shops and clinics can start with essential POS, inventory, billing, and records, then scale as they grow." },
               { q: "Can you migrate my Excel or register data?", a: "Yes. We can help import clean starting data for animals, stock, customers, vendors, and balances." },
-              { q: "Does the system support FBR invoicing?", a: "AnimalCare360 includes FBR-ready invoicing workflows for eligible retail and enterprise use cases. Final setup depends on your business registration and compliance requirements." }
+              { q: "Does the system support tax-compliant invoicing?", a: "AnimalCare360 includes tax-compliant invoicing workflows for eligible retail and enterprise use cases. Final setup depends on your business registration and local compliance requirements." }
             ].map((faq, i) => (
               <div key={i} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
                 <h4 className="font-bold text-brand-navy text-lg mb-2">{faq.q}</h4>

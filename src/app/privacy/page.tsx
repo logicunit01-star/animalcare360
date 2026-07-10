@@ -50,7 +50,7 @@ export default function PrivacyPolicy() {
             <p>We may collect the following types of information:</p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
               <li><strong>Account Information:</strong> Name, phone number, email address, and business details when you register.</li>
-              <li><strong>Business Data:</strong> Records you input into our system, including animal details, financial ledgers, customer/supplier data, inventory, and FBR-related invoicing data.</li>
+              <li><strong>Business Data:</strong> Records you input into our system, including animal details, financial ledgers, customer/supplier data, inventory, and transaction-related invoicing data.</li>
               <li><strong>Usage Data:</strong> Information about how you interact with our web and mobile applications to help us improve the system.</li>
             </ul>
           </section>
@@ -60,7 +60,7 @@ export default function PrivacyPolicy() {
             <p>Your data is primarily used to provide you with ERP services. Specifically, we use it to:</p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
               <li>Facilitate your farm, clinic, trading, or retail operations.</li>
-              <li>Generate reports, financial statements, and FBR-compliant invoices for your business.</li>
+              <li>Generate reports, financial statements, and compliant invoices for your business.</li>
               <li>Provide customer support via WhatsApp or email.</li>
               <li>Improve and optimize our software modules.</li>
             </ul>
@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
               We <strong>do not</strong> sell or rent your business data to third parties. We may only disclose data if:
             </p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
-              <li>Required by law or legal processes in Pakistan (e.g., FBR audits).</li>
+              <li>Required by law or legal processes.</li>
               <li>Necessary to protect our rights, privacy, safety, or property.</li>
               <li>Working with trusted third-party service providers (like cloud hosting providers) under strict confidentiality agreements.</li>
             </ul>

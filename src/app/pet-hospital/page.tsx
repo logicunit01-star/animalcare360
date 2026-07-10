@@ -40,19 +40,19 @@ export default function PetHospital() {
             "@type": "Product",
             "name": "Pet Hospital & Veterinary Clinic Software (AnimalCare360)",
             "image": "https://animalcare360.com/user-icon.png",
-            "description": "Veterinary clinical management ERP. Digitally manage patient Electronic Medical Records (EMR), drag-and-drop appointment calendars, surgery logs, laboratory results, pharmacy stock control with expiry alerts, and medical billing with WhatsApp reminders in Pakistan.",
+            "description": "Veterinary clinical management ERP. Digitally manage patient Electronic Medical Records (EMR), drag-and-drop appointment calendars, surgery logs, laboratory results, pharmacy stock control with expiry alerts, and medical billing with WhatsApp reminders.",
             "brand": {
               "@type": "Brand",
               "name": "AnimalCare360"
             },
             "offers": {
               "@type": "Offer",
-              "priceCurrency": "PKR",
-              "price": "2999",
+              "priceCurrency": "USD",
+              "price": "19",
               "priceSpecification": {
                 "@type": "UnitPriceSpecification",
-                "price": "2999",
-                "priceCurrency": "PKR",
+                "price": "19",
+                "priceCurrency": "USD",
                 "referenceQuantity": {
                   "@type": "QuantitativeValue",
                   "value": "1",
@@ -74,7 +74,7 @@ export default function PetHospital() {
               <p className="text-red-600 font-bold text-xs uppercase tracking-widest">Clinical Management ERP</p>
             </div>
             <h1 className="text-5xl font-bold mb-8 leading-tight tracking-tight">
-              Pet Hospital and Veterinary Clinic Software for Pakistan
+              Pet Hospital and Veterinary Clinic Software
             </h1>
             <p className="text-xl text-brand-muted leading-relaxed mb-10">
               AnimalCare360 helps veterinary clinics and pet hospitals manage patient care and business operations together. Keep patient histories, appointments, prescriptions, surgery notes, pharmacy stock, billing, and reminders in one system.
@@ -100,7 +100,7 @@ export default function PetHospital() {
               { title: "Patient EMR", icon: ClipboardList, desc: "Store pet profiles, owner details, visit history, diagnosis, treatment plans, vaccinations, and follow-ups." },
               { title: "Appointments", icon: Calendar, desc: "Manage doctors, rooms, follow-ups, and reminders so fewer patients are missed." },
               { title: "Surgery and Lab Records", icon: Stethoscope, desc: "Record procedures, consent, notes, lab results, attachments, and post-treatment instructions." },
-              { title: "Pharmacy and Billing", icon: Syringe, desc: "Track medicines, expiry dates, prescriptions, stock levels, sales, and FBR-ready invoices where applicable." },
+              { title: "Pharmacy and Billing", icon: Syringe, desc: "Track medicines, expiry dates, prescriptions, stock levels, sales, and digital invoices where applicable." },
             ].map((mod, i) => (
               <div key={i} className="p-10 bg-brand-background border border-brand-border rounded-[32px] text-center hover:border-red-500 transition-all shadow-sm">
                 <mod.icon className="w-12 h-12 text-red-500 mx-auto mb-6" />
@@ -130,7 +130,7 @@ export default function PetHospital() {
               </div>
               <div className="p-10 bg-[#FFF5F5] border border-red-100 rounded-[40px] shadow-sm">
                 <p className="text-lg italic text-brand-navy mb-6 leading-relaxed">&quot;AnimalCare360 has reduced our administrative overhead by 40%. We spend more time with patients and less time on paperwork.&quot;</p>
-                <p className="text-xs font-bold uppercase text-red-600 tracking-widest">— Senior Vet, Lahore Pet Clinic</p>
+                <p className="text-xs font-bold uppercase text-red-600 tracking-widest">— Senior Vet, Metropolitan Animal Hospital</p>
               </div>
             </div>
             <div className="space-y-6">
@@ -145,7 +145,7 @@ export default function PetHospital() {
                 <Database className="w-14 h-14 text-green-500 mb-8" />
                 <h3 className="text-3xl font-bold text-brand-navy mb-6 tracking-tight">Inventory & Dispensary</h3>
                 <p className="text-brand-muted leading-relaxed text-lg">
-                  Track every vaccine vial and tablet. Automated alerts for pharmacy stock levels and expiry dates. FBR-compliant invoicing for retail pharmacies.
+                  Track every vaccine vial and tablet. Automated alerts for pharmacy stock levels and expiry dates. Compliant invoicing for retail pharmacies.
                 </p>
               </div>
             </div>
@@ -155,7 +155,7 @@ export default function PetHospital() {
 
       <CTA
         title="Ready to Modernize Your Practice?"
-        subtitle="Join the digital veterinary revolution in Pakistan. Standardize care, improve outcomes, and grow your clinic with AnimalCare360."
+        subtitle="Join the digital veterinary revolution. Standardize care, improve outcomes, and grow your clinic with AnimalCare360."
       />
     </div>
   );

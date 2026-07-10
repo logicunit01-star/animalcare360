@@ -6,7 +6,7 @@ import CTA from "@/components/CTA";
 
 export const metadata = {
   title: "Download AnimalCare360 Mobile App | Cattle Management App",
-  description: "Download the AnimalCare360 APK for Android. Track your cattle, manage farm operations, and get real-time insights from your mobile phone anywhere in Pakistan.",
+  description: "Download the AnimalCare360 APK for Android. Track your cattle, manage farm operations, and get real-time insights from your mobile phone anywhere.",
 };
 
 export default function DownloadApp() {

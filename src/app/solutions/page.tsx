@@ -9,7 +9,7 @@ export default function Solutions() {
   const solutions = [
     {
       title: "Wanda and Feed Retail ERP",
-      desc: "For shops, wholesalers, distributors, and pet food retailers that need POS, inventory, expiry, customer credit, supplier ledgers, and FBR-ready invoices.",
+      desc: "For shops, wholesalers, distributors, and pet food retailers that need POS, inventory, expiry, customer credit, supplier ledgers, and digital invoices.",
       icon: ShoppingCart,
       color: "border-blue-200",
       link: "/feed-retail"
@@ -36,7 +36,7 @@ export default function Solutions() {
       link: "/pet-hospital"
     },
     {
-      title: "FBR and Financial Control",
+      title: "Tax and Financial Control",
       desc: "For businesses that need clean invoices, audit logs, profit/loss reports, receivables, payables, and tax-friendly digital records.",
       icon: LineChart,
       color: "border-slate-200",
@@ -73,7 +73,7 @@ export default function Solutions() {
       <div className="section-container">
         <div className="text-center mb-24">
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Targeted Industry Tech</p>
-          <h1 className="text-5xl font-bold text-brand-navy mb-8 tracking-tight leading-[1.1]">Software Modules for Every Animal Business in Pakistan</h1>
+          <h1 className="text-5xl font-bold text-brand-navy mb-8 tracking-tight leading-[1.1]">Software Modules for Every Animal Business</h1>
           <p className="text-brand-muted max-w-3xl mx-auto text-xl leading-relaxed">
             AnimalCare360 is modular, so you can start with the system your business needs today and expand as your operations grow. Each module is designed for a specific animal industry workflow, not a generic ERP template.
           </p>
@@ -100,7 +100,7 @@ export default function Solutions() {
                     {(sol.title === "Wanda and Feed Retail ERP" ? ["Retail POS Terminal", "Fodder Supply Logs", "Wholesale Credit Limits", "Customer CRM Analytics"] :
                       sol.title === "Cattle and Dairy Farm ERP" ? ["Milk Supply Chain", "ADG Fattening Logs", "Pedigree Mapping", "Poultry/Egg Records"] :
                         sol.title === "Pet Hospital ERP" ? ["Surgery Case Records", "Pharmacy Dispensary", "Appointment Hub", "Clinical Histories"] :
-                          sol.title === "Animal Trading Suite" ? ["Sale/Purchase Logs", "Trading Commission", "FBR-Compliant Receipts", "Trader Dashboards"] :
+                          sol.title === "Animal Trading Suite" ? ["Sale/Purchase Logs", "Trading Commission", "Tax-Compliant Receipts", "Trader Dashboards"] :
                             ["QR-Coded Invoicing", "Auditable Tax Logs", "Profit/Loss Tracking", "Sales Order Workflows"]).map((item, idx) => (
                               <li key={idx} className="flex items-center gap-3 text-[10px] font-bold text-brand-navy uppercase tracking-widest">
                                 <div className="w-2 h-2 rounded-full bg-brand-primary shadow-sm shadow-green-200"></div> {item}

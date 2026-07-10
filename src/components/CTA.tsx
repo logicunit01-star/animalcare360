@@ -8,7 +8,7 @@ interface CTAProps {
 
 const CTA: React.FC<CTAProps> = ({ 
   title = "Ready to Digitise Your Animal Care Business?", 
-  subtitle = "Join Pakistan's leading livestock enterprises. Connect with our experts today and see how AnimalCare360 can transform your operations."
+  subtitle = "Join leading livestock and animal care enterprises. Connect with our experts today and see how AnimalCare360 can transform your operations."
 }) => {
   return (
     <section className="py-24 bg-brand-navy relative overflow-hidden">
@@ -51,11 +51,11 @@ const CTA: React.FC<CTAProps> = ({
             </div>
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div>
-              Built for Pakistan
+              Built for Modern Industry
             </div>
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div>
-              FBR Compliant
+              Tax Compliant
             </div>
           </div>
         </div>

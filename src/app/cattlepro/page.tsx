@@ -142,19 +142,19 @@ export default function CattleProOverview() {
             "@type": "Product",
             "name": "CattlePro Livestock ERP Software",
             "image": "https://animalcare360.com/dashboard-procurement.png",
-            "description": "CattlePro is a multi-farm livestock operations and finance ERP platform for managing cattle, goats, feed, procurement, ledger finance, and Palai partnering in Pakistan.",
+            "description": "CattlePro is a multi-farm livestock operations and finance ERP platform for managing cattle, goats, feed, procurement, ledger finance, and Palai partnering.",
             "brand": {
               "@type": "Brand",
               "name": "AnimalCare360"
             },
             "offers": {
               "@type": "Offer",
-              "priceCurrency": "PKR",
-              "price": "12000",
+              "priceCurrency": "USD",
+              "price": "79",
               "priceSpecification": {
                 "@type": "UnitPriceSpecification",
-                "price": "12000",
-                "priceCurrency": "PKR",
+                "price": "79",
+                "priceCurrency": "USD",
                 "referenceQuantity": {
                   "@type": "QuantitativeValue",
                   "value": "1",
@@ -205,7 +205,7 @@ export default function CattleProOverview() {
                 CattlePro brings livestock records, farm context, expenses, sales, feed inventory, medical activity, breeding, milk production, and reporting into one system. Your team can make operations decisions from live operational and financial data instead of disconnected notebooks or spreadsheets.
               </p>
               <p className="text-brand-muted text-base leading-relaxed mb-8">
-                Designed specifically for Pakistani livestock operations, CattlePro fully supports PKR transactions, Palai client animal care, feed procurement workflows, and farm-wise cost tracking.
+                Designed specifically for livestock operations, CattlePro fully supports multi-currency transactions, Palai client animal care, feed procurement workflows, and farm-wise cost tracking.
               </p>
               <div className="p-6 bg-brand-background rounded-3xl border border-brand-border flex gap-4 items-start">
                 <Bot className="w-8 h-8 text-brand-primary shrink-0 mt-1" />
@@ -227,7 +227,7 @@ export default function CattleProOverview() {
                 <div className="bg-brand-navy text-white px-4 py-2 text-[10px] flex justify-between items-center">
                   <span className="font-bold">CattlePro ERP v2.0</span>
                   <div className="flex gap-2">
-                    <span className="bg-white/10 px-2 py-0.5 rounded">Lahore Farm</span>
+                    <span className="bg-white/10 px-2 py-0.5 rounded">Alpha Farm</span>
                     <span className="bg-brand-primary px-2 py-0.5 rounded font-bold">Active</span>
                   </div>
                 </div>
@@ -335,7 +335,7 @@ export default function CattleProOverview() {
             <h4 className="font-bold text-brand-navy text-center text-lg mb-6">Global Context Filter System</h4>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
               {[
-                { title: "Global View", desc: "Summarized visibility across Lahore, Sahiwal, and all farm locations." },
+                { title: "Global View", desc: "Summarized visibility across multiple regions, branches, and all farm locations." },
                 { title: "City/Region Filters", desc: "Isolate operations inside specific hubs or geographical cities." },
                 { title: "Individual Farm Context", desc: "Narrow down database updates to unique farm locations." },
                 { title: "Tenant Context aware", desc: "Access clean, segmented data parameters via custom URL structures." }

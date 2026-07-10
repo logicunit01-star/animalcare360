@@ -36,7 +36,7 @@ export default function Resources() {
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Support Hub</p>
           <h1 className="text-5xl font-bold text-brand-navy mb-8 tracking-tight">Livestock, Feed Retail, and Veterinary Business Resources</h1>
           <p className="text-brand-muted max-w-2xl mx-auto text-xl leading-relaxed">
-            Learn how to improve records, reduce manual work, control inventory, manage animal health, and grow animal businesses in Pakistan with practical guides from AnimalCare360.
+            Learn how to improve records, reduce manual work, control inventory, manage animal health, and grow animal businesses with practical guides from AnimalCare360.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export default function Resources() {
             { title: "Knowledge Base", desc: "Detailed step-by-step documentation for every module.", icon: BookOpen },
             { title: "Video Tutorials", desc: "Watch how-to videos for every ERP feature.", icon: PlayCircle },
             { title: "Implementation", desc: "Guides for multi-farm and multi-site setup.", icon: Settings },
-            { title: "Privacy & Security", desc: "Data protection and Pakistani compliance.", icon: ShieldCheck },
+            { title: "Privacy & Security", desc: "Data protection and compliance.", icon: ShieldCheck },
           ].map((item, i) => (
             <motion.div
               key={i}
@@ -76,7 +76,7 @@ export default function Resources() {
                 "Feed and Wanda Retail",
                 "Animal Trading",
                 "Pet Hospital Operations",
-                "FBR and Business Records",
+                "Tax and Business Records",
                 "Product Tutorials"
               ].map((guide, idx) => (
                 <div key={idx} className="flex items-start gap-6 group cursor-pointer">
@@ -99,14 +99,14 @@ export default function Resources() {
         <div className="max-w-4xl mx-auto mb-32">
           <div className="text-center mb-20">
             <h2 className="text-4xl font-bold text-brand-navy mb-6 tracking-tight">Frequently Asked Questions</h2>
-            <p className="text-brand-muted text-lg">Everything you need to know about setting up AnimalCare360 for your enterprise in Pakistan.</p>
+            <p className="text-brand-muted text-lg">Everything you need to know about setting up AnimalCare360 for your enterprise.</p>
           </div>
 
           <div className="space-y-6">
             {[
               {
-                q: "Is AnimalCare360 compatible with FBR requirements?",
-                a: "Yes. Our Retail and Enterprise plans include built-in FBR-compliant QR invoicing and digital record-keeping modules designed specifically for Pakistan's sales tax compliance."
+                q: "Is AnimalCare360 compatible with tax compliance requirements?",
+                a: "Yes. Our Retail and Enterprise plans include built-in compliant QR invoicing and digital record-keeping modules designed specifically for sales tax compliance."
               },
               {
                 q: "Can I manage multiple farm locations from one account?",

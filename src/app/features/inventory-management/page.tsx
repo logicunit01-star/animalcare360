@@ -9,7 +9,7 @@ export default function InventoryManagementFeature() {
   const items = [
     { title: "Batch & Expiry", desc: "Track batch codes and expiration dates for veterinary medicines to avoid waste." },
     { title: "Low-Stock Alerts", desc: "Configure automated minimum stock levels and get notifications to reorder feed." },
-    { title: "Multi-Warehouse", desc: "Allocate stock across Lahore and Sahiwal stores, and record warehouse transfers." },
+    { title: "Multi-Warehouse", desc: "Allocate stock across multiple regional warehouses, and record warehouse transfers." },
     { title: "Intake Ledger", desc: "Synchronize incoming procurement orders and auto-update inventory valuations." }
   ];
 

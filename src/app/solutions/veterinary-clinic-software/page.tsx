@@ -10,7 +10,7 @@ export default function VeterinaryClinicSoftware() {
     { title: "Patient EMR", desc: "Detailed records for pets and farm animals: breed, owner logs, diagnostics, vaccines, and treatment timelines." },
     { title: "SOAP Clinic Notes", desc: "Log veterinary diagnostics (Subjective, Objective, Assessment, Plan) with digital signatures." },
     { title: "Appointment Hub", desc: "Schedule clinic visits, register check-in statuses, and automate WhatsApp follow-up reminders." },
-    { title: "Pharmacy & Billing", desc: "Auto-deduct medical inventories from pharmacy stock and generate invoices with FBR receipts." }
+    { title: "Pharmacy & Billing", desc: "Auto-deduct medical inventories from pharmacy stock and generate invoices with digital receipts." }
   ];
 
   return (
@@ -39,7 +39,7 @@ export default function VeterinaryClinicSoftware() {
             "name": "Veterinary Clinic ERP (AnimalCare360)",
             "operatingSystem": "All (Web & Android)",
             "applicationCategory": "BusinessApplication",
-            "description": "Patient EMR, appointments scheduling, veterinary SOAP clinic notes, pharmacy inventory, and billing software for pet clinics and veterinary hospitals in Pakistan."
+            "description": "Patient EMR, appointments scheduling, veterinary SOAP clinic notes, pharmacy inventory, and billing software for pet clinics and veterinary hospitals."
           })
         }}
       />

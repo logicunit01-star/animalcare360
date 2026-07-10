@@ -22,9 +22,9 @@ export default function Features() {
     },
     {
       title: "Sales and Finance",
-      desc: "POS, invoices, customer credit, supplier payments, profit/loss, partner ROI, and FBR-ready records.",
+      desc: "POS, invoices, customer credit, supplier payments, profit/loss, partner ROI, and tax-ready records.",
       icon: Users,
-      details: ["Retail POS", "FBR Invoices", "Customer Credit", "Profit & Loss"],
+      details: ["Retail POS", "Tax Invoices", "Customer Credit", "Profit & Loss"],
       link: "/features/billing-pos"
     },
     {

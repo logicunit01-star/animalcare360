@@ -41,19 +41,19 @@ export default function AnimalTrading() {
             "@type": "Product",
             "name": "Animal Trading Software (AnimalCare360)",
             "image": "https://animalcare360.com/dashboard-finance.png",
-            "description": "Digitally track animal purchases, sales, mandi deal registers, agent commission tracking, transit cost logs, buyer and seller ledgers, and profit reporting per animal or lot in Pakistan.",
+            "description": "Digitally track animal purchases, sales, deal registers, agent commission tracking, transit cost logs, buyer and seller ledgers, and profit reporting per animal or lot.",
             "brand": {
               "@type": "Brand",
               "name": "AnimalCare360"
             },
             "offers": {
               "@type": "Offer",
-              "priceCurrency": "PKR",
-              "price": "5000",
+              "priceCurrency": "USD",
+              "price": "19",
               "priceSpecification": {
                 "@type": "UnitPriceSpecification",
-                "price": "5000",
-                "priceCurrency": "PKR",
+                "price": "19",
+                "priceCurrency": "USD",
                 "referenceQuantity": {
                   "@type": "QuantitativeValue",
                   "value": "1",
@@ -96,7 +96,7 @@ export default function AnimalTrading() {
                 {[
                   { label: "Trader Volume", val: "10k+", unit: "Animals" },
                   { label: "Commission Auth", val: "99%", unit: "Accuracy" },
-                  { label: "Tax Compliance", val: "100%", unit: "FBR Sync" },
+                  { label: "Tax Compliance", val: "100%", unit: "Digital Sync" },
                   { label: "Stock Logs", val: "Real", unit: "Time" },
                 ].map((stat, i) => (
                   <div key={i} className="bg-brand-background p-8 rounded-3xl border border-brand-border text-center shadow-sm">
@@ -109,7 +109,7 @@ export default function AnimalTrading() {
             <div className="order-1 lg:order-2">
               <h2 className="text-4xl font-bold text-brand-navy mb-6 tracking-tight">Master the High-Value Livestock Trade</h2>
               <p className="text-brand-muted text-lg leading-relaxed mb-8">
-                Trading animals in Pakistan requires trust and meticulous record-keeping. Our suite digitizes traditional deals while providing professional financial protection.
+                Trading animals requires trust and meticulous record-keeping. Our suite digitizes traditional deals while providing professional financial protection.
               </p>
               <div className="space-y-6">
                 {[
