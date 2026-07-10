@@ -59,7 +59,7 @@ export default function InventoryManagementFeature() {
               <a href="https://app.animalcare360.com/register" className="bg-brand-primary hover:bg-opacity-90 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-brand-primary/20">
                 Start Free Trial
               </a>
-              <Link href="/cattlepro/features" className="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-bold transition-all border border-white/20">
+              <Link href="/solutions/cattlepro/features" className="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-bold transition-all border border-white/20">
                 All 16 Modules spec
               </Link>
             </div>

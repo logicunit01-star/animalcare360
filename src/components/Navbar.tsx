@@ -19,7 +19,7 @@ const Navbar = () => {
         { name: "Wanda Feed Retail", path: "/solutions/feed-retail" },
         { name: "Animal Trading ERP", path: "/solutions/animal-trading" },
         { name: "Pet Hospital & Clinic", path: "/solutions/pet-hospital" },
-        { name: "CattlePro Guide", path: "/cattlepro" }
+        { name: "CattlePro Guide", path: "/solutions/cattlepro" }
       ]
     },
     {
@@ -29,7 +29,7 @@ const Navbar = () => {
         { name: "Inventory Management", path: "/features/inventory-management" },
         { name: "Animal Health Tracking", path: "/features/health-tracking" },
         { name: "Invoicing & POS", path: "/features/billing-pos" },
-        { name: "CattlePro Feature Spec", path: "/cattlepro/features" }
+        { name: "CattlePro Feature Spec", path: "/solutions/cattlepro/features" }
       ]
     },
     { name: "Blog", path: "/blog" },

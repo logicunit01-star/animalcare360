@@ -214,7 +214,7 @@ export default function CattleManagement() {
                     Read the comprehensive CattlePro product guide outlining all 16 operating modules, data models, and features.
                   </p>
                 </div>
-                <Link href="/cattlepro" className="bg-brand-primary hover:bg-opacity-90 text-white px-6 py-3.5 rounded-xl font-bold text-sm transition-all whitespace-nowrap shadow-lg shadow-brand-primary/20 shrink-0">
+                <Link href="/solutions/cattlepro" className="bg-brand-primary hover:bg-opacity-90 text-white px-6 py-3.5 rounded-xl font-bold text-sm transition-all whitespace-nowrap shadow-lg shadow-brand-primary/20 shrink-0">
                   View Product Guide
                 </Link>
               </div>

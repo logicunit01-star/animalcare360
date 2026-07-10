@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'CattlePro Complete Product Guide & Features | AnimalCare360',
   description: 'Read the complete product guide for CattlePro: the multi-farm livestock operations platform. Detailed records across animals, inventory, finances, and Palai partnering.',
   alternates: {
-    canonical: '/cattlepro',
+    canonical: '/solutions/cattlepro',
   },
 };
 

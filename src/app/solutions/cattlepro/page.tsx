@@ -127,8 +127,14 @@ export default function CattleProOverview() {
               {
                 "@type": "ListItem",
                 "position": 2,
+                "name": "Solutions",
+                "item": "https://animalcare360.com/solutions"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
                 "name": "CattlePro",
-                "item": "https://animalcare360.com/cattlepro"
+                "item": "https://animalcare360.com/solutions/cattlepro"
               }
             ]
           })
@@ -184,7 +190,7 @@ export default function CattleProOverview() {
               <a href="https://app.animalcare360.com/register" className="bg-brand-primary hover:bg-opacity-90 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-brand-primary/20">
                 Start Free Trial
               </a>
-              <Link href="/cattlepro/features" className="bg-white/10 hover:bg-white/20 text-white px-10 py-5 rounded-2xl font-bold transition-all border border-white/20 flex items-center gap-2">
+              <Link href="/solutions/cattlepro/features" className="bg-white/10 hover:bg-white/20 text-white px-10 py-5 rounded-2xl font-bold transition-all border border-white/20 flex items-center gap-2">
                 Detailed Feature Set <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
@@ -382,7 +388,7 @@ export default function CattleProOverview() {
               </table>
             </div>
             <div className="mt-8 text-center">
-              <Link href="/cattlepro/features" className="inline-flex items-center gap-2 text-brand-primary font-bold uppercase tracking-widest text-xs hover:translate-x-2 transition-transform">
+              <Link href="/solutions/cattlepro/features" className="inline-flex items-center gap-2 text-brand-primary font-bold uppercase tracking-widest text-xs hover:translate-x-2 transition-transform">
                 Read the Complete 16-Feature Guide <ChevronRight className="w-4 h-4" />
               </Link>
             </div>

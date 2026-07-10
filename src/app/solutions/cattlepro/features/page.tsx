@@ -325,14 +325,20 @@ export default function CattleProFeatures() {
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "CattlePro",
-                "item": "https://animalcare360.com/cattlepro"
+                "name": "Solutions",
+                "item": "https://animalcare360.com/solutions"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
+                "name": "CattlePro",
+                "item": "https://animalcare360.com/solutions/cattlepro"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
                 "name": "Features",
-                "item": "https://animalcare360.com/cattlepro/features"
+                "item": "https://animalcare360.com/solutions/cattlepro/features"
               }
             ]
           })
@@ -342,7 +348,7 @@ export default function CattleProFeatures() {
       <div className="section-container">
         {/* Header Navigation */}
         <div className="mb-12">
-          <Link href="/cattlepro" className="inline-flex items-center gap-2 text-brand-muted hover:text-brand-navy font-bold text-xs uppercase tracking-widest transition-colors mb-6">
+          <Link href="/solutions/cattlepro" className="inline-flex items-center gap-2 text-brand-muted hover:text-brand-navy font-bold text-xs uppercase tracking-widest transition-colors mb-6">
             <ArrowLeft className="w-4 h-4" /> Back to Product Overview
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold text-brand-navy tracking-tight mb-4">
