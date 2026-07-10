@@ -25,8 +25,14 @@ export default function CattleManagement() {
               {
                 "@type": "ListItem",
                 "position": 2,
+                "name": "Solutions",
+                "item": "https://animalcare360.com/solutions"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
                 "name": "Cattle Management",
-                "item": "https://animalcare360.com/cattle-management"
+                "item": "https://animalcare360.com/solutions/cattle-management"
               }
             ]
           })

@@ -12,28 +12,28 @@ export default function Solutions() {
       desc: "For shops, wholesalers, distributors, and pet food retailers that need POS, inventory, expiry, customer credit, supplier ledgers, and digital invoices.",
       icon: ShoppingCart,
       color: "border-blue-200",
-      link: "/feed-retail"
+      link: "/solutions/feed-retail"
     },
     {
       title: "Cattle and Dairy Farm ERP",
       desc: "For farms that need accurate records for animals, milk, feed, breeding, treatment, weight gain, and farm profitability.",
       icon: Beef,
       color: "border-orange-200",
-      link: "/cattle-management"
+      link: "/solutions/cattle-management"
     },
     {
       title: "Animal Trading Suite",
       desc: "For traders, dealers, brokers, and livestock investors who need sale-purchase records, commission tracking, buyer/seller ledgers, and profit visibility.",
       icon: Users,
       color: "border-green-200",
-      link: "/animal-trading"
+      link: "/solutions/animal-trading"
     },
     {
       title: "Pet Hospital ERP",
       desc: "For veterinary clinics and pet hospitals that need patient EMR, appointment scheduling, surgery logs, pharmacy inventory, billing, and reminders.",
       icon: HeartPulse,
       color: "border-red-200",
-      link: "/pet-hospital"
+      link: "/solutions/pet-hospital"
     },
     {
       title: "Tax and Financial Control",

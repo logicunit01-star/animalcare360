@@ -28,16 +28,16 @@ export default function NotFound() {
         <div className="pt-8 border-t border-brand-border">
           <p className="text-[10px] font-bold text-brand-muted uppercase tracking-widest mb-4">Popular Solutions</p>
           <div className="grid grid-cols-2 gap-3 text-left">
-            <Link href="/cattle-management" className="text-xs font-bold text-brand-navy hover:text-brand-primary flex items-center gap-1.5 transition-colors">
+            <Link href="/solutions/cattle-management" className="text-xs font-bold text-brand-navy hover:text-brand-primary flex items-center gap-1.5 transition-colors">
               <ArrowRight className="w-3.5 h-3.5 text-brand-primary shrink-0" /> Cattle Farm ERP
             </Link>
-            <Link href="/feed-retail" className="text-xs font-bold text-brand-navy hover:text-brand-primary flex items-center gap-1.5 transition-colors">
+            <Link href="/solutions/feed-retail" className="text-xs font-bold text-brand-navy hover:text-brand-primary flex items-center gap-1.5 transition-colors">
               <ArrowRight className="w-3.5 h-3.5 text-brand-primary shrink-0" /> Feed Retail POS
             </Link>
-            <Link href="/animal-trading" className="text-xs font-bold text-brand-navy hover:text-brand-primary flex items-center gap-1.5 transition-colors">
+            <Link href="/solutions/animal-trading" className="text-xs font-bold text-brand-navy hover:text-brand-primary flex items-center gap-1.5 transition-colors">
               <ArrowRight className="w-3.5 h-3.5 text-brand-primary shrink-0" /> Animal Trading
             </Link>
-            <Link href="/pet-hospital" className="text-xs font-bold text-brand-navy hover:text-brand-primary flex items-center gap-1.5 transition-colors">
+            <Link href="/solutions/pet-hospital" className="text-xs font-bold text-brand-navy hover:text-brand-primary flex items-center gap-1.5 transition-colors">
               <ArrowRight className="w-3.5 h-3.5 text-brand-primary shrink-0" /> Pet Hospital ERP
             </Link>
           </div>

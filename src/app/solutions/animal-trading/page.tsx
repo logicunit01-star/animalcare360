@@ -24,8 +24,14 @@ export default function AnimalTrading() {
               {
                 "@type": "ListItem",
                 "position": 2,
+                "name": "Solutions",
+                "item": "https://animalcare360.com/solutions"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
                 "name": "Animal Trading ERP",
-                "item": "https://animalcare360.com/animal-trading"
+                "item": "https://animalcare360.com/solutions/animal-trading"
               }
             ]
           })
@@ -66,6 +72,7 @@ export default function AnimalTrading() {
       />
       {/* Hero Section */}
       <section className="bg-brand-navy py-24 text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-primary opacity-10 blur-3xl rounded-full translate-x-1/2"></div>
         <div className="section-container relative z-10">
           <div className="max-w-3xl">
             <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Marketplace & B2B Hub</p>

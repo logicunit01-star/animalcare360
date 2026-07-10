@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Pet Hospital ERP & Veterinary EMR Software | AnimalCare360',
   description: 'All-in-one veterinary clinic software. Manage pet patient EMR histories, vaccine alerts, SOAP records, doctor schedules, and pharmacy billing.',
   alternates: {
-    canonical: '/pet-hospital',
+    canonical: '/solutions/pet-hospital',
   },
 };
 

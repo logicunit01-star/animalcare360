@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Animal Trading & Livestock Deal Ledger | AnimalCare360',
   description: 'Manage livestock trading deals, purchase and sales logs, commission structures, partner shares, and transportation expenses.',
   alternates: {
-    canonical: '/animal-trading',
+    canonical: '/solutions/animal-trading',
   },
 };
 

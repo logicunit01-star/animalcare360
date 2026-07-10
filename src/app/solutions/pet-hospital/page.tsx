@@ -23,8 +23,14 @@ export default function PetHospital() {
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Pet Hospital ERP",
-                "item": "https://animalcare360.com/pet-hospital"
+                "name": "Solutions",
+                "item": "https://animalcare360.com/solutions"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Pet Hospital & Clinic Software",
+                "item": "https://animalcare360.com/solutions/pet-hospital"
               }
             ]
           })

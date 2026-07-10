@@ -121,7 +121,7 @@ export default function Home() {
                 desc: "Track every animal from purchase or birth to breeding, treatment, milk, weight gain, sale, and profit.",
                 color: "border-[#3B82F6]",
                 bg: "bg-[#EFF6FF]",
-                link: "/cattle-management"
+                link: "/solutions/cattle-management"
               },
               {
                 title: "Wanda and Feed Retailers",
@@ -129,7 +129,7 @@ export default function Home() {
                 desc: "Run POS, stock, expiry, supplier payments, customer credit, and digital invoices from one retail system.",
                 color: "border-[#F59E0B]",
                 bg: "bg-[#FFFBEB]",
-                link: "/feed-retail"
+                link: "/solutions/feed-retail"
               },
               {
                 title: "Animal Traders",
@@ -137,7 +137,7 @@ export default function Home() {
                 desc: "Record sale, purchase, commission, transport, payments, and profit for every deal and animal lot.",
                 color: "border-[#8B5CF6]",
                 bg: "bg-[#F5F3FF]",
-                link: "/animal-trading"
+                link: "/solutions/animal-trading"
               },
               {
                 title: "Pet Hospitals and Clinics",
@@ -145,7 +145,7 @@ export default function Home() {
                 desc: "Manage patient EMR, appointments, surgery notes, pharmacy stock, billing, and reminders.",
                 color: "border-[#EF4444]",
                 bg: "bg-[#FEF2F2]",
-                link: "/pet-hospital"
+                link: "/solutions/pet-hospital"
               }
             ].map((card, i) => (
               <Link key={i} href={card.link}>
@@ -195,11 +195,11 @@ export default function Home() {
 
             {/* Solutions Orbiting */}
             {[
-              { title: "Feed Retail", icon: ShoppingCart, link: "/feed-retail", angle: 0 },
-              { title: "Trading Hub", icon: Users, link: "/animal-trading", angle: 60 },
-              { title: "Cattle Farms", icon: Beef, link: "/cattle-management", angle: 120 },
-              { title: "Pet Hospital", icon: HeartPulse, link: "/pet-hospital", angle: 180 },
-              { title: "Supply Chain", icon: Warehouse, link: "/feed-retail", angle: 240 },
+              { title: "Feed Retail", icon: ShoppingCart, link: "/solutions/feed-retail", angle: 0 },
+              { title: "Trading Hub", icon: Users, link: "/solutions/animal-trading", angle: 60 },
+              { title: "Cattle Farms", icon: Beef, link: "/solutions/cattle-management", angle: 120 },
+              { title: "Pet Hospital", icon: HeartPulse, link: "/solutions/pet-hospital", angle: 180 },
+              { title: "Supply Chain", icon: Warehouse, link: "/solutions/feed-retail", angle: 240 },
               { title: "Integrations", icon: Sparkles, link: "/solutions", angle: 300 },
             ].map((sol, i) => {
               const rad = sol.angle * (Math.PI / 180);

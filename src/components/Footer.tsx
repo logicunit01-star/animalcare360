@@ -23,13 +23,11 @@ const Footer = () => (
         <div>
           <h4 className="font-bold text-brand-navy mb-6 uppercase text-[10px] tracking-[0.2em] opacity-50">Solutions</h4>
           <ul className="space-y-3 text-sm text-brand-muted font-medium">
-            <li><Link href="/cattle-management" className="hover:text-brand-navy transition-colors">Cattle Management</Link></li>
-            <li><Link href="/solutions/dairy-farm-software" className="hover:text-brand-navy transition-colors">Dairy Farm Software</Link></li>
+            <li><Link href="/solutions/cattle-management" className="hover:text-brand-navy transition-colors">Cattle & Dairy ERP</Link></li>
+            <li><Link href="/solutions/feed-retail" className="hover:text-brand-navy transition-colors">Wanda Feed Retail</Link></li>
+            <li><Link href="/solutions/animal-trading" className="hover:text-brand-navy transition-colors">Animal Trading ERP</Link></li>
+            <li><Link href="/solutions/pet-hospital" className="hover:text-brand-navy transition-colors">Pet Hospital & Clinic</Link></li>
             <li><Link href="/cattlepro" className="hover:text-brand-navy transition-colors">CattlePro Product Guide</Link></li>
-            <li><Link href="/feed-retail" className="hover:text-brand-navy transition-colors">Wanda Feed Retail</Link></li>
-            <li><Link href="/animal-trading" className="hover:text-brand-navy transition-colors">Animal Trading</Link></li>
-            <li><Link href="/pet-hospital" className="hover:text-brand-navy transition-colors">Pet Hospital ERP</Link></li>
-            <li><Link href="/solutions/veterinary-clinic-software" className="hover:text-brand-navy transition-colors">Veterinary Software</Link></li>
           </ul>
         </div>
 

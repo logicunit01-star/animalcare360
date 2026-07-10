@@ -15,13 +15,11 @@ const Navbar = () => {
       name: "Solutions",
       path: "/solutions",
       subItems: [
-        { name: "Cattle Management solution", path: "/cattle-management" },
-        { name: "Dairy Farm Software", path: "/solutions/dairy-farm-software" },
-        { name: "CattlePro Product Guide", path: "/cattlepro" },
-        { name: "Wanda Feed Retail", path: "/feed-retail" },
-        { name: "Animal Trading", path: "/animal-trading" },
-        { name: "Pet Hospital ERP", path: "/pet-hospital" },
-        { name: "Veterinary Clinic Software", path: "/solutions/veterinary-clinic-software" }
+        { name: "Cattle & Dairy ERP", path: "/solutions/cattle-management" },
+        { name: "Wanda Feed Retail", path: "/solutions/feed-retail" },
+        { name: "Animal Trading ERP", path: "/solutions/animal-trading" },
+        { name: "Pet Hospital & Clinic", path: "/solutions/pet-hospital" },
+        { name: "CattlePro Guide", path: "/cattlepro" }
       ]
     },
     {

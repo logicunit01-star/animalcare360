@@ -24,8 +24,14 @@ export default function FeedRetail() {
               {
                 "@type": "ListItem",
                 "position": 2,
+                "name": "Solutions",
+                "item": "https://animalcare360.com/solutions"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
                 "name": "Feed Retail ERP",
-                "item": "https://animalcare360.com/feed-retail"
+                "item": "https://animalcare360.com/solutions/feed-retail"
               }
             ]
           })
