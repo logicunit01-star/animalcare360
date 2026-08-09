@@ -23,9 +23,9 @@ export default function BillingPOSFeature() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://animalcare360.com" },
-              { "@type": "ListItem", "position": 2, "name": "Features", "item": "https://animalcare360.com/features" },
-              { "@type": "ListItem", "position": 3, "name": "Billing & POS", "item": "https://animalcare360.com/features/billing-pos" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.animalcare360.com" },
+              { "@type": "ListItem", "position": 2, "name": "Features", "item": "https://www.animalcare360.com/features" },
+              { "@type": "ListItem", "position": 3, "name": "Billing & POS", "item": "https://www.animalcare360.com/features/billing-pos" }
             ]
           })
         }}

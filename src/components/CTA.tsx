@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import { MessageCircle, ArrowRight } from 'lucide-react';
+import { trackGAEvent } from '@/lib/analytics';
 
 interface CTAProps {
   title?: string;
@@ -31,6 +34,11 @@ const CTA: React.FC<CTAProps> = ({
               href="https://wa.me/923391119259" 
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackGAEvent('whatsapp_cta_click', {
+                event_category: 'conversion',
+                event_label: 'CTA Section WhatsApp',
+                cta_location: 'cta_section',
+              })}
               className="flex items-center gap-3 bg-[#25D366] text-white px-10 py-5 rounded-2xl font-bold hover:scale-105 transition-all shadow-xl shadow-green-900/20"
             >
               <MessageCircle className="w-6 h-6" />
@@ -38,6 +46,11 @@ const CTA: React.FC<CTAProps> = ({
             </a>
             <a 
               href="https://app.animalcare360.com/register"
+              onClick={() => trackGAEvent('free_trial_click', {
+                event_category: 'conversion',
+                event_label: 'CTA Section Free Trial',
+                cta_location: 'cta_section',
+              })}
               className="flex items-center gap-2 bg-brand-primary text-white px-10 py-5 rounded-2xl font-bold hover:scale-105 transition-all shadow-xl shadow-brand-primary/20"
             >
               Start Free Trial <ArrowRight className="w-5 h-5" />

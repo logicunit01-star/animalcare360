@@ -61,8 +61,8 @@ export default function BlogIndex() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://animalcare360.com" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://animalcare360.com/blog" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.animalcare360.com" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.animalcare360.com/blog" }
             ]
           })
         }}

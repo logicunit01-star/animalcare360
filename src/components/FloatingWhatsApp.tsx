@@ -6,8 +6,9 @@ import { trackGAEvent } from '@/lib/analytics';
 const FloatingWhatsApp = () => {
   const handleClick = () => {
     trackGAEvent('whatsapp_click', {
-      event_category: 'engagement',
+      event_category: 'conversion',
       event_label: 'Floating WhatsApp Button',
+      cta_location: 'floating_whatsapp',
     });
   };
 

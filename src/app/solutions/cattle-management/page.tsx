@@ -20,19 +20,19 @@ export default function CattleManagement() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://animalcare360.com"
+                "item": "https://www.animalcare360.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Solutions",
-                "item": "https://animalcare360.com/solutions"
+                "item": "https://www.animalcare360.com/solutions"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Cattle Management",
-                "item": "https://animalcare360.com/solutions/cattle-management"
+                "item": "https://www.animalcare360.com/solutions/cattle-management"
               }
             ]
           })
@@ -47,7 +47,7 @@ export default function CattleManagement() {
             "@context": "https://schema.org",
             "@type": "Product",
             "name": "Cattle & Dairy Farm Management Software (AnimalCare360)",
-            "image": "https://animalcare360.com/dashboard-palai.png",
+            "image": "https://www.animalcare360.com/dashboard-palai.png",
             "description": "Digitally track cattle breeding, milk production, vaccination schedules, weight gain (ADG), fattening lots, palai partnership ROI, and feed inventory for dairy farms.",
             "brand": {
               "@type": "Brand",

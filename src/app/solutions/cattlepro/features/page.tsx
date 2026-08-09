@@ -320,25 +320,25 @@ export default function CattleProFeatures() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://animalcare360.com"
+                "item": "https://www.animalcare360.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Solutions",
-                "item": "https://animalcare360.com/solutions"
+                "item": "https://www.animalcare360.com/solutions"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "CattlePro",
-                "item": "https://animalcare360.com/solutions/cattlepro"
+                "item": "https://www.animalcare360.com/solutions/cattlepro"
               },
               {
                 "@type": "ListItem",
                 "position": 4,
                 "name": "Features",
-                "item": "https://animalcare360.com/solutions/cattlepro/features"
+                "item": "https://www.animalcare360.com/solutions/cattlepro/features"
               }
             ]
           })

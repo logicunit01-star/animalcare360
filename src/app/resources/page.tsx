@@ -19,13 +19,13 @@ export default function Resources() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://animalcare360.com"
+                "item": "https://www.animalcare360.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Resources",
-                "item": "https://animalcare360.com/resources"
+                "item": "https://www.animalcare360.com/resources"
               }
             ]
           })
