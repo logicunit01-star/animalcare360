@@ -1,21 +1,43 @@
 'use client';
 import React from "react";
 import Link from "next/link";
-import { motion } from "motion/react";
-import { Coins, CheckCircle2, FileText, Users, ShoppingCart, Percent } from "lucide-react";
+import { Coins, CheckCircle2, FileText, Users, ShoppingCart, Percent, ReceiptText, BarChart3 } from "lucide-react";
 import CTA from "@/components/CTA";
 
 export default function BillingPOSFeature() {
   const items = [
-    { title: "Digital Invoicing", desc: "Built-in integration for tax-compliant QR-coded invoices for feed retail shops and veterinary pharmacies." },
-    { title: "Retail POS", desc: "Rapid-fire billing screen for walk-in buyers. Search items, select payment methods, and print receipts." },
-    { title: "Customer Credit", desc: "Track customer credit logs, set credit limits, view historical bills, and register partial payments." },
-    { title: "Sales Margins", desc: "Automated calculations for sales margins, average inventory cost margins, and net profits." }
+    { title: "Digital Invoicing", desc: "Create tax-ready QR-coded invoice workflows for eligible feed retail shops, pet stores, and veterinary pharmacies." },
+    { title: "Retail POS", desc: "Use a fast billing screen for walk-in buyers, item search, quantity, pricing, payment mode, and receipt sharing." },
+    { title: "Customer Credit", desc: "Track khata-style customer balances, credit limits, partial payments, overdue accounts, and running ledgers." },
+    { title: "Sales Margins", desc: "Connect item cost, sale price, discount, stock movement, and daily closing reports for clearer margin control." }
+  ];
+
+  const workflow = [
+    "Add products, services, customers, suppliers, prices, opening stock, and tax-ready invoice settings where applicable.",
+    "Create POS invoices for cash, online transfer, partial payment, or customer credit sales.",
+    "Update stock automatically after sales, returns, purchases, or stock adjustments.",
+    "Record payments against customers, suppliers, vendors, or clinic accounts.",
+    "Review daily sales, margins, receivables, payables, and closing reports."
+  ];
+
+  const reports = [
+    "Daily sales report",
+    "Customer credit ledger",
+    "Supplier payable ledger",
+    "Invoice history",
+    "Product margin report",
+    "Cash and payment summary"
+  ];
+
+  const faqs = [
+    { q: "Can AnimalCare360 manage wanda shop billing?", a: "Yes. AnimalCare360 supports POS billing for wanda shops, feed retailers, pet food stores, and veterinary pharmacies with inventory, customer credit, supplier records, and invoice history." },
+    { q: "Can it manage customer khata?", a: "Yes. Customer credit, partial payments, opening balances, running ledgers, overdue balances, and payment history can be tracked inside AnimalCare360." },
+    { q: "Does it support tax-ready invoices?", a: "Yes. AnimalCare360 supports tax-ready invoice workflows for eligible businesses. Final setup depends on business registration and local requirements." },
+    { q: "Can POS connect with inventory?", a: "Yes. Sales can update stock counts, purchase records can increase stock, and inventory reports can show stock value, low stock, and expiry-sensitive items." }
   ];
 
   return (
     <div className="pt-0 bg-brand-background">
-      {/* Schemas */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -39,7 +61,21 @@ export default function BillingPOSFeature() {
             "name": "Invoicing & Retail POS ERP (AnimalCare360)",
             "operatingSystem": "All (Web & Android)",
             "applicationCategory": "BusinessApplication",
-            "description": "Tax QR-coded receipts, retail POS screens, customer credit ledgers, supplier payable ledgers, and profit calculations for veterinary clinics and feed stores."
+            "description": "Tax-ready QR-coded receipts, retail POS screens, customer credit ledgers, supplier payable ledgers, and profit calculations for veterinary clinics and feed stores."
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map((faq) => ({
+              "@type": "Question",
+              "name": faq.q,
+              "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+            }))
           })
         }}
       />
@@ -53,7 +89,7 @@ export default function BillingPOSFeature() {
               Invoicing & Retail POS
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-10">
-              Run retail wanda shops, pet hospitals, and clinical pharmacies with compliant billing terminals. Automate credit ledger accounting and monitor transaction margins.
+              AnimalCare360 POS helps wanda shops, feed retailers, pet hospitals, and veterinary pharmacies manage billing, tax-ready invoices, customer credit, supplier ledgers, payments, stock movement, and margin reports.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="https://app.animalcare360.com/register" className="bg-brand-primary hover:bg-opacity-90 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-brand-primary/20">
@@ -69,14 +105,25 @@ export default function BillingPOSFeature() {
 
       <section className="py-24 bg-white">
         <div className="section-container">
+          <div className="bg-brand-background border border-brand-border rounded-[32px] p-8 md:p-10 mb-20">
+            <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-3">Quick Answer</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-navy mb-4">What is POS and invoicing software for animal businesses?</h2>
+            <p className="text-brand-muted leading-relaxed max-w-4xl">
+              POS and invoicing software helps animal businesses create bills, record payments, manage customer credit, update inventory, track supplier balances, and review sales reports. AnimalCare360 adapts this workflow for wanda shops, feed stores, pet hospitals, veterinary pharmacies, and livestock sale operations.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
             <div>
-              <h2 className="text-3xl font-bold text-brand-navy mb-6 tracking-tight">Unified Credit & Financial Registers</h2>
+              <h2 className="text-3xl font-bold text-brand-navy mb-6 tracking-tight">Unified Credit And Financial Registers</h2>
               <p className="text-brand-muted text-base leading-relaxed mb-6">
-                Connect retail transactions with overall accounts. AnimalCare360 links point-of-sale activities directly to accounting books. Track vendor payable entries, maintain customer credit profiles, generate printable invoice forms, and verify monthly profits.
+                Billing is not just receipt printing. A proper POS should connect every sale with stock, customer balance, supplier cost, payment status, and margin. AnimalCare360 keeps those records together so owners can see what sold, who paid, what remains in stock, and what suppliers are owed.
+              </p>
+              <p className="text-brand-muted text-base leading-relaxed mb-6">
+                For Pakistan and South Asia businesses, this includes khata-style customer credit, partial payments, supplier balances, and invoice records. For global businesses, the same workflow supports clean sales, inventory, and accounting visibility.
               </p>
               <ul className="space-y-4">
-                {["POS with QR receipts", "Integrated customer credit ledger", "Auto-updates on store stock counts", "Double-entry financial reporting"].map((item, idx) => (
+                {["POS with QR invoice workflows", "Integrated customer credit ledger", "Inventory updates after sales and purchases", "Sales margin and daily closing reports"].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-3 text-brand-navy font-bold text-sm">
                     <CheckCircle2 className="w-5 h-5 text-brand-primary shrink-0" /> {item}
                   </li>
@@ -84,8 +131,8 @@ export default function BillingPOSFeature() {
               </ul>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {items.map((card, i) => (
-                <div key={i} className="p-6 bg-brand-background border border-brand-border rounded-2xl">
+              {items.map((card) => (
+                <div key={card.title} className="p-6 bg-brand-background border border-brand-border rounded-2xl">
                   <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center mb-4 shadow-sm">
                     <Coins className="w-5 h-5 text-brand-primary" />
                   </div>
@@ -95,10 +142,84 @@ export default function BillingPOSFeature() {
               ))}
             </div>
           </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-24">
+            {[
+              { title: "For Feed Retail", icon: ShoppingCart, desc: "Create invoices for wanda, feed, medicines, pet food, accessories, and bulk supplies while keeping stock and customer credit updated." },
+              { title: "For Clinics", icon: ReceiptText, desc: "Bill consultations, pharmacy items, vaccines, procedures, and follow-ups while connecting medicine stock and patient records." },
+              { title: "For Owners", icon: Percent, desc: "Review daily sales, margin, pending collections, supplier payables, cash movement, and product performance from one reporting view." }
+            ].map((card) => (
+              <div key={card.title} className="bg-brand-background border border-brand-border rounded-[32px] p-8">
+                <card.icon className="w-10 h-10 text-brand-primary mb-6" />
+                <h3 className="text-xl font-bold text-brand-navy mb-4">{card.title}</h3>
+                <p className="text-sm text-brand-muted leading-relaxed">{card.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
+            <section className="bg-white border border-brand-border rounded-[32px] p-8">
+              <h2 className="text-2xl font-bold text-brand-navy mb-6">Billing Workflow</h2>
+              <div className="space-y-4">
+                {workflow.map((step, index) => (
+                  <div key={step} className="flex gap-4">
+                    <span className="w-8 h-8 rounded-full bg-brand-primary text-white flex items-center justify-center text-xs font-bold shrink-0">{index + 1}</span>
+                    <p className="text-sm text-brand-muted leading-relaxed pt-1">{step}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="bg-brand-navy text-white rounded-[32px] p-8">
+              <BarChart3 className="w-10 h-10 text-brand-primary mb-6" />
+              <h2 className="text-2xl font-bold mb-6">POS Reports And Ledgers</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {reports.map((report) => (
+                  <div key={report} className="bg-white/5 border border-white/10 rounded-2xl px-4 py-3 text-sm font-semibold">
+                    {report}
+                  </div>
+                ))}
+              </div>
+            </section>
+          </div>
+
+          <section className="bg-brand-background border border-brand-border rounded-[32px] p-8 md:p-10 mb-24">
+            <h2 className="text-2xl font-bold text-brand-navy mb-6">Billing And Ledger Fields Teams Can Track</h2>
+            <p className="text-brand-muted leading-relaxed mb-6 max-w-4xl">
+              Strong billing records help owners answer practical questions quickly: what was sold, who paid, who still owes money, which supplier bill is pending, and which product or service produced margin.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              {[
+                "Invoice number, customer, item, quantity, rate, discount, tax-ready settings, and payment mode",
+                "Customer opening balance, credit limit, partial payments, overdue amount, and running khata ledger",
+                "Supplier bill, purchase cost, stock update, product margin, daily closing cash, and payment history"
+              ].map((field) => (
+                <div key={field} className="bg-white border border-brand-border rounded-2xl p-5 text-sm text-brand-muted leading-relaxed">
+                  {field}
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="mb-4">
+            <h2 className="text-3xl font-bold text-brand-navy mb-8">Billing And POS FAQ</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {faqs.map((faq) => (
+                <div key={faq.q} className="bg-brand-background border border-brand-border rounded-2xl p-6">
+                  <FileText className="w-6 h-6 text-brand-primary mb-4" />
+                  <h3 className="font-bold text-brand-navy mb-3">{faq.q}</h3>
+                  <p className="text-sm text-brand-muted leading-relaxed">{faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
       </section>
 
-      <CTA />
+      <CTA
+        title="Connect Sales, Stock, Credit, and Reports"
+        subtitle="Use AnimalCare360 POS to manage billing for feed retail, veterinary pharmacies, pet hospitals, and animal businesses."
+      />
     </div>
   );
 }

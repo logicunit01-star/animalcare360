@@ -66,6 +66,36 @@ const nextConfig: NextConfig = {
         destination: '/solutions/cattlepro/features',
         permanent: true,
       },
+      {
+        source: '/livestock-management-software',
+        destination: '/solutions/livestock-management-software',
+        permanent: true,
+      },
+      {
+        source: '/herd-management-software',
+        destination: '/solutions/herd-management-software',
+        permanent: true,
+      },
+      {
+        source: '/dairy-farm-management-software',
+        destination: '/solutions/dairy-farm-management-software',
+        permanent: true,
+      },
+      {
+        source: '/goat-farm-management-software',
+        destination: '/solutions/goat-farm-management-software',
+        permanent: true,
+      },
+      {
+        source: '/sheep-farm-management-software',
+        destination: '/solutions/sheep-farm-management-software',
+        permanent: true,
+      },
+      {
+        source: '/livestock-record-keeping-software',
+        destination: '/solutions/livestock-record-keeping-software',
+        permanent: true,
+      },
     ];
   },
 };

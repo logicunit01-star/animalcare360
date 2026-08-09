@@ -23,7 +23,10 @@ const Footer = () => (
         <div>
           <h4 className="font-bold text-brand-navy mb-6 uppercase text-[10px] tracking-[0.2em] opacity-50">Solutions</h4>
           <ul className="space-y-3 text-sm text-brand-muted font-medium">
+            <li><Link href="/solutions/livestock-management-software" className="hover:text-brand-navy transition-colors">Livestock Management</Link></li>
             <li><Link href="/solutions/cattle-management" className="hover:text-brand-navy transition-colors">Cattle & Dairy ERP</Link></li>
+            <li><Link href="/solutions/goat-farm-management-software" className="hover:text-brand-navy transition-colors">Goat Farm Software</Link></li>
+            <li><Link href="/solutions/sheep-farm-management-software" className="hover:text-brand-navy transition-colors">Sheep Farm Software</Link></li>
             <li><Link href="/solutions/feed-retail" className="hover:text-brand-navy transition-colors">Wanda Feed Retail</Link></li>
             <li><Link href="/solutions/animal-trading" className="hover:text-brand-navy transition-colors">Animal Trading ERP</Link></li>
             <li><Link href="/solutions/pet-hospital" className="hover:text-brand-navy transition-colors">Pet Hospital & Clinic</Link></li>

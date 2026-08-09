@@ -41,7 +41,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-2xl font-bold text-brand-navy mb-4">1. Agreement to Terms</h2>
             <p>
-              By accessing or using AnimalCare360 (the "Software"), a service provided by Hulm Solutions, you agree to be bound by these Terms of Service. If you do not agree to these terms, you may not use the Software.
+              By accessing or using AnimalCare360 (the "Software"), operated by Hulm Solutions, you agree to be bound by these Terms of Service. If you do not agree to these terms, you may not use the Software.
             </p>
           </section>
 

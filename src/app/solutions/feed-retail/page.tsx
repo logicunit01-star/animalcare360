@@ -47,7 +47,7 @@ export default function FeedRetail() {
             "@type": "Product",
             "name": "Wanda & Feed Retail Software (AnimalCare360)",
             "image": "https://www.animalcare360.com/dashboard-procurement.png",
-            "description": "Point of Sale (POS), multi-warehouse stock inventory, customer credit ledgers, supplier payments, expiry tracking, and tax-compliant invoicing for wanda shops, pet food retailers, and feed wholesalers.",
+            "description": "Point of Sale (POS), multi-warehouse stock inventory, customer credit ledgers, supplier payments, expiry tracking, and tax-ready invoicing for wanda shops, pet food retailers, and feed wholesalers.",
             "brand": {
               "@type": "Brand",
               "name": "AnimalCare360"
@@ -93,6 +93,14 @@ export default function FeedRetail() {
       {/* Main Content */}
       <section className="py-24 bg-white">
         <div className="section-container">
+          <div className="bg-brand-background border border-brand-border rounded-[32px] p-8 md:p-10 mb-16">
+            <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-3">Quick Answer</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-navy mb-4">What is feed retail POS software?</h2>
+            <p className="text-brand-muted leading-relaxed max-w-4xl">
+              Feed retail POS software helps wanda shops, feed distributors, pet food stores, and veterinary pharmacies manage sales, customer credit, supplier ledgers, stock, expiry, purchase orders, digital invoices, and tax-ready billing. AnimalCare360 connects POS with inventory and finance so shop owners can control margins and balances without paper khata registers.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
             <div className="relative aspect-video rounded-[48px] overflow-hidden border border-brand-border shadow-2xl">
               <Image
@@ -109,7 +117,7 @@ export default function FeedRetail() {
               </p>
               <div className="space-y-4">
                 {[
-                  "Tax-compliant QR receipts for all sales",
+                  "Tax-ready QR invoice workflows for eligible regions",
                   "Multi-warehouse stock synchronization",
                   "Batch tracking for expiry management",
                   "Credit limit management for wholesalers"
@@ -119,6 +127,23 @@ export default function FeedRetail() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+
+          <div className="bg-brand-background border border-brand-border rounded-[40px] p-8 md:p-12 mb-32">
+            <h2 className="text-3xl font-bold text-brand-navy mb-8 text-center">Built for Wanda, Feed, Pet Food, and Pharmacy Retail</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { title: "Fast Sales", desc: "Create invoices, select payment mode, apply customer pricing, and print or share receipts." },
+                { title: "Khata Credit", desc: "Track customer balances, partial payments, limits, overdue accounts, and running ledgers." },
+                { title: "Supplier Control", desc: "Record purchase orders, stock arrivals, vendor balances, and changing cost rates." },
+                { title: "Expiry Protection", desc: "Monitor feed, medicine, pet food, and supplies by batch, expiry, and warehouse." }
+              ].map((item) => (
+                <div key={item.title} className="p-6 bg-white border border-brand-border rounded-2xl">
+                  <h3 className="font-bold text-brand-navy text-lg mb-3">{item.title}</h3>
+                  <p className="text-sm text-brand-muted leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -155,13 +180,13 @@ export default function FeedRetail() {
 
           <div className="bg-brand-navy rounded-[48px] p-12 md:p-20 text-white flex flex-col lg:flex-row gap-16 items-center border border-brand-border shadow-2xl">
             <div className="lg:w-1/2">
-              <h2 className="text-4xl font-bold mb-8 italic">&quot;Scale your distribution with tax compliance built-in.&quot;</h2>
+              <h2 className="text-4xl font-bold mb-8 italic">&quot;Scale your distribution with tax-ready records.&quot;</h2>
               <div className="space-y-6">
                 {[
-                  "Tax-compliant QR-coded sales invoices",
-                  "Purchase tax reconciliation",
+                  "QR-coded sales invoice workflows",
+                  "Purchase tax record support",
                   "Complete digital audit trail",
-                  "Professional VAT/GST reporting"
+                  "Region-specific VAT/GST reporting setup"
                 ].map((point, i) => (
                   <div key={i} className="flex items-center gap-4 text-brand-primary font-bold">
                     <CheckCircle2 className="w-6 h-6" />
@@ -172,12 +197,12 @@ export default function FeedRetail() {
             </div>
             <div className="lg:w-1/2 w-full grid grid-cols-2 gap-4">
               <div className="bg-white/5 p-10 rounded-[40px] border border-white/10 text-center">
-                <p className="text-4xl font-bold mb-2">99.9%</p>
-                <p className="text-[10px] uppercase font-bold tracking-[0.2em] text-slate-400">Inventory Accuracy</p>
+                <p className="text-4xl font-bold mb-2">Batch</p>
+                <p className="text-[10px] uppercase font-bold tracking-[0.2em] text-slate-400">Inventory Control</p>
               </div>
               <div className="bg-white/5 p-10 rounded-[40px] border border-white/10 text-center">
-                <p className="text-4xl font-bold mb-2">0%</p>
-                <p className="text-[10px] uppercase font-bold tracking-[0.2em] text-slate-400">Tax Non-Compliance</p>
+                <p className="text-4xl font-bold mb-2">QR</p>
+                <p className="text-[10px] uppercase font-bold tracking-[0.2em] text-slate-400">Tax-Ready Invoices</p>
               </div>
             </div>
           </div>

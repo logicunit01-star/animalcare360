@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-brand-navy mb-4">1. Introduction</h2>
             <p>
-              Welcome to AnimalCare360, a product by Hulm Solutions ("we," "our," or "us"). We are committed to protecting the privacy and security of your data. This Privacy Policy explains how we collect, use, and safeguard information when you use our livestock, retail, trading, and veterinary ERP software.
+              Welcome to AnimalCare360, operated by Hulm Solutions ("we," "our," or "us"). We are committed to protecting the privacy and security of your data. This Privacy Policy explains how we collect, use, and safeguard information when you use AnimalCare360 for livestock, retail, trading, and veterinary ERP workflows.
             </p>
           </section>
 
@@ -60,7 +60,7 @@ export default function PrivacyPolicy() {
             <p>Your data is primarily used to provide you with ERP services. Specifically, we use it to:</p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
               <li>Facilitate your farm, clinic, trading, or retail operations.</li>
-              <li>Generate reports, financial statements, and compliant invoices for your business.</li>
+              <li>Generate reports, financial statements, and tax-ready invoice records for your business where configured.</li>
               <li>Provide customer support via WhatsApp or email.</li>
               <li>Improve and optimize our software modules.</li>
             </ul>

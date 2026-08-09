@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import LeadInteractionTracker from "@/components/LeadInteractionTracker";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.animalcare360.com";
 const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-TJ0KRLP23C";
@@ -22,7 +23,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
     title: "Animal Care 360 | Livestock, Feed Retail & Pet Hospital Software",
     description:
-        "Manage livestock, feed retail, animal trading and pet hospitals with one powerful cloud-based software platform. Digital invoices, milk production charts, EMR clinic logs.",
+        "Manage livestock, feed retail, animal trading, and pet hospitals with cloud ERP for records, invoices, milk charts, inventory, and EMR logs.",
     keywords: [
         "livestock software",
         "cattle management software",
@@ -122,6 +123,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <main className="flex-grow">{children}</main>
                 <Footer />
                 <FloatingWhatsApp />
+                <LeadInteractionTracker />
                 {/* Microsoft Clarity Analytics */}
                 {microsoftClarityId ? (
                     <Script

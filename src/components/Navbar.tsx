@@ -15,7 +15,10 @@ const Navbar = () => {
       name: "Solutions",
       path: "/solutions",
       subItems: [
+        { name: "Livestock Management", path: "/solutions/livestock-management-software" },
         { name: "Cattle & Dairy ERP", path: "/solutions/cattle-management" },
+        { name: "Goat Farm Software", path: "/solutions/goat-farm-management-software" },
+        { name: "Sheep Farm Software", path: "/solutions/sheep-farm-management-software" },
         { name: "Wanda Feed Retail", path: "/solutions/feed-retail" },
         { name: "Animal Trading ERP", path: "/solutions/animal-trading" },
         { name: "Pet Hospital & Clinic", path: "/solutions/pet-hospital" },

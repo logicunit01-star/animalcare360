@@ -34,6 +34,7 @@ const CTA: React.FC<CTAProps> = ({
               href="https://wa.me/923391119259" 
               target="_blank"
               rel="noopener noreferrer"
+              data-analytics-manual="true"
               onClick={() => trackGAEvent('whatsapp_cta_click', {
                 event_category: 'conversion',
                 event_label: 'CTA Section WhatsApp',
@@ -46,6 +47,7 @@ const CTA: React.FC<CTAProps> = ({
             </a>
             <a 
               href="https://app.animalcare360.com/register"
+              data-analytics-manual="true"
               onClick={() => trackGAEvent('free_trial_click', {
                 event_category: 'conversion',
                 event_label: 'CTA Section Free Trial',
@@ -68,7 +70,7 @@ const CTA: React.FC<CTAProps> = ({
             </div>
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div>
-              Tax Compliant
+              Tax-Ready Workflows
             </div>
           </div>
         </div>

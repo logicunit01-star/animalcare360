@@ -82,7 +82,7 @@ export default function CattleManagement() {
               Cattle and Dairy Farm Management Software
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-10">
-              AnimalCare360 gives cattle, dairy, and fattening farms a complete digital record for every animal. Track purchase, birth, breed, health, vaccination, breeding, milk, weight, feed cost, sale, and profit from one system.
+              AnimalCare360 gives cattle, dairy, and fattening farms a complete digital record for every animal. This cattle management software helps teams track purchase, birth, breed, health, vaccination, breeding, milk, weight, feed cost, sale, and profit from one system.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="https://app.animalcare360.com/apps" className="bg-brand-primary hover:bg-opacity-90 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-brand-primary/20">
@@ -99,12 +99,20 @@ export default function CattleManagement() {
       {/* Feature Section with Dashboard Image */}
       <section className="py-24 bg-white">
         <div className="section-container">
+          <div className="bg-brand-background border border-brand-border rounded-[32px] p-8 md:p-10 mb-16">
+            <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-3">Quick Answer</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-navy mb-4">What is cattle farm management software?</h2>
+            <p className="text-brand-muted leading-relaxed max-w-4xl">
+              Cattle farm management software helps farms keep digital records for every animal, including purchase, birth, breed, health, vaccination, breeding, milk production, weight gain, feed cost, sale, and profit. AnimalCare360 supports cattle, dairy, goats, sheep, and mixed livestock farms with web and Android workflows for Pakistan, South Asia, and global operations, with pricing and onboarding options for farms that want to start with one module.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
             <div>
               <h2 className="text-4xl font-bold text-brand-navy mb-6 tracking-tight">Full Lifecycle Traceability</h2>
               <p className="text-brand-muted text-lg leading-relaxed mb-8">
                 Manage your herd with absolute precision. Our software allows you to classify every animal by category (A, B, C), breed, and pedigree.
-                Whether you are managing a 500-head fattening lot or a boutique dairy enterprise, AnimalCare360 provides the data granularity you need.
+                Whether you are managing a 500-head fattening lot or a boutique dairy enterprise, AnimalCare360 provides the data granularity you need from modern cattle management software.
               </p>
               <ul className="space-y-4">
                 {[
@@ -172,6 +180,23 @@ export default function CattleManagement() {
             ))}
           </div>
 
+          <div className="bg-white border border-brand-border rounded-[40px] p-8 md:p-12 mb-32 shadow-sm">
+            <h2 className="text-3xl font-bold text-brand-navy mb-8 text-center">Daily Cattle Farm Workflows Covered</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { title: "Register", desc: "Create animal profiles with tag, breed, category, purchase, birth, ownership, and status." },
+                { title: "Care", desc: "Record vet visits, medicines, vaccination schedules, withdrawal periods, and next due dates." },
+                { title: "Produce", desc: "Track milk yield, weight gain, feed usage, fattening performance, and production trends." },
+                { title: "Report", desc: "Review cost, sale value, profit, inventory, partner ROI, and farm-wise performance." }
+              ].map((step) => (
+                <div key={step.title} className="p-6 bg-brand-background border border-brand-border rounded-2xl">
+                  <h3 className="font-bold text-brand-navy text-lg mb-3">{step.title}</h3>
+                  <p className="text-sm text-brand-muted leading-relaxed">{step.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="bg-brand-background rounded-[48px] p-12 md:p-20 overflow-hidden relative border border-brand-border shadow-sm">
             <div className="relative z-10">
               <h2 className="text-4xl font-bold text-brand-navy mb-16">Enterprise Features for Modern Farms</h2>
@@ -191,7 +216,7 @@ export default function CattleManagement() {
                   },
                   {
                     title: "Financial Auditing",
-                    desc: "Generate tax-compliant records for all livestock purchases and sales."
+                    desc: "Generate tax-ready records for livestock purchases and sales where configured."
                   }
                 ].map((f, i) => (
                   <div key={i}>

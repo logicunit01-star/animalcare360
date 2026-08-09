@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { blogArticles } from '@/lib/blogArticles';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.animalcare360.com';
@@ -7,6 +8,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '',
     '/solutions',
+    '/solutions/livestock-management-software',
+    '/solutions/herd-management-software',
+    '/solutions/dairy-farm-management-software',
+    '/solutions/goat-farm-management-software',
+    '/solutions/sheep-farm-management-software',
+    '/solutions/livestock-record-keeping-software',
     '/features',
     '/pricing',
     '/resources',
@@ -25,7 +32,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/terms',
   ];
 
-  return routes.map((route) => ({
+  return [
+    ...routes,
+    ...blogArticles.map((article) => `/blog/${article.slug}`),
+  ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: currentDate,
     changeFrequency: route === '' ? 'daily' : 'weekly',

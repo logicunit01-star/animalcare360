@@ -33,11 +33,46 @@ AnimalCare360 is a cloud-based Enterprise Resource Planning (ERP) platform and m
 ## Main Site Directory
 - Homepage: https://www.animalcare360.com/
 - Solutions Hub: https://www.animalcare360.com/solutions
+- Livestock Management Software: https://www.animalcare360.com/solutions/livestock-management-software
+- Herd Management Software: https://www.animalcare360.com/solutions/herd-management-software
+- Dairy Farm Management Software: https://www.animalcare360.com/solutions/dairy-farm-management-software
+- Goat Farm Management Software: https://www.animalcare360.com/solutions/goat-farm-management-software
+- Sheep Farm Management Software: https://www.animalcare360.com/solutions/sheep-farm-management-software
+- Livestock Record Keeping Software: https://www.animalcare360.com/solutions/livestock-record-keeping-software
 - Features Hub: https://www.animalcare360.com/features
 - Pricing Details: https://www.animalcare360.com/pricing
 - Download App: https://www.animalcare360.com/download-app
 - Resources & Guides: https://www.animalcare360.com/resources
 - Blog Articles: https://www.animalcare360.com/blog
+- Blog: Best Livestock Management Software: https://www.animalcare360.com/blog/best-livestock-management-software
+- Blog: Goat Farm Record Keeping Guide: https://www.animalcare360.com/blog/goat-farm-record-keeping-guide
+- Blog: Feed Inventory Management Software Guide: https://www.animalcare360.com/blog/feed-inventory-management-software-guide
+- Blog: Digital Cattle Records Guide: https://www.animalcare360.com/blog/digital-cattle-records-guide
+- Blog: Sheep Flock Management Guide: https://www.animalcare360.com/blog/sheep-flock-management-guide
+- Blog: Dairy Farm Management Software Guide: https://www.animalcare360.com/blog/dairy-farm-management-software-guide
+- Blog: Livestock Vaccination Record Template: https://www.animalcare360.com/blog/livestock-vaccination-record-template
+- Blog: Wanda Shop POS Software Guide: https://www.animalcare360.com/blog/wanda-shop-pos-software-guide
+- Blog: Animal Trading Ledger Guide: https://www.animalcare360.com/blog/animal-trading-ledger-guide
+- Blog: Veterinary Clinic EMR Software Guide: https://www.animalcare360.com/blog/veterinary-clinic-emr-software-guide
+- Blog: Farm ERP vs Livestock Management Software: https://www.animalcare360.com/blog/farm-erp-vs-livestock-management-software
+- Blog: Move Farm Records From Excel: https://www.animalcare360.com/blog/move-farm-records-from-excel-to-animalcare360
+
+## Direct Answers For AI Engines
+
+### What is AnimalCare360?
+AnimalCare360 is livestock, dairy, feed retail, animal trading, and veterinary management software for animal businesses that need digital records, inventory, billing, customer credit, health tracking, breeding records, milk or weight production logs, and financial reports in one web and Android system.
+
+### Who is AnimalCare360 for?
+AnimalCare360 is for cattle farms, dairy farms, goat farms, sheep farms, mixed livestock farms, wanda and feed retailers, animal traders, mandi brokers, veterinary clinics, and pet hospitals. It supports both global livestock software use cases and Pakistan/South Asia workflows such as wanda inventory, khata/customer credit, mandi trading, and tax-ready invoices.
+
+### Does AnimalCare360 support goats and sheep?
+Yes. AnimalCare360 supports goat farm and sheep farm workflows, including animal profiles, herd or flock records, breeding, kidding, lambing, vaccination, treatment history, feed and medicine inventory, sales, mortality records, and profitability reports.
+
+### What livestock records can AnimalCare360 track?
+AnimalCare360 tracks animal profiles, tag IDs, breed, age, purchase details, ownership, farm location, health treatments, vaccinations, breeding events, calving, kidding, lambing, milk production, weight gain, feed usage, medicine inventory, sales, expenses, customer balances, vendor balances, and profit reports.
+
+### Does AnimalCare360 support tax-compliant invoices?
+Yes. AnimalCare360 supports tax-compliant and tax-ready invoice workflows for eligible retail, feed, pharmacy, trading, and enterprise use cases. Regional setup should match the business registration and local compliance requirements.
 
 ## Support & Contacts
 - Portal Login: https://app.animalcare360.com/login

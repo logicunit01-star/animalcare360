@@ -65,7 +65,7 @@ export default function CattleProFeatures() {
         "Milk production monthly trend charts.",
         "Feed cost curves and inventory cost trends.",
         "Drill-down action routes directly linking widgets to source entries.",
-        "Server-backed dashboard APIs with graceful mock local fallbacks."
+        "Dashboard summaries designed for reliable farm management visibility."
       ],
       dataModels: "KPI Metrics, Monthly Aggregates, Trend vectors"
     },
@@ -266,12 +266,12 @@ export default function CattleProFeatures() {
       id: 15,
       category: "system",
       title: "15. Gemini AI Advisor Integration",
-      desc: "Built-in intelligence engine utilizing state parameters to deliver diagnostic recommendations.",
+      desc: "Built-in intelligence engine using app context to support record review, operational prompts, and cost checks.",
       icon: Bot,
       capabilities: [
         "Reads active farm data arrays (livestock, health logs, diet plans).",
-        "Accepts text questions regarding operations, medical advice, and financial reports.",
-        "Provides answers based on real-time app parameters."
+        "Accepts text questions regarding operations, record context, and financial reports.",
+        "Provides management prompts based on app parameters while keeping veterinary decisions with qualified professionals."
       ],
       dataModels: "AI prompts logs, App state context snapshots"
     },
@@ -285,7 +285,7 @@ export default function CattleProFeatures() {
         "Add, edit, or remove operating cities and regions.",
         "Add new farm locations and link them to cities.",
         "Force background databases to sync with remote APIs.",
-        "View mock lists of team members and access rules.",
+        "Review team members, permissions, and access rules.",
         "Monitor system performance metrics and database statuses."
       ],
       dataModels: "Cities, System variables, Sync state metadata"
@@ -445,9 +445,9 @@ export default function CattleProFeatures() {
         {/* Dataset & Demo Section */}
         <section className="bg-white border border-brand-border rounded-[48px] p-10 md:p-16 mb-16 shadow-sm">
           <div className="max-w-4xl mx-auto">
-            <span className="text-brand-primary font-bold text-xs uppercase tracking-widest block mb-4">Demo Datasets</span>
+            <span className="text-brand-primary font-bold text-xs uppercase tracking-widest block mb-4">Evaluation Datasets</span>
             <h2 className="text-3xl font-bold text-brand-navy tracking-tight mb-6">
-              Evaluation & Sandbox Mock Data
+              Evaluation And Sandbox Sample Data
             </h2>
             <p className="text-brand-muted text-base leading-relaxed mb-8">
               CattlePro is pre-loaded with structured testing profiles so enterprise evaluation teams can test reports and dashboard filters without manual data entry.
@@ -456,7 +456,7 @@ export default function CattleProFeatures() {
               {[
                 { title: "Locations & Farm Contexts", desc: "Pre-configured regions and physical farm sites (Farm A, Farm B, Farm C) to validate context-aware analytics." },
                 { title: "Livestock Register", desc: "Cattle and goat profiles across categories: milking dairy heads, breeding stock, beef fattening lots, calves, and Palai clients." },
-                { title: "Financial Transactions", desc: "Mock records covering feed purchases, vet treatment expenses, milk sales batches, manure invoices, and supplier ledgers." }
+                { title: "Financial Transactions", desc: "Sample operating records covering feed purchases, vet treatment expenses, milk sales batches, manure invoices, and supplier ledgers." }
               ].map((data, idx) => (
                 <div key={idx} className="p-6 bg-brand-background rounded-3xl border border-brand-border">
                   <h4 className="font-bold text-brand-navy text-sm mb-2">{data.title}</h4>
@@ -469,7 +469,7 @@ export default function CattleProFeatures() {
               <div>
                 <h4 className="font-bold text-sm mb-1">Production Readiness Note</h4>
                 <p className="text-xs leading-relaxed">
-                  The CattlePro software client supports sync modes with live servers. In network drop conditions, local dashboards gracefully utilize locally cached models or localStorage state fallbacks. Incomplete CRUD states or custom mock triggers should be fully reviewed against your server-side API specifications prior to final production deployments.
+                  CattlePro is designed for operational teams that need dependable farm records, reporting, and daily activity tracking. During implementation, our team helps configure farm locations, access rules, data migration, and reporting workflows so your production setup matches your operating model.
                 </p>
               </div>
             </div>

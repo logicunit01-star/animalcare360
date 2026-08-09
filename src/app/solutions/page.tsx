@@ -8,6 +8,20 @@ import CTA from "@/components/CTA";
 export default function Solutions() {
   const solutions = [
     {
+      title: "Livestock Management Software",
+      desc: "For cattle, dairy, goat, sheep, and mixed farms that need animal profiles, breeding, health, feed, sales, and profit reports.",
+      icon: Beef,
+      color: "border-emerald-200",
+      link: "/solutions/livestock-management-software"
+    },
+    {
+      title: "Goat and Sheep Farm Records",
+      desc: "For farms managing goats, sheep, breeding, kidding, lambing, vaccination schedules, feed costs, mortality, and sales.",
+      icon: Activity,
+      color: "border-lime-200",
+      link: "/solutions/goat-farm-management-software"
+    },
+    {
       title: "Wanda and Feed Retail ERP",
       desc: "For shops, wholesalers, distributors, and pet food retailers that need POS, inventory, expiry, customer credit, supplier ledgers, and digital invoices.",
       icon: ShoppingCart,
@@ -75,7 +89,7 @@ export default function Solutions() {
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Targeted Industry Tech</p>
           <h1 className="text-5xl font-bold text-brand-navy mb-8 tracking-tight leading-[1.1]">Software Modules for Every Animal Business</h1>
           <p className="text-brand-muted max-w-3xl mx-auto text-xl leading-relaxed">
-            AnimalCare360 is modular, so you can start with the system your business needs today and expand as your operations grow. Each module is designed for a specific animal industry workflow, not a generic ERP template.
+            AnimalCare360 provides animal care software solutions for farms, feed retailers, animal traders, and pet hospitals. You can start with the system your business needs today, review pricing, book a demo, and expand as your operations grow.
           </p>
         </div>
 
@@ -97,10 +111,12 @@ export default function Solutions() {
                   <h2 className="text-4xl font-bold text-brand-navy mb-6 tracking-tight">{sol.title}</h2>
                   <p className="text-brand-muted text-lg leading-relaxed mb-10 max-w-lg">{sol.desc}</p>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-5 gap-x-12 mb-10">
-                    {(sol.title === "Wanda and Feed Retail ERP" ? ["Retail POS Terminal", "Fodder Supply Logs", "Wholesale Credit Limits", "Customer CRM Analytics"] :
+                    {(sol.title === "Livestock Management Software" ? ["Cattle, Goat & Sheep Records", "Breeding & Birth Logs", "Vaccination Schedules", "Profit Reports"] :
+                      sol.title === "Goat and Sheep Farm Records" ? ["Kidding & Lambing", "Flock Health", "Feed Cost Control", "Sales Ledgers"] :
+                      sol.title === "Wanda and Feed Retail ERP" ? ["Retail POS Terminal", "Fodder Supply Logs", "Wholesale Credit Limits", "Customer CRM Analytics"] :
                       sol.title === "Cattle and Dairy Farm ERP" ? ["Milk Supply Chain", "ADG Fattening Logs", "Pedigree Mapping", "Poultry/Egg Records"] :
                         sol.title === "Pet Hospital ERP" ? ["Surgery Case Records", "Pharmacy Dispensary", "Appointment Hub", "Clinical Histories"] :
-                          sol.title === "Animal Trading Suite" ? ["Sale/Purchase Logs", "Trading Commission", "Tax-Compliant Receipts", "Trader Dashboards"] :
+                          sol.title === "Animal Trading Suite" ? ["Sale/Purchase Logs", "Trading Commission", "Tax-Ready Receipts", "Trader Dashboards"] :
                             ["QR-Coded Invoicing", "Auditable Tax Logs", "Profit/Loss Tracking", "Sales Order Workflows"]).map((item, idx) => (
                               <li key={idx} className="flex items-center gap-3 text-[10px] font-bold text-brand-navy uppercase tracking-widest">
                                 <div className="w-2 h-2 rounded-full bg-brand-primary shadow-sm shadow-green-200"></div> {item}

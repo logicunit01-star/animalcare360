@@ -4,52 +4,10 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { BookOpen, Calendar, Clock, ArrowRight } from "lucide-react";
 import CTA from "@/components/CTA";
+import { blogArticles } from "@/lib/blogArticles";
 
 export default function BlogIndex() {
-  const articles = [
-    {
-      title: "Best Livestock Management Software for Agribusiness",
-      desc: "Explore how cloud-based farm ERP systems solve milk yield tracking, cattle breeding pedigrees, and profit-sharing distributions for dairy owners.",
-      tag: "Livestock Management",
-      readTime: "8 min read",
-      date: "June 24, 2026"
-    },
-    {
-      title: "How to Optimize Animal Feed Inventory Management",
-      desc: "Prevent feed stockouts and control costs. Learn how multi-warehouse allocations, low-stock notifications, and automatic diet run deductions streamline stores.",
-      tag: "Feed Inventory",
-      readTime: "6 min read",
-      date: "June 18, 2026"
-    },
-    {
-      title: "Ultimate Guide to Pet Hospital Management Systems",
-      desc: "Discover how veterinary practices organize appointment schedules, patient medical charts, surgical registers, and pharmacy stock cabinets from one cloud ERP.",
-      tag: "Pet Hospital EMR",
-      readTime: "7 min read",
-      date: "June 12, 2026"
-    },
-    {
-      title: "Why Veterinary Clinic Software is Critical for Modern Practices",
-      desc: "Compare manual diaries with unified SOAP note software. Learn about tax-compliant billing POS and auto reminders to boost veterinary clinic client retention.",
-      tag: "Clinical Workflows",
-      readTime: "5 min read",
-      date: "June 05, 2026"
-    },
-    {
-      title: "Animal Health Monitoring & Preventive Care Guide",
-      desc: "Learn how to build vaccine schedules, log veterinarian visits, record clinical treatment plans, and track heat cycles to ensure dairy herd safety.",
-      tag: "Animal Health",
-      readTime: "9 min read",
-      date: "May 28, 2026"
-    },
-    {
-      title: "Wanda & Feed Retail Business Management Strategy",
-      desc: "Unlock retail success. Automate credit ledger accounts, coordinate supplier payable limits, and print digital sales receipts.",
-      tag: "Feed Store Retail",
-      readTime: "6 min read",
-      date: "May 20, 2026"
-    }
-  ];
+  const articles = blogArticles;
 
   return (
     <div className="pt-0 bg-brand-background">
@@ -81,7 +39,7 @@ export default function BlogIndex() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
           {articles.map((art, idx) => (
-            <div key={idx} className="bg-white border border-brand-border rounded-[32px] p-8 hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+            <Link key={idx} href={`/blog/${art.slug}`} className="bg-white border border-brand-border rounded-[32px] p-8 hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
               <div>
                 <span className="inline-block bg-brand-background text-brand-primary text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full mb-6">
                   {art.tag}
@@ -90,7 +48,7 @@ export default function BlogIndex() {
                   {art.title}
                 </h3>
                 <p className="text-xs text-brand-muted leading-relaxed mb-6 line-clamp-4">
-                  {art.desc}
+                  {art.description}
                 </p>
               </div>
               <div className="pt-6 border-t border-brand-border flex items-center justify-between mt-auto">
@@ -98,11 +56,11 @@ export default function BlogIndex() {
                   <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5" /> {art.date}</span>
                   <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5" /> {art.readTime}</span>
                 </div>
-                <button className="text-brand-primary group-hover:translate-x-1.5 transition-transform">
+                <span className="text-brand-primary group-hover:translate-x-1.5 transition-transform">
                   <ArrowRight className="w-5 h-5" />
-                </button>
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

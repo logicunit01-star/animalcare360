@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'CattlePro Complete Product Guide & Features | AnimalCare360',
-  description: 'Read the complete product guide for CattlePro: the multi-farm livestock operations platform. Detailed records across animals, inventory, finances, and Palai partnering.',
+  description: 'Explore CattlePro for multi-farm livestock operations, including animal records, inventory, finance, reports, and Palai partnering workflows.',
   alternates: {
     canonical: '/solutions/cattlepro',
   },
