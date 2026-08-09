@@ -16,7 +16,7 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
-            "@id": "https://animalcare360.com/#software",
+            "@id": "https://www.animalcare360.com/#software",
             "name": "AnimalCare360",
             "operatingSystem": "All (Web & Mobile/Android)",
             "applicationCategory": "BusinessApplication",

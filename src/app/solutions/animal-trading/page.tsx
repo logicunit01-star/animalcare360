@@ -19,19 +19,19 @@ export default function AnimalTrading() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://animalcare360.com"
+                "item": "https://www.animalcare360.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Solutions",
-                "item": "https://animalcare360.com/solutions"
+                "item": "https://www.animalcare360.com/solutions"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Animal Trading ERP",
-                "item": "https://animalcare360.com/solutions/animal-trading"
+                "item": "https://www.animalcare360.com/solutions/animal-trading"
               }
             ]
           })
@@ -46,7 +46,7 @@ export default function AnimalTrading() {
             "@context": "https://schema.org",
             "@type": "Product",
             "name": "Animal Trading Software (AnimalCare360)",
-            "image": "https://animalcare360.com/dashboard-finance.png",
+            "image": "https://www.animalcare360.com/dashboard-finance.png",
             "description": "Digitally track animal purchases, sales, deal registers, agent commission tracking, transit cost logs, buyer and seller ledgers, and profit reporting per animal or lot.",
             "brand": {
               "@type": "Brand",

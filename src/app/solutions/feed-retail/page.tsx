@@ -19,19 +19,19 @@ export default function FeedRetail() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://animalcare360.com"
+                "item": "https://www.animalcare360.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Solutions",
-                "item": "https://animalcare360.com/solutions"
+                "item": "https://www.animalcare360.com/solutions"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Feed Retail ERP",
-                "item": "https://animalcare360.com/solutions/feed-retail"
+                "item": "https://www.animalcare360.com/solutions/feed-retail"
               }
             ]
           })
@@ -46,7 +46,7 @@ export default function FeedRetail() {
             "@context": "https://schema.org",
             "@type": "Product",
             "name": "Wanda & Feed Retail Software (AnimalCare360)",
-            "image": "https://animalcare360.com/dashboard-procurement.png",
+            "image": "https://www.animalcare360.com/dashboard-procurement.png",
             "description": "Point of Sale (POS), multi-warehouse stock inventory, customer credit ledgers, supplier payments, expiry tracking, and tax-compliant invoicing for wanda shops, pet food retailers, and feed wholesalers.",
             "brand": {
               "@type": "Brand",

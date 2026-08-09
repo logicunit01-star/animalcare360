@@ -16,13 +16,13 @@ export default function PrivacyPolicy() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://animalcare360.com"
+                "item": "https://www.animalcare360.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Privacy Policy",
-                "item": "https://animalcare360.com/privacy"
+                "item": "https://www.animalcare360.com/privacy"
               }
             ]
           })
@@ -97,7 +97,7 @@ export default function PrivacyPolicy() {
             <p>If you have any questions about this Privacy Policy, please contact us:</p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
               <li><strong>WhatsApp/Phone:</strong> +92 339 111 9259</li>
-              <li><strong>Website:</strong> https://animalcare360.com</li>
+              <li><strong>Website:</strong> https://www.animalcare360.com</li>
             </ul>
           </section>
         </div>

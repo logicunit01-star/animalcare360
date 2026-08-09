@@ -122,19 +122,19 @@ export default function CattleProOverview() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://animalcare360.com"
+                "item": "https://www.animalcare360.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Solutions",
-                "item": "https://animalcare360.com/solutions"
+                "item": "https://www.animalcare360.com/solutions"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "CattlePro",
-                "item": "https://animalcare360.com/solutions/cattlepro"
+                "item": "https://www.animalcare360.com/solutions/cattlepro"
               }
             ]
           })
@@ -147,7 +147,7 @@ export default function CattleProOverview() {
             "@context": "https://schema.org",
             "@type": "Product",
             "name": "CattlePro Livestock ERP Software",
-            "image": "https://animalcare360.com/dashboard-procurement.png",
+            "image": "https://www.animalcare360.com/dashboard-procurement.png",
             "description": "CattlePro is a multi-farm livestock operations and finance ERP platform for managing cattle, goats, feed, procurement, ledger finance, and Palai partnering.",
             "brand": {
               "@type": "Brand",

@@ -57,13 +57,13 @@ export default function Features() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://animalcare360.com"
+                "item": "https://www.animalcare360.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Features",
-                "item": "https://animalcare360.com/features"
+                "item": "https://www.animalcare360.com/features"
               }
             ]
           })

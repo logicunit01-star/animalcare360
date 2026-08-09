@@ -26,13 +26,13 @@ export default function DownloadApp() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://animalcare360.com"
+                "item": "https://www.animalcare360.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Download App",
-                "item": "https://animalcare360.com/download-app"
+                "item": "https://www.animalcare360.com/download-app"
               }
             ]
           })

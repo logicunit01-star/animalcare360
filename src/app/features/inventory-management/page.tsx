@@ -23,9 +23,9 @@ export default function InventoryManagementFeature() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://animalcare360.com" },
-              { "@type": "ListItem", "position": 2, "name": "Features", "item": "https://animalcare360.com/features" },
-              { "@type": "ListItem", "position": 3, "name": "Inventory Management", "item": "https://animalcare360.com/features/inventory-management" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.animalcare360.com" },
+              { "@type": "ListItem", "position": 2, "name": "Features", "item": "https://www.animalcare360.com/features" },
+              { "@type": "ListItem", "position": 3, "name": "Inventory Management", "item": "https://www.animalcare360.com/features/inventory-management" }
             ]
           })
         }}

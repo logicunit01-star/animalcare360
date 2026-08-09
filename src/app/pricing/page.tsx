@@ -59,13 +59,13 @@ export default function Pricing() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://animalcare360.com"
+                "item": "https://www.animalcare360.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Pricing",
-                "item": "https://animalcare360.com/pricing"
+                "item": "https://www.animalcare360.com/pricing"
               }
             ]
           })

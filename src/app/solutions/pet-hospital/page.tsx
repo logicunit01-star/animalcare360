@@ -18,19 +18,19 @@ export default function PetHospital() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://animalcare360.com"
+                "item": "https://www.animalcare360.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Solutions",
-                "item": "https://animalcare360.com/solutions"
+                "item": "https://www.animalcare360.com/solutions"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Pet Hospital & Clinic Software",
-                "item": "https://animalcare360.com/solutions/pet-hospital"
+                "item": "https://www.animalcare360.com/solutions/pet-hospital"
               }
             ]
           })
@@ -45,7 +45,7 @@ export default function PetHospital() {
             "@context": "https://schema.org",
             "@type": "Product",
             "name": "Pet Hospital & Veterinary Clinic Software (AnimalCare360)",
-            "image": "https://animalcare360.com/user-icon.png",
+            "image": "https://www.animalcare360.com/user-icon.png",
             "description": "Veterinary clinical management ERP. Digitally manage patient Electronic Medical Records (EMR), drag-and-drop appointment calendars, surgery logs, laboratory results, pharmacy stock control with expiry alerts, and medical billing with WhatsApp reminders.",
             "brand": {
               "@type": "Brand",
