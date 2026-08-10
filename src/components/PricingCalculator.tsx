@@ -92,6 +92,7 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
               href={`https://wa.me/923391119259?text=Hi, I am interested in ${label} for ${qty} items and ${stores} stores. Can you provide a custom quote?`}
               target="_blank"
               rel="noopener noreferrer"
+              data-analytics-manual="true"
               onClick={handleQuoteClick}
               className="bg-brand-primary text-white p-3 rounded-xl hover:scale-110 transition-transform shadow-brand"
             >

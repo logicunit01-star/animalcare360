@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Cattle Farm & Dairy Management Software | AnimalCare360',
-  description: 'Digitally track cattle breeding, milk production, vaccination schedules, weight gain (ADG), and feed inventory for cattle and dairy farms.',
+  description: 'Cattle management software to track breeding, milk production, vaccination schedules, weight gain, feed inventory, and farm profit.',
   alternates: {
     canonical: '/solutions/cattle-management',
   },

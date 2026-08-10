@@ -34,11 +34,6 @@ export default function Home() {
                   "unitCode": "MON"
                 }
               }
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "124"
             }
           })
         }}

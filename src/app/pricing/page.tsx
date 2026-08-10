@@ -33,13 +33,13 @@ const pricingData = [
   {
     name: "Farm Management",
     price: "$79",
-    desc: "Comprehensive software for Cattle, Dairy, and Poultry farms.",
+    desc: "Comprehensive software for cattle, dairy, goat, sheep, and mixed livestock farms.",
     features: [
-      "Cattle Pedigree Tracking",
+      "Cattle, Goat & Sheep Records",
       "Milk Yield Monitoring",
       "Vaccination Alerts",
       "ADG Performance Tracking",
-      "Precision Diet Formulation"
+      "Feed & Diet Cost Tracking"
     ]
   }
 ];
@@ -114,10 +114,10 @@ export default function Pricing() {
               },
               {
                 "@type": "Question",
-                "name": "Does the system support tax-compliant invoicing?",
+                "name": "Does the system support tax-ready invoicing?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AnimalCare360 includes tax-compliant invoicing workflows for eligible retail and enterprise use cases. Final setup depends on your business registration and local compliance requirements."
+                  "text": "AnimalCare360 includes tax-ready invoicing workflows for eligible retail and enterprise use cases. Final setup depends on your business registration and local compliance requirements."
                 }
               }
             ]
@@ -130,8 +130,23 @@ export default function Pricing() {
           <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-4">Investment Plans</p>
           <h1 className="text-5xl font-bold text-brand-navy mb-6 tracking-tight">Pricing Plans for Farms, Wanda Shops, Traders, and Pet Clinics</h1>
           <p className="text-brand-muted max-w-2xl mx-auto text-lg leading-relaxed">
-            Choose the module that fits your business today. Pricing can scale by number of users, animals, locations, inventory volume, and implementation needs.
+            Choose the module that fits your business today. Prices are listed in USD per month and can scale by number of users, animals, locations, inventory volume, and implementation needs.
           </p>
+        </div>
+
+        <div className="bg-white border border-brand-border rounded-[32px] p-8 mb-12 shadow-sm">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { title: "USD Monthly Plans", desc: "Base prices are monthly subscription starting points. Final pricing depends on selected modules and operating scale." },
+              { title: "Global + South Asia Fit", desc: "Plans support global livestock operations plus Pakistan/South Asia needs such as wanda, khata, mandi, and tax-ready invoicing." },
+              { title: "Implementation Support", desc: "Data migration, staff training, and workflow setup can be added for farms, shops, traders, and clinics." }
+            ].map((item) => (
+              <div key={item.title} className="p-5 bg-brand-background rounded-2xl border border-brand-border">
+                <h2 className="text-base font-bold text-brand-navy mb-2">{item.title}</h2>
+                <p className="text-sm text-brand-muted leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Dynamic Calculators */}
@@ -205,6 +220,36 @@ export default function Pricing() {
           </a>
         </div>
 
+        <div className="bg-white border border-brand-border rounded-[40px] p-8 md:p-12 mb-20">
+          <h2 className="text-3xl font-bold text-brand-navy mb-8 text-center">What Affects Your Final Plan?</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left min-w-[720px]">
+              <thead>
+                <tr className="border-b border-brand-border bg-brand-background">
+                  <th className="p-4 text-xs uppercase tracking-widest text-brand-navy">Factor</th>
+                  <th className="p-4 text-xs uppercase tracking-widest text-brand-navy">Examples</th>
+                  <th className="p-4 text-xs uppercase tracking-widest text-brand-navy">Why It Matters</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-brand-border">
+                {[
+                  ["Business type", "Farm, wanda shop, trader, clinic", "Each workflow uses different modules and reports."],
+                  ["Operating scale", "Animals, SKUs, invoices, locations", "Larger operations need more records, users, and automation."],
+                  ["Modules selected", "Health, inventory, POS, finance, EMR", "You can start with one module and add more later."],
+                  ["Data migration", "Excel, registers, stock ledgers", "Clean starting data improves launch speed and reporting quality."],
+                  ["Tax-ready billing", "QR invoices, customer credit, supplier ledgers", "Invoice setup depends on the business and region."]
+                ].map(([factor, examples, why]) => (
+                  <tr key={factor} className="hover:bg-brand-background/40">
+                    <td className="p-4 font-bold text-brand-navy text-sm">{factor}</td>
+                    <td className="p-4 text-sm text-brand-muted">{examples}</td>
+                    <td className="p-4 text-sm text-brand-muted">{why}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
         {/* FAQ Section */}
         <div className="max-w-4xl mx-auto mb-32">
           <h2 className="text-3xl font-bold text-brand-navy mb-10 text-center">Frequently Asked Questions</h2>
@@ -214,7 +259,7 @@ export default function Pricing() {
               { q: "Do you provide onboarding?", a: "Yes. We help configure your business, train staff, and support the first live records." },
               { q: "Is AnimalCare360 suitable for small businesses?", a: "Yes. Small shops and clinics can start with essential POS, inventory, billing, and records, then scale as they grow." },
               { q: "Can you migrate my Excel or register data?", a: "Yes. We can help import clean starting data for animals, stock, customers, vendors, and balances." },
-              { q: "Does the system support tax-compliant invoicing?", a: "AnimalCare360 includes tax-compliant invoicing workflows for eligible retail and enterprise use cases. Final setup depends on your business registration and local compliance requirements." }
+              { q: "Does the system support tax-ready invoicing?", a: "AnimalCare360 includes tax-ready invoicing workflows for eligible retail and enterprise use cases. Final setup depends on your business registration and local compliance requirements." }
             ].map((faq, i) => (
               <div key={i} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
                 <h4 className="font-bold text-brand-navy text-lg mb-2">{faq.q}</h4>

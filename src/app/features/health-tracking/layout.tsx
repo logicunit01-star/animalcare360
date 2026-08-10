@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Animal Health & Medical Record Tracking Software | AnimalCare360',
-  description: 'Digitally record livestock checkups, vet treatment protocols, heat cycle calendars, breeding inseminations, and group vaccinations schedules.',
+  description: 'Animal health tracking software for livestock checkups, treatment records, vaccination schedules, breeding events, due dates, and medicine usage.',
   alternates: {
     canonical: '/features/health-tracking',
   },

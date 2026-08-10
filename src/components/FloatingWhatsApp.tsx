@@ -18,6 +18,7 @@ const FloatingWhatsApp = () => {
         href="https://wa.me/923391119259"
         target="_blank"
         rel="noopener noreferrer"
+        data-analytics-manual="true"
         onClick={handleClick}
         className="flex items-center gap-2 bg-[#25D366] text-white px-5 py-3 rounded-full shadow-lg hover:scale-105 transition-all font-bold text-sm"
       >

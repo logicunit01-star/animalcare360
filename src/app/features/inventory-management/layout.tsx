@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Feed & Medicine Inventory Management Software | AnimalCare360',
-  description: 'Streamline animal feed and veterinary medicine inventory control. Track batch numbers, expiry alerts, low-stock thresholds, and multi-warehouse transfers.',
+  description: 'Feed inventory software for farms, wanda shops, and veterinary pharmacies. Track medicine stock, batch numbers, expiry, low-stock alerts, and warehouses.',
   alternates: {
     canonical: '/features/inventory-management',
   },

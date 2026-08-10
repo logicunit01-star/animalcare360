@@ -96,7 +96,7 @@ export default function CattleProOverview() {
     { name: "Entity Registry", desc: "Vendor, customer, and Palai client details with current running balances." },
     { name: "Reports Hub", desc: "Deep financial performance sheets, herd census, and feed consumption logs." },
     { name: "Palai Partnering", desc: "Package configuration, customer ledgers, and recurring board invoices." },
-    { name: "Gemini Advisor", desc: "State-aware AI support module for predictive diagnostics and alerts." },
+    { name: "Gemini Advisor", desc: "State-aware AI support module for record review, operational prompts, and cost checks." },
     { name: "System Settings", desc: "City registries, farm parameters configuration, and team permissions." }
   ];
 
@@ -218,7 +218,7 @@ export default function CattleProOverview() {
                 <div>
                   <h4 className="font-bold text-brand-navy text-base mb-1">State-Aware AI Assistance</h4>
                   <p className="text-xs text-brand-muted leading-relaxed">
-                    Powered by Google Gemini, the built-in AI advisor analyzes your farm records and provides answers to help optimize diets, check animal treatment timelines, and audit costs.
+                    Powered by Google Gemini, the built-in AI advisor reviews farm records and provides management prompts to help compare diet context, check treatment timelines, and audit costs. Veterinary decisions should still be confirmed by qualified professionals.
                   </p>
                 </div>
               </div>

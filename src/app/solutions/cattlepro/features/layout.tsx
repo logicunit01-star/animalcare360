@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'CattlePro Detailed Feature Set & Catalog | AnimalCare360',
-  description: 'Read the full capability catalog of CattlePro: 16 modules covering authentication, livestock profiles, health, breeding, operations feed, financials, and Gemini advisor.',
+  description: 'Review 16 CattlePro modules for livestock profiles, health, breeding, feed operations, finance, reporting, settings, and AI advisor workflows.',
   alternates: {
     canonical: '/solutions/cattlepro/features',
   },
