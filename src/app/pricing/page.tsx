@@ -1,8 +1,9 @@
 'use client';
-import React from "react";
+import React, { useEffect } from "react";
 import { Check, Info } from "lucide-react";
 import CTA from "@/components/CTA";
 import PricingCalculator from "@/components/PricingCalculator";
+import { trackGAEvent } from "@/lib/analytics";
 
 const pricingData = [
   {
@@ -45,6 +46,13 @@ const pricingData = [
 ];
 
 export default function Pricing() {
+  useEffect(() => {
+    trackGAEvent('pricing_viewed', {
+      event_category: 'commercial_intent',
+      pricing_model: 'monthly_usd',
+    });
+  }, []);
+
   return (
     <div className="pt-0 pb-0 bg-brand-background">
       {/* Pricing Breadcrumb Schema */}

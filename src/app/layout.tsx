@@ -65,11 +65,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" className={outfit.variable}>
-            <body className="font-sans antialiased bg-brand-background text-brand-navy">
+            <head>
                 {googleTagManagerId ? (
                     <Script
                         id="google-tag-manager"
-                        strategy="afterInteractive"
+                        strategy="beforeInteractive"
                         dangerouslySetInnerHTML={{
                             __html: `
                               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -81,6 +81,29 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         }}
                     />
                 ) : null}
+                {shouldLoadDirectGA ? (
+                    <>
+                        <Script
+                            id="google-analytics-loader"
+                            strategy="beforeInteractive"
+                            src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+                        />
+                        <Script
+                            id="google-analytics-config"
+                            strategy="beforeInteractive"
+                            dangerouslySetInnerHTML={{
+                                __html: `
+                                  window.dataLayer = window.dataLayer || [];
+                                  function gtag(){dataLayer.push(arguments);}
+                                  gtag('js', new Date());
+                                  gtag('config', '${googleAnalyticsId}', { send_page_view: ${googleTagManagerId ? 'false' : 'true'} });
+                                `,
+                            }}
+                        />
+                    </>
+                ) : null}
+            </head>
+            <body className="font-sans antialiased bg-brand-background text-brand-navy">
                 {googleTagManagerId ? (
                     <noscript>
                         <iframe
@@ -139,28 +162,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             `,
                         }}
                     />
-                ) : null}
-                {/* Google Analytics (gtag.js) */}
-                {shouldLoadDirectGA ? (
-                    <>
-                        <Script
-                            id="google-analytics-loader"
-                            strategy="afterInteractive"
-                            src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
-                        />
-                        <Script
-                            id="google-analytics-config"
-                            strategy="afterInteractive"
-                            dangerouslySetInnerHTML={{
-                                __html: `
-                                  window.dataLayer = window.dataLayer || [];
-                                  function gtag(){dataLayer.push(arguments);}
-                                  gtag('js', new Date());
-                                  gtag('config', '${googleAnalyticsId}', { send_page_view: ${googleTagManagerId ? 'false' : 'true'} });
-                                `,
-                            }}
-                        />
-                    </>
                 ) : null}
             </body>
         </html>

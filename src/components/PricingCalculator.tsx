@@ -33,6 +33,11 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
       quantity_band: quantityBand,
       location_band: locationBand,
     });
+    trackGAEvent('whatsapp_clicked', {
+      event_category: 'conversion',
+      event_label: `${label} pricing quote`,
+      cta_location: 'pricing_calculator',
+    });
   };
 
   return (

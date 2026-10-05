@@ -69,6 +69,22 @@ export default function LeadInteractionTracker() {
           cta_location: anchor.closest('nav') ? 'navigation' : anchor.closest('footer') ? 'footer' : 'page_body',
         });
       }
+
+      if (interactionType === 'demo' || linkText.toLowerCase().includes('demo')) {
+        trackGAEvent('demo_requested', {
+          event_category: 'conversion',
+          event_label: linkText || 'Demo request',
+          request_channel: interactionType === 'whatsapp' ? 'whatsapp' : 'website',
+        });
+      }
+
+      if (interactionType === 'trial') {
+        trackGAEvent('trial_started', {
+          event_category: 'conversion',
+          event_label: linkText || 'Trial registration',
+          link_target: safeLinkTarget,
+        });
+      }
     };
 
     document.addEventListener('click', handleClick, true);
