@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { MessageCircle, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 import { trackGAEvent } from '@/lib/analytics';
 
 interface CTAProps {
@@ -10,68 +11,34 @@ interface CTAProps {
 }
 
 const CTA: React.FC<CTAProps> = ({ 
-  title = "Ready to Digitise Your Animal Care Business?", 
-  subtitle = "Join leading livestock and animal care enterprises. Connect with our experts today and see how AnimalCare360 can transform your operations."
+  title = "Ready to see the economics behind every animal?",
+  subtitle = "Calculate a planning estimate now, then see how AnimalCare360 can track the underlying records across your real operation."
 }) => {
   return (
-    <section className="py-24 bg-brand-navy relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-10 w-64 h-64 bg-brand-primary rounded-full blur-[100px]"></div>
-        <div className="absolute bottom-10 right-10 w-64 h-64 bg-blue-500 rounded-full blur-[100px]"></div>
-      </div>
-      
-      <div className="section-container relative z-10 text-center">
+    <section className="border-y border-slate-700 bg-brand-navy">
+      <div className="section-container text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight">
+          <h2 className="mb-5 text-3xl font-bold text-white md:text-4xl">
             {title}
           </h2>
-          <p className="text-xl text-slate-300 mb-12 leading-relaxed">
+          <p className="mx-auto mb-8 max-w-2xl text-base leading-7 text-slate-300">
             {subtitle}
           </p>
           
-          <div className="flex flex-wrap justify-center gap-6">
-            <a 
-              href="https://wa.me/923391119259" 
-              target="_blank"
-              rel="noopener noreferrer"
+          <div className="flex flex-col justify-center gap-3 sm:flex-row">
+            <Link href="/cattle-fattening-profit-calculator" className="inline-flex items-center justify-center gap-2 rounded-lg bg-brand-primary px-7 py-3.5 font-bold text-white">Calculate Your Cattle Profit <ArrowRight className="h-5 w-5" /></Link>
+            <Link
+              href="/demo"
               data-analytics-manual="true"
-              onClick={() => trackGAEvent('whatsapp_cta_click', {
-                event_category: 'conversion',
-                event_label: 'CTA Section WhatsApp',
+              onClick={() => trackGAEvent('cta_clicked', {
+                event_category: 'engagement',
+                event_label: 'Book a Demo',
                 cta_location: 'cta_section',
               })}
-              className="flex items-center gap-3 bg-[#25D366] text-white px-10 py-5 rounded-2xl font-bold hover:scale-105 transition-all shadow-xl shadow-green-900/20"
+              className="inline-flex items-center justify-center rounded-lg border border-slate-500 px-7 py-3.5 font-bold text-white hover:border-white"
             >
-              <MessageCircle className="w-6 h-6" />
-              Connect with Expert
-            </a>
-            <a 
-              href="https://app.animalcare360.com/register"
-              data-analytics-manual="true"
-              onClick={() => trackGAEvent('free_trial_click', {
-                event_category: 'conversion',
-                event_label: 'CTA Section Free Trial',
-                cta_location: 'cta_section',
-              })}
-              className="flex items-center gap-2 bg-brand-primary text-white px-10 py-5 rounded-2xl font-bold hover:scale-105 transition-all shadow-xl shadow-brand-primary/20"
-            >
-              Start Free Trial <ArrowRight className="w-5 h-5" />
-            </a>
-          </div>
-          
-          <div className="mt-16 flex flex-wrap justify-center gap-8 text-slate-400 text-sm font-medium">
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div>
-              No Credit Card Required
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div>
-              Built for Modern Industry
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div>
-              Tax-Ready Workflows
-            </div>
+              Book a Demo
+            </Link>
           </div>
         </div>
       </div>

@@ -1,8 +1,7 @@
 'use client';
 import React from "react";
 import Link from "next/link";
-import { motion } from "motion/react";
-import { BookOpen, Calendar, Clock, ArrowRight } from "lucide-react";
+import { Calendar, Clock, ArrowRight } from "lucide-react";
 import CTA from "@/components/CTA";
 import { blogArticles } from "@/lib/blogArticles";
 

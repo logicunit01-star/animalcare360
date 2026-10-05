@@ -3,10 +3,12 @@ import { blogArticles } from '@/lib/blogArticles';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.animalcare360.com';
-  const currentDate = new Date();
-
   const routes = [
     '',
+    '/cattle-fattening-software',
+    '/cattle-fattening-profit-calculator',
+    '/demo',
+    '/customers',
     '/solutions',
     '/solutions/livestock-management-software',
     '/solutions/herd-management-software',
@@ -32,13 +34,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/terms',
   ];
 
-  return [
-    ...routes,
-    ...blogArticles.map((article) => `/blog/${article.slug}`),
-  ].map((route) => ({
+  const routeEntries: MetadataRoute.Sitemap = routes.map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: currentDate,
     changeFrequency: route === '' ? 'daily' : 'weekly',
-    priority: route === '' ? 1.0 : 0.8,
+    priority: route === '' ? 1.0 : route.startsWith('/cattle-fattening') ? 0.9 : 0.8,
   }));
+
+  const articleEntries: MetadataRoute.Sitemap = blogArticles.map((article) => ({
+    url: `${baseUrl}/blog/${article.slug}`,
+    lastModified: new Date(`${article.date} UTC`).toISOString().slice(0, 10),
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }));
+
+  return [...routeEntries, ...articleEntries];
 }

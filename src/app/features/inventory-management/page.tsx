@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import Link from "next/link";
-import { Warehouse, CheckCircle2, ArrowRight, Boxes, ClipboardList, PackageCheck, BarChart3 } from "lucide-react";
+import { Warehouse, CheckCircle2, Boxes, ClipboardList, PackageCheck, BarChart3 } from "lucide-react";
 import CTA from "@/components/CTA";
 
 export default function InventoryManagementFeature() {

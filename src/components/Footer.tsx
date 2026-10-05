@@ -1,76 +1,55 @@
-import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
-const Footer = () => (
-  <footer id="footer" className="bg-white border-t border-brand-border">
-    <div className="section-container">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-        <div className="col-span-1 md:col-span-1">
-          <div className="flex items-center gap-3 mb-6">
-            <Image src="/user-icon.png" alt="AnimalCare360 Logo" width={32} height={32} />
-            <span className="text-2xl font-bold tracking-tight text-brand-navy">AnimalCare<span className="text-brand-primary">360</span></span>
+const linkClass = 'hover:text-brand-navy transition-colors';
+
+export default function Footer() {
+  return (
+    <footer id="footer" className="border-t border-brand-border bg-white">
+      <div className="section-container">
+        <div className="grid gap-10 border-b border-brand-border pb-12 md:grid-cols-2 lg:grid-cols-5">
+          <div className="lg:col-span-2">
+            <div className="mb-5 flex items-center gap-3">
+              <Image src="/user-icon.png" alt="" width={36} height={36} />
+              <span className="text-2xl font-bold text-brand-navy">AnimalCare<span className="text-brand-primary">360</span></span>
+            </div>
+            <p className="max-w-md text-sm leading-6 text-brand-muted">Cattle fattening management software for controlling animal cost, feed, weight performance, health, inventory, and profitability from purchase to sale.</p>
+            <a href="https://app.animalcare360.com" target="_blank" rel="noopener noreferrer" className="mt-5 inline-block text-sm font-bold text-brand-primary">Open the AnimalCare360 portal</a>
           </div>
-          <p className="text-brand-muted text-sm leading-relaxed mb-6">
-            Precision livestock management for the modern farm operator. From health tracking to financial reporting. Built for the modern agricultural ecosystem.
-          </p>
-          <div className="flex flex-col gap-1">
-            <p className="text-[10px] uppercase font-bold text-brand-navy tracking-widest">Main Portal</p>
-            <a href="https://app.animalcare360.com" target="_blank" rel="noopener noreferrer" className="text-brand-primary text-sm font-semibold hover:underline">app.animalcare360.com</a>
+          <div>
+            <h2 className="mb-4 text-xs font-bold uppercase text-brand-navy">Cattle economics</h2>
+            <ul className="space-y-3 text-sm text-brand-muted">
+              <li><Link href="/cattle-fattening-software" className={linkClass}>Fattening software</Link></li>
+              <li><Link href="/cattle-fattening-profit-calculator" className={linkClass}>Profit calculator</Link></li>
+              <li><Link href="/solutions/cattlepro" className={linkClass}>CattlePro</Link></li>
+              <li><Link href="/solutions/cattle-management" className={linkClass}>Cattle management</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="mb-4 text-xs font-bold uppercase text-brand-navy">Company</h2>
+            <ul className="space-y-3 text-sm text-brand-muted">
+              <li><Link href="/pricing" className={linkClass}>Pricing</Link></li>
+              <li><Link href="/demo" className={linkClass}>Book a demo</Link></li>
+              <li><Link href="/customers" className={linkClass}>Customer outcomes</Link></li>
+              <li><Link href="/resources" className={linkClass}>Resources</Link></li>
+              <li><Link href="/blog" className={linkClass}>Blog</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="mb-4 text-xs font-bold uppercase text-brand-navy">Other products</h2>
+            <ul className="space-y-3 text-sm text-brand-muted">
+              <li><Link href="/solutions/feed-retail" className={linkClass}>Feed retail</Link></li>
+              <li><Link href="/solutions/animal-trading" className={linkClass}>Animal trading</Link></li>
+              <li><Link href="/solutions/pet-hospital" className={linkClass}>Veterinary & pet hospital</Link></li>
+              <li><a href="https://wa.me/923391119259" target="_blank" rel="noopener noreferrer" className={linkClass}>WhatsApp sales</a></li>
+            </ul>
           </div>
         </div>
-
-        <div>
-          <h4 className="font-bold text-brand-navy mb-6 uppercase text-[10px] tracking-[0.2em] opacity-50">Solutions</h4>
-          <ul className="space-y-3 text-sm text-brand-muted font-medium">
-            <li><Link href="/solutions/livestock-management-software" className="hover:text-brand-navy transition-colors">Livestock Management</Link></li>
-            <li><Link href="/solutions/cattle-management" className="hover:text-brand-navy transition-colors">Cattle & Dairy ERP</Link></li>
-            <li><Link href="/solutions/goat-farm-management-software" className="hover:text-brand-navy transition-colors">Goat Farm Software</Link></li>
-            <li><Link href="/solutions/sheep-farm-management-software" className="hover:text-brand-navy transition-colors">Sheep Farm Software</Link></li>
-            <li><Link href="/solutions/feed-retail" className="hover:text-brand-navy transition-colors">Wanda Feed Retail</Link></li>
-            <li><Link href="/solutions/animal-trading" className="hover:text-brand-navy transition-colors">Animal Trading ERP</Link></li>
-            <li><Link href="/solutions/pet-hospital" className="hover:text-brand-navy transition-colors">Pet Hospital & Clinic</Link></li>
-            <li><Link href="/solutions/cattlepro" className="hover:text-brand-navy transition-colors">CattlePro</Link></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-bold text-brand-navy mb-6 uppercase text-[10px] tracking-[0.2em] opacity-50">Quick Links</h4>
-          <ul className="space-y-3 text-sm text-brand-muted font-medium">
-            <li><Link href="/pricing" className="hover:text-brand-navy transition-colors">Pricing</Link></li>
-            <li><Link href="/features" className="hover:text-brand-navy transition-colors">Key Features</Link></li>
-            <li><Link href="/blog" className="hover:text-brand-navy transition-colors">Company Blog</Link></li>
-            <li><Link href="/resources" className="hover:text-brand-navy transition-colors">Learning Hub</Link></li>
-            <li><Link href="/download-app" className="hover:text-brand-navy transition-colors flex items-center gap-2">Mobile App <span className="text-[8px] bg-brand-primary text-white px-1.5 py-0.5 rounded-full font-bold uppercase tracking-widest">New</span></Link></li>
-            <li><a href="https://app.animalcare360.com/register" className="hover:text-brand-navy transition-colors">Register for Free</a></li>
-            <li><a href="https://app.animalcare360.com/login" className="hover:text-brand-navy transition-colors">Portal Login</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-bold text-brand-navy mb-6 uppercase text-[10px] tracking-[0.2em] opacity-50">Support</h4>
-          <ul className="space-y-3 text-sm text-brand-muted font-medium">
-            <li className="flex flex-col gap-1">
-              <span className="text-[10px] uppercase tracking-widest opacity-60">WhatsApp / Call</span>
-              <a href="tel:+923391119259" className="text-brand-navy font-bold text-base hover:text-brand-primary transition-colors">+92 339 1119259</a>
-            </li>
-            <li><Link href="/resources" className="hover:text-brand-navy transition-colors">Knowledge Base</Link></li>
-            <li><a href="https://wa.me/923391119259" className="hover:text-brand-navy transition-colors">Talk to an Expert</a></li>
-          </ul>
+        <div className="flex flex-col gap-4 pt-7 text-center text-xs text-brand-muted sm:flex-row sm:items-center sm:justify-between sm:text-left">
+          <p>© {new Date().getFullYear()} AnimalCare360. All rights reserved.</p>
+          <div className="flex justify-center gap-5"><Link href="/privacy" className={linkClass}>Privacy</Link><Link href="/terms" className={linkClass}>Terms</Link></div>
         </div>
       </div>
-
-      <div className="border-t border-brand-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-        <p className="text-[10px] font-bold text-brand-muted uppercase tracking-widest">
-          © {new Date().getFullYear()} AnimalCare360. All rights reserved.
-        </p>
-        <div className="flex gap-6">
-          <Link href="/privacy" className="text-[10px] font-bold text-brand-muted uppercase tracking-widest hover:text-brand-navy">Privacy Policy</Link>
-          <Link href="/terms" className="text-[10px] font-bold text-brand-muted uppercase tracking-widest hover:text-brand-navy">Terms of Service</Link>
-        </div>
-      </div>
-    </div>
-  </footer>
-);
-
-export default Footer;
+    </footer>
+  );
+}

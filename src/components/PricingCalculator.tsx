@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Calculator, TrendingUp } from 'lucide-react';
 import { trackGAEvent } from '@/lib/analytics';
 
@@ -12,35 +12,26 @@ interface PricingCalculatorProps {
 const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label, type }) => {
   const [qty, setQty] = useState<number>(0);
   const [stores, setStores] = useState<number>(1);
-  const [total, setTotal] = useState<number>(basePrice);
+  const unitCost = type === 'wanda' ? 0.1 : 0.5;
+  const storeCost = 15;
+  const total = basePrice + (qty * unitCost) + (Math.max(0, stores - 1) * storeCost);
 
-  useEffect(() => {
-    // Dynamic pricing logic based on user requirements
-    // base + per unit cost logic
-    const unitCost = type === 'wanda' ? 0.1 : 0.5; // Example variables
-    const storeCost = 15;
+  const quantityBand = qty < 50 ? 'under_50' : qty <= 250 ? '50_250' : qty <= 1000 ? '251_1000' : 'over_1000';
+  const locationBand = stores <= 1 ? 'one' : stores <= 3 ? 'two_three' : 'four_plus';
 
-    let calculatedTotal = basePrice;
-    if (qty > 0) calculatedTotal += (qty * unitCost);
-    if (stores > 1) calculatedTotal += ((stores - 1) * storeCost);
-
-    setTotal(calculatedTotal);
-  }, [qty, stores, basePrice, type]);
-
-  const handleBlur = (field: 'qty' | 'stores', val: number) => {
+  const handleBlur = (field: 'qty' | 'stores') => {
     trackGAEvent('pricing_calculator_use', {
       calculator_type: type,
       field,
-      value: val,
+      value_band: field === 'qty' ? quantityBand : locationBand,
     });
   };
 
   const handleQuoteClick = () => {
     trackGAEvent('pricing_calculator_quote_click', {
       calculator_type: type,
-      quantity: qty,
-      stores_count: stores,
-      estimated_total: total,
+      quantity_band: quantityBand,
+      location_band: locationBand,
     });
   };
 
@@ -62,7 +53,7 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
             type="number"
             value={qty || ''}
             onChange={(e) => setQty(Math.max(0, parseInt(e.target.value) || 0))}
-            onBlur={() => handleBlur('qty', qty)}
+            onBlur={() => handleBlur('qty')}
             placeholder={type === 'wanda' ? "e.g. 100" : "e.g. 50"}
             className="w-full bg-brand-background border border-brand-border p-4 rounded-xl text-brand-navy font-bold focus:ring-2 focus:ring-brand-primary outline-none transition-all"
           />
@@ -76,7 +67,7 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
             type="number"
             value={stores || ''}
             onChange={(e) => setStores(Math.max(1, parseInt(e.target.value) || 1))}
-            onBlur={() => handleBlur('stores', stores)}
+            onBlur={() => handleBlur('stores')}
             placeholder="e.g. 1"
             className="w-full bg-brand-background border border-brand-border p-4 rounded-xl text-brand-navy font-bold focus:ring-2 focus:ring-brand-primary outline-none transition-all"
           />
@@ -94,6 +85,7 @@ const PricingCalculator: React.FC<PricingCalculatorProps> = ({ basePrice, label,
               rel="noopener noreferrer"
               data-analytics-manual="true"
               onClick={handleQuoteClick}
+              aria-label={`Request a ${label} pricing quote`}
               className="bg-brand-primary text-white p-3 rounded-xl hover:scale-110 transition-transform shadow-brand"
             >
               <TrendingUp className="w-5 h-5" />

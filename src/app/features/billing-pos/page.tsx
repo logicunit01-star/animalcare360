@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import Link from "next/link";
-import { Coins, CheckCircle2, FileText, Users, ShoppingCart, Percent, ReceiptText, BarChart3 } from "lucide-react";
+import { Coins, CheckCircle2, FileText, ShoppingCart, Percent, ReceiptText, BarChart3 } from "lucide-react";
 import CTA from "@/components/CTA";
 
 export default function BillingPOSFeature() {

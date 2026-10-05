@@ -1,27 +1,16 @@
 'use client';
 import React from "react";
 import Link from "next/link";
-import { motion } from "motion/react";
 import { 
   CheckCircle2, 
   ChevronRight, 
   Users, 
-  ShieldCheck, 
   Database, 
   ArrowRight, 
   Layers, 
-  Sparkles, 
   Bot, 
-  TrendingUp, 
-  FileSpreadsheet, 
-  BadgeHelp,
-  Activity,
-  HeartPulse,
   Scale,
-  Milk,
-  Calculator,
   Warehouse,
-  ShoppingBag
 } from "lucide-react";
 import CTA from "@/components/CTA";
 
@@ -181,15 +170,13 @@ export default function CattleProOverview() {
               Flagship Livestock ERP
             </span>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-8">
-              CattlePro: Complete Livestock Operations & Finance System
+              CattlePro: Cattle Operations, Cost and Profit Management
             </h1>
             <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-12 max-w-3xl mx-auto">
-              A comprehensive multi-farm platform to manage cattle, goats, feed, procurement, finance, Palai partnering, and day-to-day farm activity from one unified web and mobile application.
+              A multi-farm platform to connect cattle purchases, feed, weight, health, inventory, finance, partner ownership, sale, and profitability in one web and mobile system.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="https://app.animalcare360.com/register" className="bg-brand-primary hover:bg-opacity-90 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-brand-primary/20">
-                Start Free Trial
-              </a>
+              <Link href="/cattle-fattening-profit-calculator" className="rounded-lg bg-brand-primary px-8 py-4 font-bold text-white transition-opacity hover:opacity-90">Calculate Cattle Profit</Link>
               <Link href="/solutions/cattlepro/features" className="bg-white/10 hover:bg-white/20 text-white px-10 py-5 rounded-2xl font-bold transition-all border border-white/20 flex items-center gap-2">
                 Detailed Feature Set <ArrowRight className="w-5 h-5" />
               </Link>
@@ -398,8 +385,8 @@ export default function CattleProOverview() {
 
       {/* CTA Section */}
       <CTA 
-        title="Ready to Transform Your Livestock Enterprise?" 
-        subtitle="Access all 16 CattlePro workspaces today. Track your cattle, feed inventory, Palai partnering, and financial ledger from one unified dashboard." 
+        title="Ready to connect cattle performance with financial impact?"
+        subtitle="See how CattlePro brings animal records, feed, weight, health, inventory, partner ownership, and profitability into one operating workflow."
       />
     </div>
   );

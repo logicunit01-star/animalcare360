@@ -1,165 +1,88 @@
 'use client';
-import React, { useState } from 'react';
+
+import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, ChevronDown } from 'lucide-react';
-import Image from 'next/image';
+import { AnimatePresence, motion } from 'motion/react';
+import { Calculator, ChevronDown, Menu, X } from 'lucide-react';
 
-const Navbar = () => {
+const productLinks = [
+  { name: 'CattlePro', path: '/solutions/cattlepro', note: 'Cattle operations and farm economics' },
+  { name: 'Feed Retail', path: '/solutions/feed-retail', note: 'Inventory, sales, and supplier control' },
+  { name: 'Animal Trading', path: '/solutions/animal-trading', note: 'Deals, ledgers, and trade profitability' },
+  { name: 'Veterinary & Pet Hospital', path: '/solutions/pet-hospital', note: 'Clinical records, billing, and pharmacy' },
+];
+
+const primaryLinks = [
+  { name: 'Cattle Fattening', path: '/cattle-fattening-software' },
+  { name: 'Calculator', path: '/cattle-fattening-profit-calculator' },
+  { name: 'Pricing', path: '/pricing' },
+  { name: 'Resources', path: '/resources' },
+];
+
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-
-  const navLinks = [
-    {
-      name: "Solutions",
-      path: "/solutions",
-      subItems: [
-        { name: "Livestock Management", path: "/solutions/livestock-management-software" },
-        { name: "Cattle & Dairy ERP", path: "/solutions/cattle-management" },
-        { name: "Goat Farm Software", path: "/solutions/goat-farm-management-software" },
-        { name: "Sheep Farm Software", path: "/solutions/sheep-farm-management-software" },
-        { name: "Wanda Feed Retail", path: "/solutions/feed-retail" },
-        { name: "Animal Trading ERP", path: "/solutions/animal-trading" },
-        { name: "Pet Hospital & Clinic", path: "/solutions/pet-hospital" },
-        { name: "CattlePro", path: "/solutions/cattlepro" }
-      ]
-    },
-    {
-      name: "Features",
-      path: "/features",
-      subItems: [
-        { name: "Inventory Management", path: "/features/inventory-management" },
-        { name: "Animal Health Tracking", path: "/features/health-tracking" },
-        { name: "Invoicing & POS", path: "/features/billing-pos" }
-      ]
-    },
-    { name: "Blog", path: "/blog" },
-    { name: "Resources", path: "/resources" },
-    { name: "Mobile App", path: "/download-app" },
-    { name: "Pricing", path: "/pricing" },
-  ];
+  const isActive = (path: string) => pathname === path || pathname.startsWith(`${path}/`);
 
   return (
-    <nav id="navbar" className="sticky top-0 z-50 bg-white border-b border-brand-border h-[72px] flex items-center">
-      <div className="max-w-7xl w-full mx-auto px-6 sm:px-10 flex justify-between items-center">
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-10 h-10">
-            <Image src="/user-icon.png" alt="Logo Icon" fill className="object-contain" />
-          </div>
-          <span className="text-xl font-bold tracking-tight text-brand-navy hidden sm:block">
-            AnimalCare<span className="text-brand-primary">360</span>
-          </span>
+    <nav id="navbar" aria-label="Primary navigation" className="sticky top-0 z-50 flex h-[72px] items-center border-b border-brand-border bg-white/95 backdrop-blur">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 sm:px-8">
+        <Link href="/" className="flex items-center gap-2.5" aria-label="AnimalCare360 home">
+          <Image src="/user-icon.png" alt="" width={40} height={40} priority className="h-10 w-10 object-contain" />
+          <span className="hidden text-xl font-bold text-brand-navy sm:block">AnimalCare<span className="text-brand-primary">360</span></span>
         </Link>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => {
-            if (link.subItems) {
-              return (
-                <div key={link.name} className="relative group py-2">
-                  <button className="flex items-center gap-1 text-sm font-medium text-brand-muted hover:text-brand-navy transition-colors cursor-pointer">
-                    {link.name} <ChevronDown className="w-4 h-4 text-brand-muted group-hover:text-brand-navy transition-colors" />
-                  </button>
-                  <div className="absolute left-0 mt-2 w-72 bg-white border border-brand-border rounded-2xl shadow-card opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 p-4 flex flex-col gap-2">
-                    {link.subItems.map((sub) => (
-                      <Link
-                        key={sub.name}
-                        href={sub.path}
-                        className="text-xs font-semibold text-brand-navy hover:text-brand-primary p-2.5 rounded-xl hover:bg-brand-background transition-colors"
-                      >
-                        {sub.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              );
-            }
-
-            return (
-              <Link
-                key={link.name}
-                href={link.path}
-                className={`text-sm font-medium transition-colors ${
-                  pathname === link.path ? "text-brand-primary" : "text-brand-muted hover:text-brand-navy"
-                }`}
-              >
-                {link.name}
-              </Link>
-            );
-          })}
+        <div className="hidden items-center gap-6 lg:flex">
+          {primaryLinks.slice(0, 2).map((link) => (
+            <Link key={link.path} href={link.path} className={`text-sm font-semibold transition-colors ${isActive(link.path) ? 'text-brand-primary' : 'text-brand-muted hover:text-brand-navy'}`}>{link.name}</Link>
+          ))}
+          <div className="group relative py-3">
+            <button type="button" className="flex items-center gap-1 text-sm font-semibold text-brand-muted hover:text-brand-navy" aria-haspopup="true">Products <ChevronDown className="h-4 w-4" /></button>
+            <div className="invisible absolute left-1/2 top-full w-80 -translate-x-1/2 rounded-lg border border-brand-border bg-white p-2 opacity-0 shadow-card transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              {productLinks.map((item) => (
+                <Link key={item.path} href={item.path} className="block rounded-md px-3 py-3 hover:bg-brand-background">
+                  <span className="block text-sm font-bold text-brand-navy">{item.name}</span>
+                  <span className="mt-0.5 block text-xs text-brand-muted">{item.note}</span>
+                </Link>
+              ))}
+              <Link href="/solutions" className="block border-t border-brand-border px-3 pt-3 text-xs font-bold text-brand-primary">View all solutions</Link>
+            </div>
+          </div>
+          {primaryLinks.slice(2).map((link) => (
+            <Link key={link.path} href={link.path} className={`text-sm font-semibold transition-colors ${isActive(link.path) ? 'text-brand-primary' : 'text-brand-muted hover:text-brand-navy'}`}>{link.name}</Link>
+          ))}
         </div>
 
-        <div className="hidden md:flex items-center gap-3">
-          <a href="https://app.animalcare360.com/login" className="text-sm font-semibold text-brand-navy hover:text-brand-primary px-3 py-2 transition-colors">
-            Login
-          </a>
-          <a href="https://app.animalcare360.com/register" className="btn-ghost">
-            Start Free Trial
-          </a>
-          <a href="https://wa.me/923391119259" target="_blank" rel="noopener noreferrer" className="btn-primary">
-            Book a Demo
-          </a>
+        <div className="hidden items-center gap-2 lg:flex">
+          <a href="https://app.animalcare360.com/login" className="px-3 py-2 text-sm font-semibold text-brand-navy hover:text-brand-primary">Login</a>
+          <Link href="/demo" className="btn-ghost">Book a Demo</Link>
+          <Link href="/cattle-fattening-profit-calculator" className="btn-primary inline-flex items-center gap-2"><Calculator className="h-4 w-4" /> Calculate Profit</Link>
         </div>
 
-        {/* Mobile Menu Button */}
-        <button className="md:hidden p-2" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        <button type="button" className="rounded-md p-2 text-brand-navy lg:hidden" onClick={() => setIsOpen((open) => !open)} aria-expanded={isOpen} aria-controls="mobile-navigation" aria-label={isOpen ? 'Close navigation' : 'Open navigation'}>
+          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
 
-      {/* Mobile Nav */}
       <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden absolute top-[72px] left-0 right-0 bg-white border-b border-gray-100 overflow-hidden shadow-xl"
-          >
-            <div className="px-6 pt-2 pb-6 space-y-2 max-h-[80vh] overflow-y-auto">
-              {navLinks.map((link) => (
-                <div key={link.name} className="border-b border-gray-50 py-2">
-                  {link.subItems ? (
-                    <div>
-                      <span className="block px-3 py-1 text-[10px] font-bold text-brand-navy uppercase tracking-wider opacity-60">
-                        {link.name}
-                      </span>
-                      <div className="pl-3 flex flex-col gap-1 mt-1">
-                        {link.subItems.map((sub) => (
-                          <Link
-                            key={sub.name}
-                            href={sub.path}
-                            onClick={() => setIsOpen(false)}
-                            className="block px-3 py-2 text-xs font-semibold text-brand-muted hover:text-brand-navy"
-                          >
-                            {sub.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  ) : (
-                    <Link
-                      href={link.path}
-                      onClick={() => setIsOpen(false)}
-                      className="block px-3 py-2 text-sm font-medium text-brand-navy"
-                    >
-                      {link.name}
-                    </Link>
-                  )}
-                </div>
-              ))}
-              <div className="pt-4 flex flex-col gap-3">
-                <a href="https://app.animalcare360.com/login" className="text-center py-3 font-semibold text-brand-navy border border-brand-border rounded-xl">Login</a>
-                <a href="https://app.animalcare360.com/register" className="text-center py-3 font-semibold text-white bg-brand-navy rounded-xl">Start Free Trial</a>
-                <a href="https://wa.me/923391119259" target="_blank" rel="noopener noreferrer" className="bg-brand-primary text-white text-center py-4 rounded-xl font-bold">Book a Demo</a>
+        {isOpen ? (
+          <motion.div id="mobile-navigation" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="absolute left-0 right-0 top-[72px] max-h-[calc(100vh-72px)] overflow-y-auto border-b border-brand-border bg-white shadow-xl lg:hidden">
+            <div className="space-y-1 px-5 py-5">
+              {primaryLinks.map((link) => <Link key={link.path} href={link.path} onClick={() => setIsOpen(false)} className="block rounded-md px-3 py-3 text-sm font-bold text-brand-navy hover:bg-brand-background">{link.name}</Link>)}
+              <p className="px-3 pb-1 pt-4 text-[11px] font-bold uppercase text-brand-muted">Products</p>
+              {productLinks.map((item) => <Link key={item.path} href={item.path} onClick={() => setIsOpen(false)} className="block rounded-md px-3 py-2.5 text-sm font-semibold text-brand-navy hover:bg-brand-background">{item.name}</Link>)}
+              <Link href="/solutions" onClick={() => setIsOpen(false)} className="block rounded-md px-3 py-2.5 text-sm font-semibold text-brand-primary">All solutions</Link>
+              <div className="grid gap-2 border-t border-brand-border pt-4">
+                <a href="https://app.animalcare360.com/login" className="rounded-lg border border-brand-border py-3 text-center text-sm font-bold text-brand-navy">Login</a>
+                <Link href="/demo" onClick={() => setIsOpen(false)} className="rounded-lg border border-brand-navy py-3 text-center text-sm font-bold text-brand-navy">Book a Demo</Link>
+                <Link href="/cattle-fattening-profit-calculator" onClick={() => setIsOpen(false)} className="rounded-lg bg-brand-primary py-3 text-center text-sm font-bold text-white">Calculate Profit</Link>
               </div>
             </div>
           </motion.div>
-        )}
+        ) : null}
       </AnimatePresence>
     </nav>
   );
-};
-
-export default Navbar;
+}

@@ -1,6 +1,6 @@
 'use client';
 import React from "react";
-import { HeartPulse, Syringe, Calendar, ClipboardList, Database, CheckCircle2, Stethoscope, ReceiptText, FileText, BarChart3 } from "lucide-react";
+import { HeartPulse, Syringe, Calendar, ClipboardList, Database, CheckCircle2, Stethoscope, FileText, BarChart3 } from "lucide-react";
 import CTA from "@/components/CTA";
 
 export default function PetHospital() {

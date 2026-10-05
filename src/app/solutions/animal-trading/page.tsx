@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import Image from "next/image";
-import { FileText, CheckCircle2, BadgePercent, Coins, Truck, Users, BarChart3, ClipboardList } from "lucide-react";
+import { FileText, CheckCircle2, BadgePercent, Coins, Truck, BarChart3, ClipboardList } from "lucide-react";
 import CTA from "@/components/CTA";
 
 export default function AnimalTrading() {

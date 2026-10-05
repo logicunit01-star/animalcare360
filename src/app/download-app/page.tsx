@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { Download, Smartphone, ShieldCheck, Globe, CheckCircle2, ChevronRight, Settings } from "lucide-react";
+import { Download, Smartphone, ShieldCheck, CheckCircle2, Settings } from "lucide-react";
 import CTA from "@/components/CTA";
 
 export const metadata = {

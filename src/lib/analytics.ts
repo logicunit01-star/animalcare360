@@ -20,12 +20,12 @@ export const trackGAEvent = (eventName: string, params: AnalyticsEventParams = {
     window.gtag('event', eventName, eventPayload);
   }
 
-  if (window.dataLayer) {
-    window.dataLayer.push({
-      event: eventName,
+  window.dataLayer = window.dataLayer ?? [];
+  window.dataLayer.push({
+      event: 'animalcare360_event',
+      analytics_event_name: eventName,
       ...eventPayload,
-    });
-  }
+  });
 };
 
 export const tagClaritySession = (key: string, value: string) => {

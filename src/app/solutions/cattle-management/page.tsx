@@ -52,21 +52,6 @@ export default function CattleManagement() {
             "brand": {
               "@type": "Brand",
               "name": "AnimalCare360"
-            },
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "USD",
-              "price": "49",
-              "priceSpecification": {
-                "@type": "UnitPriceSpecification",
-                "price": "49",
-                "priceCurrency": "USD",
-                "referenceQuantity": {
-                  "@type": "QuantitativeValue",
-                  "value": "1",
-                  "unitCode": "MON"
-                }
-              }
             }
           })
         }}
@@ -85,12 +70,8 @@ export default function CattleManagement() {
               AnimalCare360 gives cattle, dairy, and fattening farms a complete digital record for every animal. This cattle management software helps teams track purchase, birth, breed, health, vaccination, breeding, milk, weight, feed cost, sale, and profit from one system.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.animalcare360.com/apps" className="bg-brand-primary hover:bg-opacity-90 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl shadow-brand-primary/20">
-                Start Free Trial
-              </a>
-              <a href="https://wa.me/923391119259" className="bg-white/10 hover:bg-white/20 text-white px-10 py-5 rounded-2xl font-bold transition-all border border-white/20">
-                Talk to Expert
-              </a>
+              <Link href="/cattle-fattening-software" className="rounded-lg bg-brand-primary px-8 py-4 font-bold text-white transition-opacity hover:opacity-90">Explore Cattle Fattening</Link>
+              <Link href="/cattle-fattening-profit-calculator" className="rounded-lg border border-white/20 bg-white/10 px-8 py-4 font-bold text-white hover:bg-white/20">Calculate Profit</Link>
             </div>
           </div>
         </div>
@@ -103,7 +84,7 @@ export default function CattleManagement() {
             <p className="text-brand-primary font-bold text-xs uppercase tracking-widest mb-3">Quick Answer</p>
             <h2 className="text-2xl md:text-3xl font-bold text-brand-navy mb-4">What is cattle farm management software?</h2>
             <p className="text-brand-muted leading-relaxed max-w-4xl">
-              Cattle farm management software helps farms keep digital records for every animal, including purchase, birth, breed, health, vaccination, breeding, milk production, weight gain, feed cost, sale, and profit. AnimalCare360 supports cattle, dairy, goats, sheep, and mixed livestock farms with web and Android workflows for Pakistan, South Asia, and global operations, with pricing and onboarding options for farms that want to start with one module.
+              Cattle farm management software helps farms keep digital records for every animal, including purchase, birth, breed, health, vaccination, breeding, milk production, weight gain, feed cost, sale, and profit. AnimalCare360 supports cattle, dairy, goats, sheep, and mixed livestock farms with web and Android workflows for operations worldwide, with pricing and onboarding options for farms that want to start with one module.
             </p>
           </div>
 
@@ -249,8 +230,8 @@ export default function CattleManagement() {
       </section>
 
       <CTA
-        title="Ready to Digitize Your Farm?"
-        subtitle="Join leading livestock enterprises. Start your free trial today and experience precision farm management."
+        title="Ready to connect cattle records with operating results?"
+        subtitle="Calculate a planning estimate or book a guided demo around your purchase, feed, weight, health, and sale workflow."
       />
     </div>
   );

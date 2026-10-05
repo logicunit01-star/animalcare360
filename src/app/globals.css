@@ -30,10 +30,16 @@
   }
 
   .section-container {
-    @apply max-w-7xl mx-auto px-6 sm:px-10 py-10;
+    @apply max-w-7xl mx-auto px-5 sm:px-8 py-12 md:py-16;
   }
 
   .input-primary {
-    @apply w-full bg-brand-background border border-brand-border p-4 rounded-xl text-brand-navy font-bold focus:ring-2 focus:ring-brand-primary outline-none transition-all;
+    @apply w-full bg-brand-background border border-brand-border p-3 rounded-lg text-brand-navy font-semibold focus:ring-2 focus:ring-brand-primary outline-none transition-all;
+  }
+}
+
+@layer base {
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-primary;
   }
 }

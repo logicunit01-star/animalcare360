@@ -11,7 +11,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.animalcare360.c
 const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-TJ0KRLP23C";
 const googleTagManagerId = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-KJJQPCZ8";
 const microsoftClarityId = process.env.NEXT_PUBLIC_CLARITY_ID ?? "wr1d57nths";
-const shouldLoadDirectGA = googleAnalyticsId && !googleTagManagerId;
+const shouldLoadDirectGA = Boolean(googleAnalyticsId);
 
 const outfit = Outfit({
     subsets: ["latin"],
@@ -21,11 +21,13 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-    title: "Animal Care 360 | Livestock, Feed Retail & Pet Hospital Software",
+    title: "Cattle Fattening Management Software | AnimalCare360",
     description:
-        "Manage livestock, feed retail, animal trading, and pet hospitals with cloud ERP for records, invoices, milk charts, inventory, and EMR logs.",
+        "Know the cost, weight performance, and profit of every animal. Manage cattle purchases, feed, weight, health, expenses, inventory, and sales.",
     keywords: [
-        "livestock software",
+        "cattle fattening software",
+        "beef finishing software",
+        "feedlot management software",
         "cattle management software",
         "farm ERP",
         "feed retail software",
@@ -33,8 +35,8 @@ export const metadata: Metadata = {
         "dairy farm software",
         "pet hospital software",
         "animal trading software",
-        "compliant farm software",
-        "livestock tracking",
+        "animal costing software",
+        "cattle profit software",
     ],
     authors: [{ name: "AnimalCare360", url: siteUrl }],
     creator: "AnimalCare360",
@@ -48,15 +50,15 @@ export const metadata: Metadata = {
         type: "website",
         locale: "en_US",
         siteName: "AnimalCare360",
-        title: "AnimalCare360 – Modern Livestock & Farm Management ERP",
+        title: "AnimalCare360 | Cattle Fattening Management Software",
         description:
-            "Specialized ERP for cattle farms, wanda feed retailers, animal traders & pet hospitals. Cloud-based, built for the modern animal industry.",
+            "Track cattle from purchase to sale and understand cost, weight performance, feed, health, and expected profit.",
         images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     },
     twitter: {
         card: "summary_large_image",
-        title: "AnimalCare360 – Modern Livestock ERP",
-        description: "Farm ERP, Wanda Software, Pet Hospital ERP – all in one hub.",
+        title: "AnimalCare360 | Cattle Fattening Management Software",
+        description: "Know the cost, weight performance, and profit of every animal.",
     },
 };
 
@@ -103,21 +105,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                 "@type": "ImageObject",
                                 "url": `${siteUrl}/logo.png`
                             },
-                            "sameAs": [
-                                "https://facebook.com/animalcare360",
-                                "https://twitter.com/animalcare360"
-                            ],
                             "contactPoint": {
                                 "@type": "ContactPoint",
                                 "telephone": "+92-339-111-9259",
                                 "contactType": "customer service",
-                                "availableLanguage": ["English"]
-                            }
+                                "availableLanguage": ["English"],
+                                "areaServed": "Worldwide"
+                            },
+                            "description": "Cattle fattening and livestock operations software for animal costing, feed, weight, health, inventory, and profitability."
                         })
                     }}
                 />
-                <div className="bg-brand-navy text-white text-[11px] py-1.5 px-6 sm:px-10 flex justify-center items-center tracking-widest uppercase font-medium text-center">
-                    <span>Built for modern livestock, feed retail, trading, and veterinary businesses | WhatsApp: +92 339 111 9259</span>
+                <div className="flex min-h-8 items-center justify-center bg-brand-navy px-5 py-2 text-center text-[11px] font-semibold text-white">
+                    <span>Cattle economics from purchase to sale.</span>
                 </div>
                 <Navbar />
                 <main className="flex-grow">{children}</main>
@@ -156,7 +156,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                   window.dataLayer = window.dataLayer || [];
                                   function gtag(){dataLayer.push(arguments);}
                                   gtag('js', new Date());
-                                  gtag('config', '${googleAnalyticsId}');
+                                  gtag('config', '${googleAnalyticsId}', { send_page_view: ${googleTagManagerId ? 'false' : 'true'} });
                                 `,
                             }}
                         />

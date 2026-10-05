@@ -1,15 +1,13 @@
 'use client';
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { 
   Search, 
-  ChevronRight, 
   HelpCircle, 
   CheckCircle2, 
   ArrowLeft, 
   Database, 
   ShieldCheck, 
-  Sparkles, 
   Bot, 
   AlertCircle,
   FileSpreadsheet,
@@ -292,8 +290,7 @@ export default function CattleProFeatures() {
     }
   ];
 
-  const filteredFeatures = useMemo(() => {
-    return features.filter(feature => {
+  const filteredFeatures = features.filter(feature => {
       const matchesSearch = 
         feature.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         feature.desc.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -304,7 +301,6 @@ export default function CattleProFeatures() {
 
       return matchesSearch && matchesCategory;
     });
-  }, [searchQuery, activeCategory]);
 
   return (
     <div className="pt-0 bg-brand-background">

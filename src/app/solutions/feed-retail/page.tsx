@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import Image from "next/image";
-import { ShoppingBag, ShieldCheck, Users, Database, Package, BarChart2, CheckCircle2 } from "lucide-react";
+import { ShoppingBag, Users, Database, Package, CheckCircle2 } from "lucide-react";
 import CTA from "@/components/CTA";
 
 export default function FeedRetail() {

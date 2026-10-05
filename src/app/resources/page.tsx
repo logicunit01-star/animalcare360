@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import Link from "next/link";
-import { FileText, ShieldCheck, BookOpen, Settings, ChevronRight, ClipboardList, Syringe, ShoppingCart, Milk, TableProperties } from "lucide-react";
+import { FileText, ShieldCheck, BookOpen, Settings, ChevronRight, ClipboardList, Syringe, ShoppingCart, TableProperties } from "lucide-react";
 import CTA from "@/components/CTA";
 
 export default function Resources() {
