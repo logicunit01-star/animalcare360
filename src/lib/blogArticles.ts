@@ -917,6 +917,114 @@ export const blogArticles: BlogArticle[] = [
       { label: "Resources", href: "/resources" },
       { label: "Pricing", href: "/pricing" }
     ]
+  },
+  {
+    slug: "cattle-fattening-profit-per-animal",
+    title: "How to Calculate Profit per Animal in Cattle Fattening",
+    metaTitle: "Cattle Fattening Profit per Animal | AnimalCare360",
+    description: "Step-by-step guide to calculating profit per animal in cattle fattening: purchase cost, feed, daily gain, cost per kg gained and break-even price.",
+    tag: "Cattle Fattening",
+    readTime: "10 min read",
+    date: "October 7, 2026",
+    intro: "Profit per animal in cattle fattening is the sale value of each animal minus everything it cost: purchase, feed, medicine, labour and other expenses. Most fattening businesses only see this number at the end of a cycle, after the cattle are sold. This guide shows how to calculate it step by step, which numbers move it most, and how to track it while the animals are still on feed.",
+    sections: [
+      {
+        heading: "The profit-per-animal formula",
+        body: [
+          "Start with one simple equation: profit = sale value - (purchase cost + feed cost + medicine cost + labour + other operating costs). Profit per animal is that total divided by the number of animals you bought, not only the number you sold, because an animal that dies still carries its purchase and feed cost.",
+          "Sale value is final weight multiplied by the selling price per kg (or per lb), for every animal that reaches sale. Final weight is purchase weight plus average daily gain multiplied by the number of days on feed. Each of these inputs can be recorded, which means profit can be estimated before the sale, not guessed after it."
+        ]
+      },
+      {
+        heading: "Step 1: Record what each animal cost to buy",
+        body: [
+          "The purchase price of the feeder animal is usually the single biggest cost in fattening. A Canfax Research Services feedlot cost comparison for Alberta Beef Producers (2013, using 2011 data) found that the feeder animal made up 60 to 75 percent of non-factor costs in Australia, the United States and Canada, and that the feeder animal and feed together represented more than 95 percent of total feedlot costs in every country studied.",
+          "Record the purchase price, purchase weight, date, source and any transport or market charges for every animal. Two animals bought on the same day at different weights and prices will have different break-even prices, so an average for the whole batch can hide a loss-making animal."
+        ]
+      },
+      {
+        heading: "Step 2: Track feed and operating costs",
+        body: [
+          "Feed is the largest running cost once the animal is bought. The simplest reliable method is feed cost per animal per day: the cost of the ration delivered to a pen divided by the number of animals in it. Multiply by days on feed to get feed cost per animal.",
+          "If feed is recorded by pen or batch rather than by individual animal, the per-animal figure is an allocated cost, not a measured one. That is fine for planning, but label it as allocated so nobody mistakes it for individual intake. Add medicine and vaccines per animal, then share labour, electricity, water, transport and other costs across the batch."
+        ]
+      },
+      {
+        heading: "Step 3: Measure weight gain",
+        body: [
+          "Average daily gain (ADG) is the weight gained divided by the number of days on feed. For example, an animal that goes from 250 kg to 358 kg in 120 days has an ADG of 0.9 kg per day. Texas A&M AgriLife Extension's closeout guidance calculates ADG from payweight of live cattle only, so animals that die do not inflate the gain figure.",
+          "You do not need to weigh every animal every day. Weighing a sample of animals every two weeks, with a scale or a calibrated weigh band, is enough to spot a ration or health problem early. An animal that stops gaining is still eating feed, so its cost per kg gained rises every day it stays in the pen."
+        ]
+      },
+      {
+        heading: "Step 4: Calculate cost per kg gained and break-even price",
+        body: [
+          "Cost per kg gained shows how efficiently you turn money into weight: operating cost (feed, medicine, labour and other costs, excluding the animal's purchase price) divided by total kg gained by the animals that reach sale. Use it to compare rations, feed suppliers, breeds or pens. A cheaper feed is only cheaper if it lowers this number.",
+          "Break-even price is the lowest selling price per kg at which you cover all costs: total investment (purchase plus operating costs) divided by total saleable weight. Know it before you buy. If the expected market price at sale is close to or below your break-even price, the margin is too thin to absorb a slow-gaining or sick animal."
+        ]
+      },
+      {
+        heading: "A worked example (illustrative figures)",
+        body: [
+          "The figures below are an illustrative example, not market rates. Ten cattle are bought at 250 kg for USD 550 each (USD 5,500). They are fed for 120 days at USD 1.80 per animal per day (USD 2,160), with USD 15 of medicine per animal (USD 150), USD 1,200 of labour and USD 600 of other costs. Operating costs total USD 4,110 and total investment is USD 9,610.",
+          "At 0.9 kg average daily gain, each animal reaches 358 kg. With 2 percent expected mortality and a live selling price of USD 3.20 per kg, sale value is about USD 11,227. Profit is about USD 1,617, or USD 162 per animal bought. Cost per kg gained is about USD 3.88 and the break-even price is about USD 2.74 per kg live weight."
+        ]
+      },
+      {
+        heading: "The three numbers that move profit most",
+        body: [
+          "Daily gain: in the same illustrative example, if ADG falls from 0.9 to 0.6 kg per day with the same costs, profit falls from about USD 1,617 to about USD 488, cost per kg gained rises from USD 3.88 to USD 5.82, and the break-even price rises to about USD 3.05 per kg.",
+          "Mortality: if mortality rises from 2 percent to 10 percent, profit falls to about USD 700. Selling price: a USD 0.20 per kg drop in the sale price, from USD 3.20 to USD 3.00, cuts profit to about USD 915. Daily gain, mortality and the gap between purchase and sale price per kg matter more than small savings on feed or labour, so measure them first."
+        ]
+      },
+      {
+        heading: "From spreadsheet to per-animal records",
+        body: [
+          "A spreadsheet can handle one small batch. As the number of animals, pens and suppliers grows, purchase records, feed issues, weights, treatments and sales end up in different files, and profit is only visible at the end of the cycle.",
+          "AnimalCare360 follows each animal from purchase and registration through feed, weight, health and expenses to sale, so cost and profit per animal can be checked during the cycle. To test your own numbers first, use the free cattle fattening profit calculator, which shows profit, cost per kg gained and break-even price in your currency."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        q: "How do I calculate profit per animal in cattle fattening?",
+        a: "Subtract purchase, feed, medicine, labour and other costs from the sale value, then divide by the number of animals you bought."
+      },
+      {
+        q: "What is cost per kg gained?",
+        a: "It is operating cost (feed, medicine, labour and other costs, excluding the purchase price) divided by the total kg gained by animals that reach sale."
+      },
+      {
+        q: "How is break-even price calculated?",
+        a: "Divide total investment, including purchase and operating costs, by the total saleable weight. Selling below this price per kg means a loss."
+      },
+      {
+        q: "What is a good average daily gain for fattening cattle?",
+        a: "It depends on breed, age, starting condition and ration. Measure your own animals every two weeks and compare cost per kg gained rather than relying on a single target."
+      },
+      {
+        q: "Should mortality be included in the calculation?",
+        a: "Yes. An animal that dies still carries its purchase and feed cost, so include expected mortality when planning and count dead animals when calculating profit per animal bought."
+      },
+      {
+        q: "Can I calculate this in my own currency?",
+        a: "Yes. The AnimalCare360 cattle fattening profit calculator lets you choose your currency and kg or lb before entering your numbers."
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Cattle fattening profit calculator",
+        href: "/cattle-fattening-profit-calculator"
+      },
+      {
+        label: "Cattle fattening software",
+        href: "/cattle-fattening-software"
+      },
+      {
+        label: "Book a demo",
+        href: "/demo"
+      }
+    ]
   }
 ];
 
