@@ -19,7 +19,7 @@ Most fattening businesses only see their real profit after the cattle are sold. 
 On this page we'll share practical cattle economics: cost per kg gained, break-even pricing, feed efficiency and record keeping, with worked examples from different markets.
 
 Start with our free guide: How to calculate profit per animal in cattle fattening
-https://www.animalcare360.com/blog/cattle-fattening-profit-per-animal
+https://www.animalcare360.com/blog/cattle-fattening-profit-per-animal?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cattle_economics_oct_2026&utm_content=post_1
 
 Follow the page if you run, finance or advise a fattening or feedlot business.
 
@@ -47,7 +47,7 @@ And the part most plans skip: capital. PKR 3.2 million goes out on day one, and 
 Then stress-test it. If daily gain drops from 0.8 to 0.6 kg, profit falls to about PKR 146,000.
 
 Full step-by-step guide, with a Kenya feedlot example too:
-https://www.animalcare360.com/blog/cattle-fattening-business-plan
+https://www.animalcare360.com/blog/cattle-fattening-business-plan?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cattle_economics_oct_2026&utm_content=post_2
 
 (Example figures, not market rates. Use your own quotes.)
 
@@ -74,7 +74,7 @@ Same animals, same feed bill. The difference is daily gain, and you only see it 
 
 No scale? A calibrated weigh band on a fixed sample of animals is enough to spot a problem early.
 
-Check your own numbers: https://www.animalcare360.com/cattle-fattening-profit-calculator
+Check your own numbers: https://www.animalcare360.com/cattle-fattening-profit-calculator?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cattle_economics_oct_2026&utm_content=post_3
 
 #AverageDailyGain #Feedlot #CattleFattening #FeedEfficiency #LivestockManagement
 
@@ -95,7 +95,7 @@ So before buying, work out the highest price per kg you can pay and still make m
 For Eid al-Adha 2027 (expected mid-May, depending on moon sighting), a 90-day cycle means buying by early February. That makes now the time to set your maximum purchase price.
 
 Free calculator, with your own currency and kg or lb:
-https://www.animalcare360.com/cattle-fattening-profit-calculator
+https://www.animalcare360.com/cattle-fattening-profit-calculator?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cattle_economics_oct_2026&utm_content=post_4
 
 #CattleFattening #EidUlAdha #Feedlot #LivestockTrading #AgriBusiness
 
@@ -125,7 +125,7 @@ Questions to ask any vendor:
 • Can my staff use it on their phones?
 • Can I export my data if I leave?
 
-See how AnimalCare360 handles it: https://www.animalcare360.com/demo
+See how AnimalCare360 handles it: https://www.animalcare360.com/demo?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cattle_economics_oct_2026&utm_content=post_5
 
 #FeedlotManagement #LivestockSoftware #AgTech #CattleFattening #FarmManagement
 
