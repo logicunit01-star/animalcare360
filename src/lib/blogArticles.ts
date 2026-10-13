@@ -1025,6 +1025,128 @@ export const blogArticles: BlogArticle[] = [
         href: "/demo"
       }
     ]
+  },
+  {
+    slug: "cattle-fattening-business-plan",
+    title: "Cattle Fattening Business Plan: 90-Day Costs, Feed, Timeline and Profit",
+    metaTitle: "Cattle Fattening Business Plan (90 Days) | AnimalCare360",
+    description:
+      "Build a 90-day cattle fattening business plan: buying, feed, timeline, capital, break-even price and risks, with worked Pakistan and Kenya examples.",
+    tag: "Cattle Fattening",
+    readTime: "11 min read",
+    date: "October 13, 2026",
+    intro:
+      "A cattle fattening business plan answers one question before any money is spent: if you buy these animals at this price, feed them for this many days and sell them in this market, will the numbers work? This guide walks through a practical 90-day plan step by step: choosing the sale window, buying feeder animals, planning feed and the timeline, calculating capital and break-even price, and testing what happens when gain, mortality or price go wrong. Two worked examples, one for bachra fattening in Pakistan and one for a small Kenyan feedlot, use clearly labelled illustrative figures so you can replace them with your own.",
+    sections: [
+      {
+        heading: "What a cattle fattening business plan must answer",
+        body: [
+          "A fattening plan is not a long document for a bank. At its core it is a short set of decisions and numbers: which animals you will buy, how many, at what weight and price; what they will eat and what that costs per day; how long they will stay on feed; when and where you will sell them; and how much cash you need before the first animal is sold. If any of these is left as a guess, the profit figure at the bottom of the plan is a guess too.",
+          "The two largest numbers in almost every plan are the cost of the feeder animal and the cost of feed. A Canfax Research Services feedlot cost comparison prepared for Alberta Beef Producers (2013, using 2011 data) found that the feeder animal made up 60 to 75 percent of non-factor costs in Australia, the United States and Canada, and that the feeder animal and feed together represented more than 95 percent of total feedlot costs in every country studied. Small farms in South Asia and Africa have different cost structures, but the lesson holds: the buying decision and the feeding plan decide most of the result.",
+          "A useful plan therefore ends with four figures you can check during the cycle: total capital required, cost per kg gained, break-even selling price per kg, and expected profit per animal bought. The rest of this guide builds those figures one step at a time."
+        ]
+      },
+      {
+        heading: "Step 1: Start from the market and the sale date",
+        body: [
+          "Plan backwards from the sale. Decide who will buy your finished animals (a local livestock market or mandi, a trader, a butcher, a processor or an export abattoir), what weight and condition they pay best for, and when demand is strongest. Selling to a processor in batches usually needs uniform animals and a predictable delivery date; selling at a festival market rewards appearance and timing more than precise weight.",
+          "In Pakistan, Bangladesh and other markets where demand peaks before Eid al-Adha, the sale window sets the whole timeline. Eid al-Adha 2027 is expected around mid-May 2027, with the exact date depending on moon sighting, so a 90-day finishing cycle aimed at that market would need animals bought, quarantined and settled on feed by about early February 2027. In markets with steady year-round demand, such as feedlots supplying abattoirs in Kenya, many operators instead restock in smaller batches every month to spread price risk and keep pens full.",
+          "Write down a realistic expected selling price per kg live weight (or per head, if that is how your market trades) and a lower, cautious price. Prices at festival peaks and seasonal lows can differ sharply, and the plan should still survive the cautious price."
+        ]
+      },
+      {
+        heading: "Step 2: Buy the right animals at the right price",
+        body: [
+          "Because the purchase price is usually the largest single cost, buying well matters more than almost any saving later. Record purchase weight, price, age, breed, source and transport cost for every animal. Buying animals of similar age, breed and weight makes feeding and selling easier and lets you compare performance fairly within a pen. Farmers in Pakistan often ask where to find batches of same-age, same-breed calves for exactly this reason.",
+          "Thin or underweight animals can be bought cheaply and gain quickly once well fed, which is the basis of many East African feedlot models. A 2024 report by Bizna Kenya on a commercial feedlot in Kieni, Nyeri County, described emaciated or underweight cattle bought for KES 18,000 to 30,000 and sold for KES 60,000 to 90,000 depending on breed after about three months of intensive feeding. Treat such reported ranges as one farm's experience, not a guarantee: animals that are thin because of chronic disease or very old age may never gain well.",
+          "Plan a health induction period before the fattening clock starts. The same Kenyan feedlot reported two weeks of vaccination and isolation before new cattle joined the main pens, and a Kenyan veterinarian writing in The Standard's FarmKenya (2022) describes an induction period covering deworming, vaccination, external parasite control and mineral supplementation. Agree the vaccination and deworming programme with a local veterinarian, since disease risks such as lumpy skin disease or contagious bovine pleuropneumonia differ by area."
+        ]
+      },
+      {
+        heading: "Step 3: Plan the feed and the 90-day timeline",
+        body: [
+          "Feed is the largest running cost. In an economic study of finishing Tanzania Shorthorn Zebu steers on agro-industrial by-products (Asimwe and colleagues, Livestock Research for Rural Development, 2016), feed made up 52 to 78 percent of operational costs excluding animal purchase. The same study found that steers on a higher-energy ration gained about 879 g per day against 432 g per day on a lower-energy ration, and that the higher-energy ration was more profitable under every price scenario tested, even though it cost more per day. Cheap feed is only cheap if it lowers the cost per kg gained.",
+          "A simple 90-day timeline looks like this: about two weeks of quarantine and step-up feeding (introducing concentrates gradually to avoid digestive upsets), then roughly 75 to 90 days on the full fattening ration, with weighing of all animals or a fixed sample every 14 days. The Tanzanian study also found that when the selling price per kg did not rise with longer feeding, the most profitable finishing period was between 50 and 75 days; when price rose with extra finish, 100 days paid best. Days on feed should be a decision, not a habit.",
+          "Write your ration as cost per animal per day, using actual ingredient prices: green fodder or silage, straw or hay, concentrate, minerals and any by-products. Ask a livestock nutritionist or extension officer to check the formulation, especially when using urea-treated straw or high-starch by-products, which need careful introduction and correct inclusion rates."
+        ]
+      },
+      {
+        heading: "Step 4: Budget and capital (Pakistan bachra example)",
+        body: [
+          "The following figures are illustrative, not market rates; replace them with your own quotes. A farmer plans to buy 20 bachra (young male calves) at an average of 180 kg for PKR 160,000 each, a total of PKR 3,200,000. Feed is budgeted at PKR 450 per animal per day for 90 days (PKR 810,000), medicine and vaccines at PKR 3,000 per animal (PKR 60,000), labour at PKR 120,000 for three months and other costs such as electricity, water, transport and shed repairs at PKR 110,000. Operating costs total PKR 1,100,000 and total investment is PKR 4,300,000.",
+          "At a planned average daily gain of 0.8 kg, each animal gains 72 kg and reaches about 252 kg. Allowing for one loss out of 20, 19 animals are sold with 4,788 kg of live weight. The break-even price is PKR 4,300,000 divided by 4,788 kg, or about PKR 898 per kg live. At an assumed selling price of PKR 1,000 per kg live, sale value is PKR 4,788,000, profit is PKR 488,000, or PKR 24,400 per animal bought, and cost per kg gained is about PKR 804.",
+          "Capital required is not just the purchase money. This plan needs PKR 3,200,000 on the day of purchase and about PKR 1,100,000 more over the next three months before any income arrives. Adding a contingency of around 10 percent (PKR 430,000 here) for feed price rises, extra treatment or a delayed sale gives a capital requirement of roughly PKR 4,730,000."
+        ]
+      },
+      {
+        heading: "Step 5: A small feedlot plan (Kenya example)",
+        body: [
+          "These figures are also illustrative. A small Kenyan feedlot plans to buy 30 thin steers at about 200 kg for KES 30,000 each (KES 900,000). Feed is budgeted at KES 150 per animal per day for 90 days (KES 405,000), veterinary costs including the induction programme at KES 1,200 per animal (KES 36,000), labour at KES 90,000 and other costs such as water, transport, fencing repairs and market fees at KES 69,000. Operating costs are KES 600,000 and total investment is KES 1,500,000.",
+          "At 0.9 kg average daily gain, each steer gains 81 kg and reaches about 281 kg. With one loss out of 30, 29 steers are sold with 8,149 kg of live weight. Break-even is about KES 184 per kg live, or about KES 51,700 per head sold. At an assumed KES 210 per kg live, sale value is about KES 1,711,300 and profit about KES 211,300, or roughly KES 7,040 per animal bought.",
+          "Notice that cost per kg gained in this example is about KES 255, higher than the assumed selling price of KES 210 per kg. The profit comes from buying thin animals at about KES 150 per kg and selling the whole animal at a higher price per kg after it has been finished. This is common in feedlots that buy lean stock, and it means the margin depends heavily on the purchase price: paying too much for thin animals can remove the profit entirely."
+        ]
+      },
+      {
+        heading: "Step 6: Stress-test the plan before you buy",
+        body: [
+          "A plan that only works when everything goes right is a risky plan. Re-run the numbers with worse assumptions. In the illustrative Pakistan example, if average daily gain falls from 0.8 to 0.6 kg, profit falls from PKR 488,000 to PKR 146,000 and break-even rises to about PKR 967 per kg. If the selling price falls from PKR 1,000 to PKR 950 per kg, profit falls to PKR 248,600. A second death, with costs unchanged, cuts profit to PKR 236,000.",
+          "In the illustrative Kenya example, a drop in daily gain from 0.9 to 0.6 kg leaves profit of only about KES 46,900 for the whole batch, and a selling price of KES 195 instead of KES 210 per kg cuts profit to about KES 89,100. In both examples, daily gain, mortality and the gap between buying and selling price per kg move profit far more than small savings on labour or electricity.",
+          "Set limits in the plan before the cycle starts: the highest price per kg you will pay for feeder animals, the minimum daily gain you will accept before reviewing the ration or calling a veterinarian, and the lowest selling price at which you will still sell rather than hold. Writing these down protects the business from decisions made under pressure at the market."
+        ]
+      },
+      {
+        heading: "Business plan checklist and tracking the plan",
+        body: [
+          "A complete one-page plan covers: target market and sale window; number of animals, purchase weight and maximum purchase price; induction and vaccination programme agreed with a veterinarian; ration and feed cost per animal per day; days on feed and weighing schedule; operating budget by category; capital required including contingency; break-even price per kg; expected profit per animal bought; and the stress-test results for lower gain, higher mortality and a lower selling price.",
+          "The plan is only useful if you compare it with what actually happens. Record every purchase, feed issue, treatment, weight and sale, and check cost per kg gained and break-even price every two weeks rather than only at the end of the cycle. If gain is below plan in week four, there is still time to adjust the ration, treat sick animals or sell slow gainers early.",
+          "AnimalCare360 is cattle fattening and feedlot software that follows each animal from purchase through feed, weight, health and expenses to sale, so plan and actual figures can be compared during the cycle. To test your plan's numbers first, enter them in the free cattle fattening profit calculator, and read the guide to calculating profit per animal for the formulas behind each figure."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        q: "How much capital do I need to start a cattle fattening business?",
+        a: "Add the full purchase cost of the animals, the operating costs for the whole cycle (feed, veterinary care, labour and other costs) and a contingency of around 10 percent. All of this is usually spent before the first animal is sold, so plan the cash, not just the profit."
+      },
+      {
+        q: "How long should a cattle fattening cycle be?",
+        a: "Many small fattening operations plan for about 90 days on feed after a short quarantine period. The best length depends on the animals, the ration and whether the selling price rises with extra finish; one Tanzanian study found 50 to 75 days most profitable when price per kg stayed the same."
+      },
+      {
+        q: "What is the biggest cost in cattle fattening?",
+        a: "Usually the purchase of the feeder animal, followed by feed. Together they make up most of total costs, which is why buying price and cost per kg gained matter more than small savings elsewhere."
+      },
+      {
+        q: "How do I calculate the break-even price in a fattening plan?",
+        a: "Divide total investment (purchase plus operating costs) by the total live weight you expect to sell, after allowing for mortality. Selling below this price per kg means a loss."
+      },
+      {
+        q: "Are the profit figures in the examples typical?",
+        a: "No. The Pakistan and Kenya examples use illustrative figures to show the method. Prices, gains and costs vary widely by region, season, breed and management, so always use your own quotes and records."
+      },
+      {
+        q: "Can I use software to follow my fattening plan?",
+        a: "Yes. A spreadsheet works for a small batch, but farm management software such as AnimalCare360 records purchases, feed, weights, health and sales per animal, so you can compare actual cost and profit with your plan during the cycle."
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Cattle fattening profit calculator",
+        href: "/cattle-fattening-profit-calculator"
+      },
+      {
+        label: "How to calculate profit per animal",
+        href: "/blog/cattle-fattening-profit-per-animal"
+      },
+      {
+        label: "Cattle fattening software",
+        href: "/cattle-fattening-software"
+      },
+      {
+        label: "Book a demo",
+        href: "/demo"
+      }
+    ]
   }
 ];
 
